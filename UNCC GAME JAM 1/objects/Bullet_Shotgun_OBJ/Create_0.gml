@@ -4,7 +4,7 @@ if Player_OBJ.weaponType == "Shotgun"{
 	x += random_range(-10, 10)
 	y += random_range(-10, 10)
 }
-speed = 7;
+speed = 5;
 image_angle = direction;
 
 lifespan = 300
