@@ -1,0 +1,1 @@
+draw_text_transformed(20, 110, "YOU DIED", 5, 5, 0)
