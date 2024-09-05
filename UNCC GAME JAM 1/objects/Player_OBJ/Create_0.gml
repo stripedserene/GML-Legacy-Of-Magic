@@ -23,6 +23,9 @@ instance_create_layer(random_range(0, 400), random_range(0, 300), "Instances", B
 BulletSpawnTimer = 300
 OldBulletSpawnTimer = 300
 
+HeartSpawnTimer = 1000
+OldHeartSpawnTimer = 1000
+
 EnemySpawnTimer = 200
 OldEnemySpawnTimer = 200
 

@@ -57,6 +57,14 @@ if BulletSpawnTimer <= 0 {
 	}
 }
 
+HeartSpawnTimer -= 1
+
+if HeartSpawnTimer <= 0 {
+	instance_create_layer(random_range(100, 300), random_range(100, 200), "Instances", Heart_OBJ)
+	HeartSpawnTimer = 1000 + (OldHeartSpawnTimer / 4)
+	OldHeartSpawnTimer = HeartSpawnTimer
+}
+
 EnemySpawnTimer -= 1 
 
 EnemySpawnSide = irandom_range(1, 4)
