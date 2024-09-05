@@ -14,10 +14,17 @@ NumSniperBullets = 5
 
 NumLives = 3
 
+invulnerability = false
+invulnerabilityTime = 50
+damaged = false
+
 instance_create_layer(random_range(0, 400), random_range(0, 300), "Instances", Bullet_Pickup_OBJ)
 
 BulletSpawnTimer = 300
 OldBulletSpawnTimer = 300
+
+HeartSpawnTimer = 1000
+OldHeartSpawnTimer = 1000
 
 EnemySpawnTimer = 200
 OldEnemySpawnTimer = 200

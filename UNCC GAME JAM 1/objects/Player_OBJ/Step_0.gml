@@ -57,6 +57,14 @@ if BulletSpawnTimer <= 0 {
 	}
 }
 
+HeartSpawnTimer -= 1
+
+if HeartSpawnTimer <= 0 {
+	instance_create_layer(random_range(100, 300), random_range(100, 200), "Instances", Heart_OBJ)
+	HeartSpawnTimer = 1000 + (OldHeartSpawnTimer / 4)
+	OldHeartSpawnTimer = HeartSpawnTimer
+}
+
 EnemySpawnTimer -= 1 
 
 EnemySpawnSide = irandom_range(1, 4)
@@ -132,6 +140,16 @@ if mouse_check_button_pressed(mb_left){
 	}
 }
 
+if damaged = true {
+	if invulnerabilityTime <= 0 {
+		invulnerability = false
+		damaged = false
+		invulnerabilityTime = 50
+	}
+	else {
+		invulnerabilityTime -= 1
+	}
+}
 
 if weaponType == "Shotgun"{
 	instance_create_layer(x, y, "Instances", Player_Weapon_Shotgun_OBJ)
@@ -164,11 +182,18 @@ if weaponType == "Shield"{
 	MoveSpeed = 1.5
 }
 
-if place_meeting(x, y, Enemy_OBJ) == true or place_meeting(x, y, Enemy_Bullet_OBJ) or place_meeting(x, y, Enemy_OBJ_2) == true
-	{
-	instance_create_layer(x, y, "DEATHTEXT", DeathText)
-	instance_destroy()
+if place_meeting(x, y, Enemy_OBJ) == true or place_meeting(x, y, Enemy_Bullet_OBJ) or place_meeting(x, y, Enemy_OBJ_2) == true {
+	if NumLives <= 0 {
+		instance_create_layer(x, y, "DEATHTEXT", DeathText)
+		instance_destroy()
 	}
+	else if invulnerability = false {
+		invulnerabilityTime = 50
+		damaged = true
+		invulnerability = true
+		NumLives -= 1
+	}
+}
 
 x = clamp(x,0, room_width);
 y= clamp(y,0,room_height);
