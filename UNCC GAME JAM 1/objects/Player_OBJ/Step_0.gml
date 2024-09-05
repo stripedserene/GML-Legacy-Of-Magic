@@ -157,14 +157,11 @@ if weaponType == "Pistols"{
 if weaponType == "Shotgun"{
 	MoveSpeed = 1.5
 }
-if weaponType == "Sniper"{
+else{
 	MoveSpeed = 2
 }
-if weaponType == "Shield"{
-	MoveSpeed = 1.5
-}
 
-if place_meeting(x, y, Enemy_OBJ) == true or place_meeting(x, y, Enemy_Bullet_OBJ) or place_meeting(x, y, Enemy_OBJ_2) == true
+if place_meeting(x, y, Enemy_OBJ) == true or place_meeting(x, y, Enemy_Bullet_OBJ) == true
 	{
 	instance_create_layer(x, y, "DEATHTEXT", DeathText)
 	instance_destroy()
