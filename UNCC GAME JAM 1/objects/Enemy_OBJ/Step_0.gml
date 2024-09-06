@@ -1,5 +1,4 @@
 speed = 1
-health = 4
 
 if instance_exists(Player_OBJ) == true {
 	direction = point_direction(x, y, Player_OBJ.x, Player_OBJ.y);

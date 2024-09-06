@@ -12,7 +12,7 @@ if lifespan <= 0
 if instance_exists(Player_OBJ){
 	if place_meeting(x, y, Wall_OBJ) == true
 		{
-		instance_destroy()
+		lifespan = 0
 		}
 	if place_meeting(x, y, Enemy_OBJ) or place_meeting(x, y, Enemy_OBJ_2) == true
 		{

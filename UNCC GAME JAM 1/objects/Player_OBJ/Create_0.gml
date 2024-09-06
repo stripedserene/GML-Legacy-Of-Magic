@@ -1,5 +1,7 @@
 randomize()
 
+RoomGen()
+
 Xspeed = 0
 Yspeed = 0
 
