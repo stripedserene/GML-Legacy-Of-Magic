@@ -17,6 +17,6 @@ if place_meeting(x, y, Wall_OBJ) == true
 
 lifespan -= 1
 
-if lifespan <= 1{
+if lifespan <= 0{
 	instance_destroy()
 }
