@@ -62,6 +62,7 @@
     {"id":{"name":"Warning_OBJ_2","path":"objects/Warning_OBJ_2/Warning_OBJ_2.yy",},},
     {"id":{"name":"Warning_OBJ","path":"objects/Warning_OBJ/Warning_OBJ.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"Fire_damage","path":"scripts/Fire_damage/Fire_damage.yy",},},
     {"id":{"name":"Bullet_Pickup_Shotgun_SPR","path":"sprites/Bullet_Pickup_Shotgun_SPR/Bullet_Pickup_Shotgun_SPR.yy",},},
     {"id":{"name":"Bullet_Pickup_Sniper_SPR","path":"sprites/Bullet_Pickup_Sniper_SPR/Bullet_Pickup_Sniper_SPR.yy",},},
     {"id":{"name":"Bullet_Pickup_SPR","path":"sprites/Bullet_Pickup_SPR/Bullet_Pickup_SPR.yy",},},
