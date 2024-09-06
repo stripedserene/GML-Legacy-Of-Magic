@@ -8,9 +8,9 @@ player_y = y
 
 EnemyKilled = 0
 
-NumPistolBullets = 8
-NumShotgunBullets = 4
-NumSniperBullets = 5
+NumPistolBullets = 20
+NumShotgunBullets = 8
+NumSniperBullets = 10
 
 NumLives = 3
 
@@ -23,8 +23,8 @@ instance_create_layer(random_range(0, 400), random_range(0, 300), "Instances", B
 BulletSpawnTimer = 300
 OldBulletSpawnTimer = 300
 
-HeartSpawnTimer = 1000
-OldHeartSpawnTimer = 1000
+HeartSpawnTimer = 2000
+OldHeartSpawnTimer = 2000
 
 EnemySpawnTimer = 200
 OldEnemySpawnTimer = 200

@@ -16,6 +16,6 @@ if instance_exists(Player_OBJ){
 		}
 	if place_meeting(x, y, Enemy_OBJ) or place_meeting(x, y, Enemy_OBJ_2) == true
 		{
-		lifespan = 2
+		lifespan = 1
 		}
 }

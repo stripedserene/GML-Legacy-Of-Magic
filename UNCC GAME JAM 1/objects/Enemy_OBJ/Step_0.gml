@@ -19,7 +19,7 @@ if place_meeting(x, y + Yspeed, Wall_OBJ) == true
 	Yspeed = 0;
 	}
 
-if place_meeting(x, y, Bullet_OBJ) or place_meeting(x, y, Bullet_Shotgun_OBJ) or place_meeting(x, y, Bullet_Sniper_OBJ) == true
+if place_meeting(x, y, Bullet_OBJ) or place_meeting(x, y, Bullet_Shotgun_OBJ) == true
 	{
 		obj_HP -= 1
 		if (obj_HP = 0){
@@ -29,6 +29,14 @@ if place_meeting(x, y, Bullet_OBJ) or place_meeting(x, y, Bullet_Shotgun_OBJ) or
 			instance_destroy()
 		}
 		
+	}
+	
+if place_meeting(x, y, Bullet_Sniper_OBJ) == true
+	{
+	if instance_exists(Player_OBJ){
+		Player_OBJ.EnemyKilled += 1
+	}
+	instance_destroy()
 	}
 	
 

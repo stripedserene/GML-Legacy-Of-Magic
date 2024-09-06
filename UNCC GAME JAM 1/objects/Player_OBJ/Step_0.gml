@@ -135,6 +135,8 @@ if mouse_check_button_pressed(mb_left){
 			instance_create_layer(x, y, layer, Bullet_Shotgun_OBJ);
 			instance_create_layer(x, y, layer, Bullet_Shotgun_OBJ);
 			instance_create_layer(x, y, layer, Bullet_Shotgun_OBJ);
+			instance_create_layer(x, y, layer, Bullet_Shotgun_OBJ);
+			instance_create_layer(x, y, layer, Bullet_Shotgun_OBJ);
 			NumShotgunBullets -= 1
 		}
 	}
@@ -173,13 +175,13 @@ if weaponType == "Pistols"{
 	MoveSpeed = 2.5
 }
 if weaponType == "Shotgun"{
-	MoveSpeed = 1.5
-}
-if weaponType == "Sniper"{
 	MoveSpeed = 2
 }
-if weaponType == "Shield"{
+if weaponType == "Sniper"{
 	MoveSpeed = 1.5
+}
+if weaponType == "Shield"{
+	MoveSpeed = 2.5
 }
 
 if place_meeting(x, y, Enemy_OBJ) == true or place_meeting(x, y, Enemy_Bullet_OBJ) or place_meeting(x, y, Enemy_OBJ_2) == true {
