@@ -12,11 +12,15 @@ Yspeed = lengthdir_y(speed, direction)
 
 if place_meeting(x + Xspeed, y, Wall_OBJ) == true
 	{
-	Xspeed = 0;
+	wallInst = instance_place(x + Xspeed, y, Wall_OBJ)
+	wallInst.wallHealth -= 0.1
+	Xspeed = 0
 	}
 if place_meeting(x, y + Yspeed, Wall_OBJ) == true
 	{
-	Yspeed = 0;
+	wallInst = instance_place(x, y + Yspeed, Wall_OBJ)
+	wallInst.wallHealth -= 0.1
+	Yspeed = 0
 	}
 
 if place_meeting(x, y, Bullet_OBJ) or place_meeting(x, y, Bullet_Shotgun_OBJ) == true

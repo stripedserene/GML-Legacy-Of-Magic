@@ -1,16 +1,23 @@
 /// @description Insert description here
 // You can write your code in this editor
 if place_meeting(x, y, Bullet_Shotgun_OBJ) {
-	wallHealth -= 0.5
+	wallHealth -= 2
 }
 if place_meeting(x, y, Bullet_OBJ) {
 	wallHealth -= 1
 }
 if place_meeting(x, y, Bullet_Sniper_OBJ) {
-	wallHealth -= 5
+	bulletInst = instance_place(x, y, Bullet_Sniper_OBJ)
+	if bulletInst.hitWall == false {
+		wallHealth -= 10
+		bulletInst.hitWall = true
+	}
 }
 
 
+if place_meeting(x, y, Enemy_Bullet_OBJ) {
+	wallHealth -= 5
+}
 
 if wallHealth <= 0 {
 	instance_destroy()

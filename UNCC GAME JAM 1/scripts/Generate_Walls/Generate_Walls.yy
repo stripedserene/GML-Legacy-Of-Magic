@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"Script2",
+  "%Name":"Generate_Walls",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Script2",
+  "name":"Generate_Walls",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

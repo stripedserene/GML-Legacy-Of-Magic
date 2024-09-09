@@ -63,7 +63,7 @@
     {"id":{"name":"Warning_OBJ","path":"objects/Warning_OBJ/Warning_OBJ.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Fire_damage","path":"scripts/Fire_damage/Fire_damage.yy",},},
-    {"id":{"name":"Script2","path":"scripts/Script2/Script2.yy",},},
+    {"id":{"name":"Generate_Walls","path":"scripts/Generate_Walls/Generate_Walls.yy",},},
     {"id":{"name":"Bullet_Pickup_Shotgun_SPR","path":"sprites/Bullet_Pickup_Shotgun_SPR/Bullet_Pickup_Shotgun_SPR.yy",},},
     {"id":{"name":"Bullet_Pickup_Sniper_SPR","path":"sprites/Bullet_Pickup_Sniper_SPR/Bullet_Pickup_Sniper_SPR.yy",},},
     {"id":{"name":"Bullet_Pickup_SPR","path":"sprites/Bullet_Pickup_SPR/Bullet_Pickup_SPR.yy",},},

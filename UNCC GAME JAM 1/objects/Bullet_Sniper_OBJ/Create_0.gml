@@ -3,3 +3,5 @@ speed = 12;
 image_angle = direction;
 
 lifespan = 300
+
+hitWall = false 
