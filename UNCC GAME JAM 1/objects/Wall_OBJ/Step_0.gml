@@ -10,6 +10,8 @@ if place_meeting(x, y, Bullet_Sniper_OBJ) {
 	wallHealth -= 5
 }
 
+
+
 if wallHealth <= 0 {
 	instance_destroy()
 }

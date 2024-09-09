@@ -10,4 +10,4 @@ if place_meeting(x, y, Player_OBJ) {
 wallHealth = (image_xscale * image_yscale) / 20
 
 invincible = false
-invincibilityTimer = 100
+invincibilityTimer = 50
