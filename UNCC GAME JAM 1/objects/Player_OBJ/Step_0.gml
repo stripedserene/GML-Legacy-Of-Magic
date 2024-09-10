@@ -156,14 +156,14 @@ if mouse_check_button_pressed(mb_left){
 			Energy -= 5
 		}
 	}
-	if Energy >= 10 {
+	if Energy >= 7 {
 		if weaponType = "Teleportation"{
 			x = mouse_x
 			y = mouse_y
 			Energy -= 7
 		}
 	}
-	if Energy >= 20 {
+	if Energy >= 15 {
 		if weaponType = "Magic Armor" and MagicArmorActive == false{
 			instance_create_layer(x, y, "Instances", Magic_Armor_OBJ)
 			Energy -= 15
