@@ -235,6 +235,7 @@ if weaponType == "Teleportation"{
 	instance_create_layer(x, y, "Instances", Player_Spell_Teleport_OBJ_2)
 }
 
+
 if weaponType == "Magic Sword"{
 	instance_create_layer(x, y, "Instances", Player_Weapon_Sword_OBJ)
 	instance_create_layer(x, y, "Instances", Player_Weapon_Sword_OBJ_2)
@@ -247,7 +248,6 @@ else {
 if weaponType == "Thorn Wall"{
 	instance_create_layer(x, y, "Instances", Player_Spell_Thorns_OBJ)
 	instance_create_layer(x, y, "Instances", Player_Spell_Thorns_OBJ_2)
-	SwordActive = true
 }
 
 if SwordActive == true {
