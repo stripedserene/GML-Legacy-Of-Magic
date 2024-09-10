@@ -11,6 +11,9 @@ player_y = y
 EnemyKilled = 0
 
 Energy = 100
+MagicArmorActive = false 
+
+MagicArmorTimer = 500
 
 NumLives = 3
 

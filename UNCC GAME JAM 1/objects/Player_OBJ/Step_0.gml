@@ -18,6 +18,14 @@ if  keyboard_check(ord("3")) {
 	weaponType = "Lightning Bolt"
 }
 
+if  keyboard_check(ord("4")) {
+	weaponType = "Teleportation"
+}
+
+if  keyboard_check(ord("5")) {
+	weaponType = "Magic Armor"
+}
+
 if  mouse_check_button_pressed(mb_right) {
 	weaponType = "Shield"
 }
@@ -140,6 +148,20 @@ if mouse_check_button_pressed(mb_left){
 			Energy -= 5
 		}
 	}
+	if Energy >= 10 {
+		if weaponType = "Teleportation"{
+			x = mouse_x
+			y = mouse_y
+			Energy -= 10
+		}
+	}
+	if Energy >= 20 {
+		if weaponType = "Magic Armor" and MagicArmorActive == false{
+			instance_create_layer(x, y, "Instances", Magic_Armor_OBJ)
+			Energy -= 20
+			MagicArmorActive = true
+		}
+	}
 }
 
 if damaged = true {
@@ -151,6 +173,14 @@ if damaged = true {
 	else {
 		invulnerabilityTime -= 1
 	}
+}
+
+if MagicArmorActive == true {
+	MagicArmorTimer -= 1
+}
+if MagicArmorTimer <= 0 {
+	MagicArmorActive = false
+	MagicArmorTimer = 500
 }
 
 if weaponType == "Sand Blast"{
@@ -189,7 +219,7 @@ if place_meeting(x, y, Enemy_OBJ) == true or place_meeting(x, y, Enemy_Bullet_OB
 		instance_create_layer(x, y, "DEATHTEXT", DeathText)
 		instance_destroy()
 	}
-	else if invulnerability = false {
+	else if invulnerability == false and MagicArmorActive == false{
 		invulnerabilityTime = 50
 		damaged = true
 		invulnerability = true
