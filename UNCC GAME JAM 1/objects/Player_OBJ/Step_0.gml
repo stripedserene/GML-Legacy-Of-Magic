@@ -201,6 +201,16 @@ if weaponType == "Shield"{
 	instance_create_layer(x, y, "Instances", Player_Weapon_Shield_OBJ_2)
 }
 
+if weaponType == "Magic Armor"{
+	instance_create_layer(x, y, "Instances", Player_Spell_Magic_Armor_OBJ)
+	instance_create_layer(x, y, "Instances", Player_Spell_Magic_Armor_OBJ_2)
+}
+
+if weaponType == "Teleportation"{
+	instance_create_layer(x, y, "Instances", Player_Spell_Teleport_OBJ)
+	instance_create_layer(x, y, "Instances", Player_Spell_Teleport_OBJ_2)
+}
+
 if weaponType == "Hail Storm"{
 	MoveSpeed = 2.5
 }
