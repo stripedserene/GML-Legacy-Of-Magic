@@ -16,9 +16,11 @@ if place_meeting(x, y, Bullet_Sniper_OBJ) {
 
 
 if place_meeting(x, y, Enemy_Bullet_OBJ) {
-	wallHealth -= 5
+	wallHealth -= 2
 }
 
 if wallHealth <= 0 {
 	instance_destroy()
 }
+
+image_alpha = (wallHealth + (0.3 * startingWallHealth)) / (startingWallHealth)

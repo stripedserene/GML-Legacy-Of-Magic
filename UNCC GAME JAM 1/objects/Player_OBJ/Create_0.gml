@@ -10,9 +10,14 @@ player_y = y
 
 EnemyKilled = 0
 
-NumPistolBullets = 20
-NumShotgunBullets = 8
-NumSniperBullets = 10
+Energy = 100
+MagicArmorActive = false 
+SwordActive = false 
+
+SwordEnergyTimer = 75
+
+
+MagicArmorTimer = 500
 
 NumLives = 3
 
@@ -33,26 +38,26 @@ OldEnemySpawnTimer = 200
 
 // weaponType = "Sniper"
 //weaponType = "Shotgun"
-weaponType = "Pistols"
+weaponType = "Hail Storm"
 
-if weaponType == "Shotgun"{
+if weaponType == "Sand Blast"{
 	instance_create_layer(x, y, "Instances", Player_Weapon_Shotgun_OBJ)
 	instance_create_layer(x, y, "Instances", Player_Weapon_Shotgun_OBJ_2)
 }
 
-if weaponType == "Pistols"{
+if weaponType == "Hail Storm"{
 	instance_create_layer(x, y, "Instances", Player_Weapon_OBJ)
 	instance_create_layer(x, y, "Instances", Player_Weapon_OBJ_2)
 }
-if weaponType == "Sniper"{
+if weaponType == "Lightning Bolt"{
 	instance_create_layer(x, y, "Instances", Player_Weapon_Sniper_OBJ)
 	instance_create_layer(x, y, "Instances", Player_Weapon_Sniper_OBJ_2)
 }
 
-if weaponType == "Pistols"{
+if weaponType == "Hail Storm"{
 	MoveSpeed = 2.5
 }
-if weaponType == "Sniper"{
+if weaponType == "Lightning Bolt"{
 	MoveSpeed = 1.5
 }
 else{

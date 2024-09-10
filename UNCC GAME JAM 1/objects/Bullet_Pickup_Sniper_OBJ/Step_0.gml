@@ -1,7 +1,7 @@
 
 if place_meeting(x, y, Player_OBJ) == true
 	{
-	Player_OBJ.NumSniperBullets += 1
+	Player_OBJ.Energy += 10
 	instance_destroy()
 	}
 

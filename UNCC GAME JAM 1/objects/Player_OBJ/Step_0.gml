@@ -7,19 +7,35 @@ Xspeed = (Right_key - Left_key) * MoveSpeed;
 Yspeed = (Down_key - Up_key) * MoveSpeed;
 
 if  keyboard_check(ord("1")) {
-	weaponType = "Pistols"
+	weaponType = "Hail Storm"
 }
 
 if  keyboard_check(ord("2")) {
-	weaponType = "Shotgun"
+	weaponType = "Sand Blast"
 }
 
 if  keyboard_check(ord("3")) {
-	weaponType = "Sniper"
+	weaponType = "Magic Sword"
+}
+
+if  keyboard_check(ord("4")) {
+	weaponType = "Lightning Bolt"
+}
+
+if  keyboard_check(ord("5")) {
+	weaponType = "Teleportation"
+}
+
+if  keyboard_check(ord("6")) {
+	weaponType = "Magic Armor"
+}
+
+if  keyboard_check(ord("7")) {
+	weaponType = "Thorn Wall"
 }
 
 if  mouse_check_button_pressed(mb_right) {
-	weaponType = "Shield"
+	weaponType = "Absorb"
 }
 
 if place_meeting(x + Xspeed, y, Wall_OBJ) == true
@@ -67,12 +83,12 @@ if HeartSpawnTimer <= 0 {
 
 EnemySpawnTimer -= 1 
 
-EnemySpawnSide = irandom_range(1, 4)
-EnemySpawnType = irandom_range(1, 8)
+EnemySpawnSide = irandom_range(1, 3)
+EnemySpawnType = irandom_range(2, 3)
 
 if EnemySpawnTimer <= 0 {
 	if EnemySpawnSide = 1 {
-		if EnemySpawnType == 8 {
+		if EnemySpawnType == 3 {
 			instance_create_layer(0, random_range(0, 288), "Instances", Warning_OBJ_2)
 		}
 		else {
@@ -80,7 +96,7 @@ if EnemySpawnTimer <= 0 {
 		}
 	}
 	else if EnemySpawnSide = 2 {
-		if EnemySpawnType == 8 {
+		if EnemySpawnType == 3 {
 			instance_create_layer(390, random_range(0, 288), "Instances", Warning_OBJ_2)
 		}
 		else {
@@ -88,7 +104,7 @@ if EnemySpawnTimer <= 0 {
 		}
 	}
 	else if EnemySpawnSide = 3 {
-		if EnemySpawnType == 8 {
+		if EnemySpawnType == 3 {
 			instance_create_layer(random_range(0, 390), 0, "Instances", Warning_OBJ_2)
 		}
 		else {
@@ -96,7 +112,7 @@ if EnemySpawnTimer <= 0 {
 		}
 	}
 	else if EnemySpawnSide = 4 {
-		if EnemySpawnType == 8 {
+		if EnemySpawnType == 3 {
 			instance_create_layer(random_range(0, 390), 288, "Instances", Warning_OBJ_2)
 		}
 		else {
@@ -113,20 +129,20 @@ if EnemySpawnTimer <= 0 {
 }
 
 if mouse_check_button_pressed(mb_left){
-	if NumPistolBullets > 0 {
-		if weaponType = "Pistols"{
+	if Energy >= 1 {
+		if weaponType = "Hail Storm"{
 			instance_create_layer(x, y, layer, Bullet_OBJ);
-			NumPistolBullets -= 1
+			Energy -= 1
 		}
 	}
-	if NumSniperBullets > 0 {
-		if weaponType = "Sniper"{
+	if Energy >= 10 {
+		if weaponType = "Lightning Bolt"{
 			instance_create_layer(x, y, layer, Bullet_Sniper_OBJ);
-			NumSniperBullets -= 1
+			Energy -= 10
 		}
 	}
-	if NumShotgunBullets > 0 {
-		if weaponType = "Shotgun"{
+	if Energy >= 5 {
+		if weaponType = "Sand Blast"{
 			instance_create_layer(x, y, layer, Bullet_Shotgun_OBJ);
 			instance_create_layer(x, y, layer, Bullet_Shotgun_OBJ);
 			instance_create_layer(x, y, layer, Bullet_Shotgun_OBJ);
@@ -137,7 +153,37 @@ if mouse_check_button_pressed(mb_left){
 			instance_create_layer(x, y, layer, Bullet_Shotgun_OBJ);
 			instance_create_layer(x, y, layer, Bullet_Shotgun_OBJ);
 			instance_create_layer(x, y, layer, Bullet_Shotgun_OBJ);
-			NumShotgunBullets -= 1
+			Energy -= 5
+		}
+	}
+	if Energy >= 10 {
+		if weaponType = "Teleportation"{
+			x = mouse_x
+			y = mouse_y
+			Energy -= 7
+		}
+	}
+	if Energy >= 20 {
+		if weaponType = "Magic Armor" and MagicArmorActive == false{
+			instance_create_layer(x, y, "Instances", Magic_Armor_OBJ)
+			Energy -= 15
+			MagicArmorActive = true
+		}
+	}
+	if Energy >= 5 {
+		if weaponType = "Thorn Wall"{
+			instance_create_layer(mouse_x, mouse_y, "Instances", Thorn_OBJ)
+			instance_create_layer(mouse_x + random_range(-30, 30), mouse_y + random_range(-30, 30), "Instances", Thorn_OBJ)
+			instance_create_layer(mouse_x + random_range(-30, 30), mouse_y + random_range(-30, 30), "Instances", Thorn_OBJ)
+			instance_create_layer(mouse_x + random_range(-30, 30), mouse_y + random_range(-30, 30), "Instances", Thorn_OBJ)
+			instance_create_layer(mouse_x + random_range(-30, 30), mouse_y + random_range(-30, 30), "Instances", Thorn_OBJ)
+			instance_create_layer(mouse_x + random_range(-30, 30), mouse_y + random_range(-30, 30), "Instances", Thorn_OBJ)
+			instance_create_layer(mouse_x + random_range(-30, 30), mouse_y + random_range(-30, 30), "Instances", Thorn_OBJ)
+			instance_create_layer(mouse_x + random_range(-30, 30), mouse_y + random_range(-30, 30), "Instances", Thorn_OBJ)
+			instance_create_layer(mouse_x + random_range(-30, 30), mouse_y + random_range(-30, 30), "Instances", Thorn_OBJ)
+			instance_create_layer(mouse_x + random_range(-30, 30), mouse_y + random_range(-30, 30), "Instances", Thorn_OBJ)
+			instance_create_layer(mouse_x + random_range(-30, 30), mouse_y + random_range(-30, 30), "Instances", Thorn_OBJ)
+			Energy -= 20
 		}
 	}
 }
@@ -153,34 +199,75 @@ if damaged = true {
 	}
 }
 
-if weaponType == "Shotgun"{
+if MagicArmorActive == true {
+	MagicArmorTimer -= 1
+}
+if MagicArmorTimer <= 0 {
+	MagicArmorActive = false
+	MagicArmorTimer = 500
+}
+
+if weaponType == "Sand Blast"{
 	instance_create_layer(x, y, "Instances", Player_Weapon_Shotgun_OBJ)
 	instance_create_layer(x, y, "Instances", Player_Weapon_Shotgun_OBJ_2)
 }
 
-if weaponType == "Pistols"{
+if weaponType == "Hail Storm"{
 	instance_create_layer(x, y, "Instances", Player_Weapon_OBJ)
 	instance_create_layer(x, y, "Instances", Player_Weapon_OBJ_2)
 }
-if weaponType == "Sniper"{
+if weaponType == "Lightning Bolt"{
 	instance_create_layer(x, y, "Instances", Player_Weapon_Sniper_OBJ)
 	instance_create_layer(x, y, "Instances", Player_Weapon_Sniper_OBJ_2)
 }
-if weaponType == "Shield"{
+if weaponType == "Absorb"{
 	instance_create_layer(x, y, "Instances", Player_Weapon_Shield_OBJ)
 	instance_create_layer(x, y, "Instances", Player_Weapon_Shield_OBJ_2)
 }
 
-if weaponType == "Pistols"{
+if weaponType == "Magic Armor"{
+	instance_create_layer(x, y, "Instances", Player_Spell_Magic_Armor_OBJ)
+	instance_create_layer(x, y, "Instances", Player_Spell_Magic_Armor_OBJ_2)
+}
+
+if weaponType == "Teleportation"{
+	instance_create_layer(x, y, "Instances", Player_Spell_Teleport_OBJ)
+	instance_create_layer(x, y, "Instances", Player_Spell_Teleport_OBJ_2)
+}
+
+if weaponType == "Magic Sword"{
+	instance_create_layer(x, y, "Instances", Player_Weapon_Sword_OBJ)
+	instance_create_layer(x, y, "Instances", Player_Weapon_Sword_OBJ_2)
+	SwordActive = true
+}
+else {
+	SwordActive = false 
+}
+
+if weaponType == "Thorn Wall"{
+	instance_create_layer(x, y, "Instances", Player_Spell_Thorns_OBJ)
+	instance_create_layer(x, y, "Instances", Player_Spell_Thorns_OBJ_2)
+	SwordActive = true
+}
+
+if SwordActive == true {
+	SwordEnergyTimer -= 1
+}
+
+if SwordEnergyTimer <= 0 {
+	Energy -= 1
+	SwordEnergyTimer = 75
+}
+if weaponType == "Hail Storm"{
 	MoveSpeed = 2.5
 }
-if weaponType == "Shotgun"{
+if weaponType == "Sand Blast"{
 	MoveSpeed = 2
 }
-if weaponType == "Sniper"{
+if weaponType == "Lightning Bolt"{
 	MoveSpeed = 1.5
 }
-if weaponType == "Shield"{
+if weaponType == "Absorb"{
 	MoveSpeed = 2.5
 }
 
@@ -189,7 +276,7 @@ if place_meeting(x, y, Enemy_OBJ) == true or place_meeting(x, y, Enemy_Bullet_OB
 		instance_create_layer(x, y, "DEATHTEXT", DeathText)
 		instance_destroy()
 	}
-	else if invulnerability = false {
+	else if invulnerability == false and MagicArmorActive == false{
 		invulnerabilityTime = 50
 		damaged = true
 		invulnerability = true
