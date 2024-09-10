@@ -1,6 +1,6 @@
 {
   "$GMSprite":"",
-  "%Name":"Player_Spell_Magic_Armor_SPR_3",
+  "%Name":"Player_Spell_Thorns_SPR",
   "bboxMode":0,
   "bbox_bottom":10,
   "bbox_left":0,
@@ -21,9 +21,9 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"ab31c5ac-4682-4f40-80aa-73855034d2b9","blendMode":0,"displayName":"default","isLocked":false,"name":"ab31c5ac-4682-4f40-80aa-73855034d2b9","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"Player_Spell_Magic_Armor_SPR_3",
+  "name":"Player_Spell_Thorns_SPR",
   "nineSlice":null,
-  "origin":5,
+  "origin":3,
   "parent":{
     "name":"Sprites",
     "path":"folders/Sprites.yy",
@@ -33,7 +33,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"",
-    "%Name":"Player_Spell_Magic_Armor_SPR_3",
+    "%Name":"Player_Spell_Thorns_SPR",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,7 +57,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"Player_Spell_Magic_Armor_SPR_3",
+    "name":"Player_Spell_Thorns_SPR",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -69,13 +69,13 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ef6abbe9-4482-4ebb-902f-3eeab08373c2","path":"sprites/Player_Spell_Magic_Armor_SPR_3/Player_Spell_Magic_Armor_SPR_3.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ef6abbe9-4482-4ebb-902f-3eeab08373c2","path":"sprites/Player_Spell_Thorns_SPR/Player_Spell_Thorns_SPR.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"3fa737ff-38f7-4931-a5a8-251702165094","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":9,
+    "xorigin":0,
     "yorigin":8,
   },
   "swatchColours":null,

@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"Player_Spell_Teleport_OBJ_2",
+  "%Name":"Player_Weapon_Sword_OBJ",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Player_Spell_Teleport_OBJ_2",
+  "name":"Player_Weapon_Sword_OBJ",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Player_Spell_Teleport_SPR_2",
-    "path":"sprites/Player_Spell_Teleport_SPR_2/Player_Spell_Teleport_SPR_2.yy",
+    "name":"Player_Weapon_Sword_SPR",
+    "path":"sprites/Player_Weapon_Sword_SPR/Player_Weapon_Sword_SPR.yy",
   },
   "spriteMaskId":null,
   "visible":true,

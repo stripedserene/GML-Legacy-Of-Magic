@@ -2,7 +2,7 @@
 x += lengthdir_x(speed, direction)
 y += lengthdir_y(speed, direction)
 
-if place_meeting(x, y, Wall_OBJ) == true
+if place_meeting(x, y, Wall_OBJ) or place_meeting(x, y, Thorn_OBJ) == true
 	{
 	lifespan = 1
 	}

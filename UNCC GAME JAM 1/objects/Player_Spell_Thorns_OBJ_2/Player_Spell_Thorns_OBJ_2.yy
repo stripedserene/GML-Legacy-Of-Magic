@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"Player_Spell_Teleport_OBJ_2",
+  "%Name":"Player_Spell_Thorns_OBJ_2",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Player_Spell_Teleport_OBJ_2",
+  "name":"Player_Spell_Thorns_OBJ_2",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Player_Spell_Teleport_SPR_2",
-    "path":"sprites/Player_Spell_Teleport_SPR_2/Player_Spell_Teleport_SPR_2.yy",
+    "name":"Player_Spell_Thorns_SPR_2",
+    "path":"sprites/Player_Spell_Thorns_SPR_2/Player_Spell_Thorns_SPR_2.yy",
   },
   "spriteMaskId":null,
   "visible":true,

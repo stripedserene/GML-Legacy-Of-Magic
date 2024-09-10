@@ -15,15 +15,23 @@ if  keyboard_check(ord("2")) {
 }
 
 if  keyboard_check(ord("3")) {
-	weaponType = "Lightning Bolt"
+	weaponType = "Magic Sword"
 }
 
 if  keyboard_check(ord("4")) {
-	weaponType = "Teleportation"
+	weaponType = "Lightning Bolt"
 }
 
 if  keyboard_check(ord("5")) {
+	weaponType = "Teleportation"
+}
+
+if  keyboard_check(ord("6")) {
 	weaponType = "Magic Armor"
+}
+
+if  keyboard_check(ord("7")) {
+	weaponType = "Thorn Wall"
 }
 
 if  mouse_check_button_pressed(mb_right) {
@@ -76,7 +84,7 @@ if HeartSpawnTimer <= 0 {
 EnemySpawnTimer -= 1 
 
 EnemySpawnSide = irandom_range(1, 3)
-EnemySpawnType = irandom_range(1, 3)
+EnemySpawnType = irandom_range(2, 3)
 
 if EnemySpawnTimer <= 0 {
 	if EnemySpawnSide = 1 {
@@ -152,14 +160,30 @@ if mouse_check_button_pressed(mb_left){
 		if weaponType = "Teleportation"{
 			x = mouse_x
 			y = mouse_y
-			Energy -= 10
+			Energy -= 7
 		}
 	}
 	if Energy >= 20 {
 		if weaponType = "Magic Armor" and MagicArmorActive == false{
 			instance_create_layer(x, y, "Instances", Magic_Armor_OBJ)
-			Energy -= 20
+			Energy -= 15
 			MagicArmorActive = true
+		}
+	}
+	if Energy >= 5 {
+		if weaponType = "Thorn Wall"{
+			instance_create_layer(mouse_x, mouse_y, "Instances", Thorn_OBJ)
+			instance_create_layer(mouse_x + random_range(-30, 30), mouse_y + random_range(-30, 30), "Instances", Thorn_OBJ)
+			instance_create_layer(mouse_x + random_range(-30, 30), mouse_y + random_range(-30, 30), "Instances", Thorn_OBJ)
+			instance_create_layer(mouse_x + random_range(-30, 30), mouse_y + random_range(-30, 30), "Instances", Thorn_OBJ)
+			instance_create_layer(mouse_x + random_range(-30, 30), mouse_y + random_range(-30, 30), "Instances", Thorn_OBJ)
+			instance_create_layer(mouse_x + random_range(-30, 30), mouse_y + random_range(-30, 30), "Instances", Thorn_OBJ)
+			instance_create_layer(mouse_x + random_range(-30, 30), mouse_y + random_range(-30, 30), "Instances", Thorn_OBJ)
+			instance_create_layer(mouse_x + random_range(-30, 30), mouse_y + random_range(-30, 30), "Instances", Thorn_OBJ)
+			instance_create_layer(mouse_x + random_range(-30, 30), mouse_y + random_range(-30, 30), "Instances", Thorn_OBJ)
+			instance_create_layer(mouse_x + random_range(-30, 30), mouse_y + random_range(-30, 30), "Instances", Thorn_OBJ)
+			instance_create_layer(mouse_x + random_range(-30, 30), mouse_y + random_range(-30, 30), "Instances", Thorn_OBJ)
+			Energy -= 20
 		}
 	}
 }
@@ -211,6 +235,29 @@ if weaponType == "Teleportation"{
 	instance_create_layer(x, y, "Instances", Player_Spell_Teleport_OBJ_2)
 }
 
+if weaponType == "Magic Sword"{
+	instance_create_layer(x, y, "Instances", Player_Weapon_Sword_OBJ)
+	instance_create_layer(x, y, "Instances", Player_Weapon_Sword_OBJ_2)
+	SwordActive = true
+}
+else {
+	SwordActive = false 
+}
+
+if weaponType == "Thorn Wall"{
+	instance_create_layer(x, y, "Instances", Player_Spell_Thorns_OBJ)
+	instance_create_layer(x, y, "Instances", Player_Spell_Thorns_OBJ_2)
+	SwordActive = true
+}
+
+if SwordActive == true {
+	SwordEnergyTimer -= 1
+}
+
+if SwordEnergyTimer <= 0 {
+	Energy -= 1
+	SwordEnergyTimer = 75
+}
 if weaponType == "Hail Storm"{
 	MoveSpeed = 2.5
 }

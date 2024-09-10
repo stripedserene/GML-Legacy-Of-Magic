@@ -12,6 +12,10 @@ EnemyKilled = 0
 
 Energy = 100
 MagicArmorActive = false 
+SwordActive = false 
+
+SwordEnergyTimer = 75
+
 
 MagicArmorTimer = 500
 
