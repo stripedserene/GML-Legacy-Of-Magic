@@ -10,7 +10,6 @@ if instance_exists(Player_OBJ){
 		image_angle = direction
 	}
 	else {
-		instance_destroy()
 		image_angle = 0
 	}
 }

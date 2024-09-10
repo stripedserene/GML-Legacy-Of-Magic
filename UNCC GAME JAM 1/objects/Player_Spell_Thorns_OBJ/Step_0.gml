@@ -8,11 +8,9 @@ if instance_exists(Player_OBJ){
 	y = Player_OBJ.y - 3
 	
 	if direction <= 90 or direction >= 270 {
-		visible = true
 		image_angle = direction
 	}
 	else {
-		instance_destroy()
 		image_angle = 0
 	}
 }
