@@ -170,7 +170,7 @@ if mouse_check_button_pressed(mb_left){
 			MagicArmorActive = true
 		}
 	}
-	if Energy >= 5 {
+	if Energy >= 20 {
 		if weaponType = "Thorn Wall"{
 			instance_create_layer(mouse_x, mouse_y, "Instances", Thorn_OBJ)
 			instance_create_layer(mouse_x + random_range(-30, 30), mouse_y + random_range(-30, 30), "Instances", Thorn_OBJ)
