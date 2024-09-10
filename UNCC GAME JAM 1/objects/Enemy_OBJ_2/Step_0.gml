@@ -43,12 +43,27 @@ if place_meeting(x, y, Bullet_Sniper_OBJ) == true
 	instance_destroy()
 	}
 
-ShotTimer -= 1
+BurstTimer -= 1
 
-if ShotTimer <= 0 {
-	instance_create_layer(x, y, "Instances", Enemy_Bullet_OBJ)
-	ShotTimer = 200
+if BurstTimer <= 0 {
+	BurstActive = true
 }
+
+if BurstActive = true {
+	ShotTimer -= 1
+	if ShotTimer <= 0 {
+		instance_create_layer(x, y, "Instances", Enemy_Bullet_OBJ)
+		ShotTimer = 25
+		numShots += 1
+	}
+}
+
+if numShots >= 3 {
+	BurstActive = false 
+	BurstTimer = 120
+}
+
+
 
 x += Xspeed 
 y += Yspeed 
