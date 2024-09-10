@@ -55,6 +55,7 @@
     {"name":"Warning_OBJ","order":26,"path":"objects/Warning_OBJ/Warning_OBJ.yy",},
     {"name":"WeaponSelectText","order":29,"path":"objects/WeaponSelectText/WeaponSelectText.yy",},
     {"name":"Generate_Walls","order":1,"path":"scripts/Generate_Walls/Generate_Walls.yy",},
+    {"name":"Ice_effect","order":2,"path":"scripts/Ice_effect/Ice_effect.yy",},
     {"name":"Bullet_Pickup_Shotgun_SPR","order":21,"path":"sprites/Bullet_Pickup_Shotgun_SPR/Bullet_Pickup_Shotgun_SPR.yy",},
     {"name":"Bullet_Pickup_Sniper_SPR","order":22,"path":"sprites/Bullet_Pickup_Sniper_SPR/Bullet_Pickup_Sniper_SPR.yy",},
     {"name":"Bullet_Pickup_SPR","order":5,"path":"sprites/Bullet_Pickup_SPR/Bullet_Pickup_SPR.yy",},
