@@ -27,7 +27,7 @@ if  keyboard_check(ord("5")) {
 }
 
 if  mouse_check_button_pressed(mb_right) {
-	weaponType = "Shield"
+	weaponType = "Absorb"
 }
 
 if place_meeting(x + Xspeed, y, Wall_OBJ) == true
@@ -196,7 +196,7 @@ if weaponType == "Lightning Bolt"{
 	instance_create_layer(x, y, "Instances", Player_Weapon_Sniper_OBJ)
 	instance_create_layer(x, y, "Instances", Player_Weapon_Sniper_OBJ_2)
 }
-if weaponType == "Shield"{
+if weaponType == "Absorb"{
 	instance_create_layer(x, y, "Instances", Player_Weapon_Shield_OBJ)
 	instance_create_layer(x, y, "Instances", Player_Weapon_Shield_OBJ_2)
 }
@@ -220,7 +220,7 @@ if weaponType == "Sand Blast"{
 if weaponType == "Lightning Bolt"{
 	MoveSpeed = 1.5
 }
-if weaponType == "Shield"{
+if weaponType == "Absorb"{
 	MoveSpeed = 2.5
 }
 

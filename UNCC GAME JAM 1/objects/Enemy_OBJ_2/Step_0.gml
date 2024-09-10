@@ -61,6 +61,7 @@ if BurstActive = true {
 if numShots >= 3 {
 	BurstActive = false 
 	BurstTimer = 120
+	numShots = 0
 }
 
 
