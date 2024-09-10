@@ -8,8 +8,8 @@ if place_meeting(x, y, Wall_OBJ) or place_meeting(x, y, Thorn_OBJ) == true
 	}
 if place_meeting(x, y, Player_Weapon_Shield_OBJ) == true or place_meeting(x, y, Player_Weapon_Shield_OBJ_2) == true
 	{
-	Player_OBJ.EnemyKilled += 25
-	Player_OBJ.Energy += 10000
+	Player_OBJ.EnemyKilled += 10
+	Player_OBJ.Energy += 25
 	instance_destroy()
 	}
 
