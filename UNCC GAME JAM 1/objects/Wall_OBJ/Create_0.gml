@@ -7,7 +7,8 @@ if place_meeting(x, y, Player_OBJ) {
 	instance_create_layer(random_range(100, 300), random_range(100, 200), "Instances", Wall_OBJ)
 }
 
-wallHealth = (image_xscale * image_yscale) / 20
+wallHealth = (image_xscale * image_yscale) / 10
+startingWallHealth = wallHealth
 
 invincible = false
 invincibilityTimer = 50

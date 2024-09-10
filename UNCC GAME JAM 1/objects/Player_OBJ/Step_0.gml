@@ -7,15 +7,15 @@ Xspeed = (Right_key - Left_key) * MoveSpeed;
 Yspeed = (Down_key - Up_key) * MoveSpeed;
 
 if  keyboard_check(ord("1")) {
-	weaponType = "Pistols"
+	weaponType = "Hail Storm"
 }
 
 if  keyboard_check(ord("2")) {
-	weaponType = "Shotgun"
+	weaponType = "Sand Blast"
 }
 
 if  keyboard_check(ord("3")) {
-	weaponType = "Sniper"
+	weaponType = "Lightning Bolt"
 }
 
 if  mouse_check_button_pressed(mb_right) {
@@ -68,11 +68,11 @@ if HeartSpawnTimer <= 0 {
 EnemySpawnTimer -= 1 
 
 EnemySpawnSide = irandom_range(1, 4)
-EnemySpawnType = irandom_range(1, 8)
+EnemySpawnType = irandom_range(1, 4)
 
 if EnemySpawnTimer <= 0 {
 	if EnemySpawnSide = 1 {
-		if EnemySpawnType == 8 {
+		if EnemySpawnType == 4 {
 			instance_create_layer(0, random_range(0, 288), "Instances", Warning_OBJ_2)
 		}
 		else {
@@ -80,7 +80,7 @@ if EnemySpawnTimer <= 0 {
 		}
 	}
 	else if EnemySpawnSide = 2 {
-		if EnemySpawnType == 8 {
+		if EnemySpawnType == 4 {
 			instance_create_layer(390, random_range(0, 288), "Instances", Warning_OBJ_2)
 		}
 		else {
@@ -88,7 +88,7 @@ if EnemySpawnTimer <= 0 {
 		}
 	}
 	else if EnemySpawnSide = 3 {
-		if EnemySpawnType == 8 {
+		if EnemySpawnType == 4 {
 			instance_create_layer(random_range(0, 390), 0, "Instances", Warning_OBJ_2)
 		}
 		else {
@@ -96,7 +96,7 @@ if EnemySpawnTimer <= 0 {
 		}
 	}
 	else if EnemySpawnSide = 4 {
-		if EnemySpawnType == 8 {
+		if EnemySpawnType == 4 {
 			instance_create_layer(random_range(0, 390), 288, "Instances", Warning_OBJ_2)
 		}
 		else {
@@ -113,20 +113,20 @@ if EnemySpawnTimer <= 0 {
 }
 
 if mouse_check_button_pressed(mb_left){
-	if NumPistolBullets > 0 {
-		if weaponType = "Pistols"{
+	if Energy >= 1 {
+		if weaponType = "Hail Storm"{
 			instance_create_layer(x, y, layer, Bullet_OBJ);
-			NumPistolBullets -= 1
+			Energy -= 1
 		}
 	}
-	if NumSniperBullets > 0 {
-		if weaponType = "Sniper"{
+	if Energy >= 10 {
+		if weaponType = "Lightning Bolt"{
 			instance_create_layer(x, y, layer, Bullet_Sniper_OBJ);
-			NumSniperBullets -= 1
+			Energy -= 10
 		}
 	}
-	if NumShotgunBullets > 0 {
-		if weaponType = "Shotgun"{
+	if Energy >= 5 {
+		if weaponType = "Sand Blast"{
 			instance_create_layer(x, y, layer, Bullet_Shotgun_OBJ);
 			instance_create_layer(x, y, layer, Bullet_Shotgun_OBJ);
 			instance_create_layer(x, y, layer, Bullet_Shotgun_OBJ);
@@ -137,7 +137,7 @@ if mouse_check_button_pressed(mb_left){
 			instance_create_layer(x, y, layer, Bullet_Shotgun_OBJ);
 			instance_create_layer(x, y, layer, Bullet_Shotgun_OBJ);
 			instance_create_layer(x, y, layer, Bullet_Shotgun_OBJ);
-			NumShotgunBullets -= 1
+			Energy -= 5
 		}
 	}
 }
@@ -153,16 +153,16 @@ if damaged = true {
 	}
 }
 
-if weaponType == "Shotgun"{
+if weaponType == "Sand Blast"{
 	instance_create_layer(x, y, "Instances", Player_Weapon_Shotgun_OBJ)
 	instance_create_layer(x, y, "Instances", Player_Weapon_Shotgun_OBJ_2)
 }
 
-if weaponType == "Pistols"{
+if weaponType == "Hail Storm"{
 	instance_create_layer(x, y, "Instances", Player_Weapon_OBJ)
 	instance_create_layer(x, y, "Instances", Player_Weapon_OBJ_2)
 }
-if weaponType == "Sniper"{
+if weaponType == "Lightning Bolt"{
 	instance_create_layer(x, y, "Instances", Player_Weapon_Sniper_OBJ)
 	instance_create_layer(x, y, "Instances", Player_Weapon_Sniper_OBJ_2)
 }
@@ -171,13 +171,13 @@ if weaponType == "Shield"{
 	instance_create_layer(x, y, "Instances", Player_Weapon_Shield_OBJ_2)
 }
 
-if weaponType == "Pistols"{
+if weaponType == "Hail Storm"{
 	MoveSpeed = 2.5
 }
-if weaponType == "Shotgun"{
+if weaponType == "Sand Blast"{
 	MoveSpeed = 2
 }
-if weaponType == "Sniper"{
+if weaponType == "Lightning Bolt"{
 	MoveSpeed = 1.5
 }
 if weaponType == "Shield"{

@@ -14,13 +14,13 @@ Yspeed = lengthdir_y(speed, direction)
 if place_meeting(x + Xspeed, y, Wall_OBJ) == true
 	{
 	wallInst = instance_place(x + Xspeed, y, Wall_OBJ)
-	wallInst.wallHealth -= 0.25
+	wallInst.wallHealth -= 0.125
 	Xspeed = 0
 	}
 if place_meeting(x, y + Yspeed, Wall_OBJ) == true
 	{
 	wallInst = instance_place(x, y + Yspeed, Wall_OBJ)
-	wallInst.wallHealth -= 0.25
+	wallInst.wallHealth -= 0.125
 	Yspeed = 0
 	}
 

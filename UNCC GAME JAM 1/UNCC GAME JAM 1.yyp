@@ -61,6 +61,7 @@
     {"id":{"name":"Wall_OBJ","path":"objects/Wall_OBJ/Wall_OBJ.yy",},},
     {"id":{"name":"Warning_OBJ_2","path":"objects/Warning_OBJ_2/Warning_OBJ_2.yy",},},
     {"id":{"name":"Warning_OBJ","path":"objects/Warning_OBJ/Warning_OBJ.yy",},},
+    {"id":{"name":"WeaponSelectText","path":"objects/WeaponSelectText/WeaponSelectText.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Fire_damage","path":"scripts/Fire_damage/Fire_damage.yy",},},
     {"id":{"name":"Generate_Walls","path":"scripts/Generate_Walls/Generate_Walls.yy",},},
