@@ -1,10 +1,10 @@
 {
   "$GMSprite":"",
   "%Name":"Player_Weapon_Shield_SPR_2",
-  "bboxMode":0,
-  "bbox_bottom":16,
+  "bboxMode":1,
+  "bbox_bottom":24,
   "bbox_left":0,
-  "bbox_right":7,
+  "bbox_right":12,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":17,
+  "height":25,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"ab31c5ac-4682-4f40-80aa-73855034d2b9","blendMode":0,"displayName":"default","isLocked":false,"name":"ab31c5ac-4682-4f40-80aa-73855034d2b9","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -76,7 +76,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":0,
-    "yorigin":8,
+    "yorigin":12,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":8,
+  "width":13,
 }

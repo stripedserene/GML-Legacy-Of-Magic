@@ -135,13 +135,13 @@ if mouse_check_button_pressed(mb_left){
 			Energy -= 1
 		}
 	}
-	if Energy >= 10 {
+	if Energy >= 5 {
 		if weaponType = "Lightning Bolt"{
 			instance_create_layer(x, y, layer, Bullet_Sniper_OBJ);
-			Energy -= 10
+			Energy -= 5
 		}
 	}
-	if Energy >= 5 {
+	if Energy >= 3 {
 		if weaponType = "Sand Blast"{
 			instance_create_layer(x, y, layer, Bullet_Shotgun_OBJ);
 			instance_create_layer(x, y, layer, Bullet_Shotgun_OBJ);
@@ -153,7 +153,7 @@ if mouse_check_button_pressed(mb_left){
 			instance_create_layer(x, y, layer, Bullet_Shotgun_OBJ);
 			instance_create_layer(x, y, layer, Bullet_Shotgun_OBJ);
 			instance_create_layer(x, y, layer, Bullet_Shotgun_OBJ);
-			Energy -= 5
+			Energy -= 3
 		}
 	}
 	if Energy >= 7 {
