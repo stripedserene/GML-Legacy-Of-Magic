@@ -16,6 +16,18 @@ if instance_exists(Player_OBJ){
 		}
 	if place_meeting(x, y, Enemy_OBJ) or place_meeting(x, y, Enemy_OBJ_2) or place_meeting(x, y, Enemy_OBJ_3) == true
 		{
+		EnemyInst1 = instance_place(x, y, Enemy_OBJ)
+		EnemyInst2 = instance_place(x, y, Enemy_OBJ_2)
+		EnemyInst3 = instance_place(x, y, Enemy_OBJ_3)
+		if EnemyInst1 != noone {
+			EnemyInst1.speed = EnemyInst1.speed/5
+		}
+		if EnemyInst2 != noone {
+			EnemyInst2.speed = EnemyInst2.speed/5
+		}
+		if EnemyInst3 != noone {
+			EnemyInst3.speed = EnemyInst3.speed/5
+		}
 		lifespan = 1
 		}
 }

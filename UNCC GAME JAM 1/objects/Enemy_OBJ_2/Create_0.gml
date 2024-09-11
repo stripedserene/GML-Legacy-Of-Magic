@@ -5,6 +5,8 @@ obj_HP = 3
 BurstActive = false 
 numShots = 0
 
+speed = 1.3
+
 BurstTimer = 50
 ShotTimer = 25
 

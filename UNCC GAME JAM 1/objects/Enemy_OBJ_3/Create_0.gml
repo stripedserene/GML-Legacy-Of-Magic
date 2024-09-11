@@ -3,6 +3,8 @@ Xspeed = 0
 Yspeed = 0
 obj_HP = 3
 
+speed = 1
+
 ShotTimer = 50
 
 if place_meeting(x, y, Wall_OBJ) {
