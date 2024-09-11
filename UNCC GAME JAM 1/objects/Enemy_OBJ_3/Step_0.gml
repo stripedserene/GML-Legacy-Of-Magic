@@ -1,4 +1,4 @@
-speed = 1.3
+speed = 1
 
 if instance_exists(Player_OBJ) == true {
 	direction = point_direction(x, y, Player_OBJ.x, Player_OBJ.y);
@@ -43,28 +43,18 @@ if place_meeting(x, y, Bullet_Sniper_OBJ) or place_meeting(x, y, Player_Weapon_S
 	instance_destroy()
 	}
 
-BurstTimer -= 1
-
-if BurstTimer <= 0 {
-	BurstActive = true
+if ShotTimer <= 0 {
+	instance_create_layer(x, y, "Instances", Enemy_Shotgun_Bullet_OBJ)
+	instance_create_layer(x, y, "Instances", Enemy_Shotgun_Bullet_OBJ)
+	instance_create_layer(x, y, "Instances", Enemy_Shotgun_Bullet_OBJ)
+	instance_create_layer(x, y, "Instances", Enemy_Shotgun_Bullet_OBJ)
+	instance_create_layer(x, y, "Instances", Enemy_Shotgun_Bullet_OBJ)
+	instance_create_layer(x, y, "Instances", Enemy_Shotgun_Bullet_OBJ)
+	instance_create_layer(x, y, "Instances", Enemy_Shotgun_Bullet_OBJ)
+	ShotTimer = 150
 }
 
-if BurstActive = true {
-	ShotTimer -= 1
-	if ShotTimer <= 0 {
-		instance_create_layer(x, y, "Instances", Enemy_Bullet_OBJ)
-		ShotTimer = 25
-		numShots += 1
-	}
-}
-
-if numShots >= 3 {
-	BurstActive = false 
-	BurstTimer = 120
-	numShots = 0
-}
-
-
+ShotTimer -= 1
 
 x += Xspeed 
 y += Yspeed 

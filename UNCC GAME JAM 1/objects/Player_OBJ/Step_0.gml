@@ -84,39 +84,51 @@ if HeartSpawnTimer <= 0 {
 EnemySpawnTimer -= 1 
 
 EnemySpawnSide = irandom_range(1, 3)
-EnemySpawnType = irandom_range(2, 3)
+EnemySpawnType = irandom_range(1, 3)
 
 if EnemySpawnTimer <= 0 {
 	if EnemySpawnSide = 1 {
 		if EnemySpawnType == 3 {
 			instance_create_layer(0, random_range(0, 288), "Instances", Warning_OBJ_2)
 		}
-		else {
+		if EnemySpawnType == 2 {
 			instance_create_layer(0, random_range(0, 288), "Instances", Warning_OBJ)
+		}
+		if EnemySpawnType == 1 {
+			instance_create_layer(0, random_range(0, 288), "Instances", Warning_OBJ_3)
 		}
 	}
 	else if EnemySpawnSide = 2 {
 		if EnemySpawnType == 3 {
 			instance_create_layer(390, random_range(0, 288), "Instances", Warning_OBJ_2)
 		}
-		else {
+		if EnemySpawnType == 2 {
 			instance_create_layer(390, random_range(0, 288), "Instances", Warning_OBJ)
+		}
+		if EnemySpawnType == 1 {
+			instance_create_layer(390, random_range(0, 288), "Instances", Warning_OBJ_3)
 		}
 	}
 	else if EnemySpawnSide = 3 {
 		if EnemySpawnType == 3 {
 			instance_create_layer(random_range(0, 390), 0, "Instances", Warning_OBJ_2)
 		}
-		else {
+		if EnemySpawnType == 2 {
 			instance_create_layer(random_range(0, 390), 0, "Instances", Warning_OBJ)
+		}
+		if EnemySpawnType == 1{
+			instance_create_layer(random_range(0, 390), 0, "Instances", Warning_OBJ_3)
 		}
 	}
 	else if EnemySpawnSide = 4 {
 		if EnemySpawnType == 3 {
 			instance_create_layer(random_range(0, 390), 288, "Instances", Warning_OBJ_2)
 		}
-		else {
+		if EnemySpawnType == 2 {
 			instance_create_layer(random_range(0, 390), 288, "Instances", Warning_OBJ)
+		}
+		if EnemySpawnType == 1 {
+			instance_create_layer(random_range(0, 390), 288, "Instances", Warning_OBJ_3)
 		}
 	}
 	if OldEnemySpawnTimer > 100 {

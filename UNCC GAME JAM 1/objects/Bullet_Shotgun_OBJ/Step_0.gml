@@ -14,7 +14,7 @@ if instance_exists(Player_OBJ){
 		{
 		lifespan = 0
 		}
-	if place_meeting(x, y, Enemy_OBJ) or place_meeting(x, y, Enemy_OBJ_2) == true
+	if place_meeting(x, y, Enemy_OBJ) or place_meeting(x, y, Enemy_OBJ_2) or place_meeting(x, y, Enemy_OBJ_3) == true
 		{
 		lifespan = 0
 		}
