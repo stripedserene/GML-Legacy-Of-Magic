@@ -283,7 +283,7 @@ if weaponType == "Absorb"{
 	MoveSpeed = 2.5
 }
 
-if place_meeting(x, y, Enemy_OBJ) == true or place_meeting(x, y, Enemy_Bullet_OBJ) or place_meeting(x, y, Enemy_OBJ_2) == true {
+if place_meeting(x, y, Enemy_OBJ) == true or place_meeting(x, y, Enemy_Bullet_OBJ) or place_meeting(x, y, Enemy_OBJ_2) == true or place_meeting(x, y, Enemy_OBJ_3) or place_meeting(x, y, Enemy_Shotgun_Bullet_OBJ) {
 	if NumLives <= 0 {
 		instance_create_layer(x, y, "DEATHTEXT", DeathText)
 		instance_destroy()

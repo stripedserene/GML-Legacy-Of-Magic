@@ -18,6 +18,9 @@ if place_meeting(x, y, Bullet_Sniper_OBJ) {
 if place_meeting(x, y, Enemy_Bullet_OBJ) {
 	wallHealth -= 2
 }
+if place_meeting(x, y, Enemy_Shotgun_Bullet_OBJ) {
+	wallHealth -= 2
+}
 
 if wallHealth <= 0 {
 	instance_destroy()
