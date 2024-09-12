@@ -19,6 +19,8 @@ SwordEnergyTimer = 75
 
 
 MagicArmorTimer = 500
+MagicArmorInvulnerability = false
+MagicArmorInvulnerabilityTime = 60
 
 NumLives = 3
 

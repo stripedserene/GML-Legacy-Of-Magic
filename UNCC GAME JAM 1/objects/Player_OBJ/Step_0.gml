@@ -301,9 +301,20 @@ if place_meeting(x, y, Enemy_OBJ) == true or place_meeting(x, y, Enemy_Bullet_OB
 		invulnerability = true
 		NumLives -= 1
 	}
-	if MagicArmorActive == true {
-		Energy -= 2
+	if MagicArmorActive == true and MagicArmorInvulnerability == false{
+		Energy -= 4
+		MagicArmorInvulnerability = true
+		MagicArmorInvulnerabilityTime = 60
 	}
+}
+
+if MagicArmorInvulnerabilityTime <= 0 {
+	MagicArmorInvulnerability = false 
+	MagicArmorInvulnerabilityTime = 60
+}
+
+if MagicArmorInvulnerability = true {
+	MagicArmorInvulnerabilityTime -= 1
 }
 
 if Energy < 0 {
