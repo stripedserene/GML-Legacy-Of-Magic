@@ -223,6 +223,9 @@ if damaged = true {
 
 if MagicArmorActive == true {
 	MagicArmorTimer -= 1
+	if Energy <= 0 {
+		MagicArmorActive = false
+	}
 }
 if MagicArmorTimer <= 0 {
 	MagicArmorActive = false
@@ -298,6 +301,13 @@ if place_meeting(x, y, Enemy_OBJ) == true or place_meeting(x, y, Enemy_Bullet_OB
 		invulnerability = true
 		NumLives -= 1
 	}
+	if MagicArmorActive == true {
+		Energy -= 2
+	}
+}
+
+if Energy < 0 {
+	Energy = 0
 }
 
 x = clamp(x,0, room_width);
