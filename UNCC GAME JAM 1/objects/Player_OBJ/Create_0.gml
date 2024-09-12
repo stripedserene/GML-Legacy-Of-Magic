@@ -4,6 +4,7 @@ RoomGen()
 
 Xspeed = 0
 Yspeed = 0
+MoveSpeed = 2
 
 player_x = x
 player_y = y
@@ -54,14 +55,6 @@ if weaponType == "Lightning Bolt"{
 	instance_create_layer(x, y, "Instances", Player_Weapon_Sniper_OBJ_2)
 }
 
-if weaponType == "Hail Storm"{
-	MoveSpeed = 2.5
-}
-if weaponType == "Lightning Bolt"{
-	MoveSpeed = 1.5
-}
-else{
-	MoveSpeed = 2
-}
+
 
 

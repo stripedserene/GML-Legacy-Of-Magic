@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Player_Weapon_Sniper_SPR_2",
-    "path":"sprites/Player_Weapon_Sniper_SPR_2/Player_Weapon_Sniper_SPR_2.yy",
+    "name":"Player_Spell_Lightning_Bolt_SPR",
+    "path":"sprites/Player_Spell_Lightning_Bolt_SPR/Player_Spell_Lightning_Bolt_SPR.yy",
   },
   "spriteMaskId":null,
   "visible":true,

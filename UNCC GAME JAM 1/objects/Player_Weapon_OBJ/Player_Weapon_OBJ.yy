@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Player_Weapon_SPR",
-    "path":"sprites/Player_Weapon_SPR/Player_Weapon_SPR.yy",
+    "name":"Player_Spell_Hail_Storm_SPR",
+    "path":"sprites/Player_Spell_Hail_Storm_SPR/Player_Spell_Hail_Storm_SPR.yy",
   },
   "spriteMaskId":null,
   "visible":true,

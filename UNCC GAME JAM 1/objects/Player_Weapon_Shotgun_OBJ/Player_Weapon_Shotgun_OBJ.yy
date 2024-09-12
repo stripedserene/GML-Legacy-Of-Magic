@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Player_Weapon_Shotgun_SPR",
-    "path":"sprites/Player_Weapon_Shotgun_SPR/Player_Weapon_Shotgun_SPR.yy",
+    "name":"Player_Spell_Sand_Blast_SPR",
+    "path":"sprites/Player_Spell_Sand_Blast_SPR/Player_Spell_Sand_Blast_SPR.yy",
   },
   "spriteMaskId":null,
   "visible":true,

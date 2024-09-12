@@ -9,8 +9,8 @@
   "name":"Magic_Armor_OBJ",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"UNCC GAME JAM 1",
+    "path":"UNCC GAME JAM 1.yyp",
   },
   "parentObjectId":null,
   "persistent":false,

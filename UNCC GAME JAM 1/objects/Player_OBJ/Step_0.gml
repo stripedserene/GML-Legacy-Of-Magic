@@ -34,6 +34,10 @@ if  keyboard_check(ord("7")) {
 	weaponType = "Thorn Wall"
 }
 
+if  keyboard_check(ord("8")) {
+	weaponType = "Self Heal"
+}
+
 if  mouse_check_button_pressed(mb_right) {
 	weaponType = "Absorb"
 }
@@ -198,6 +202,12 @@ if mouse_check_button_pressed(mb_left){
 			Energy -= 20
 		}
 	}
+	if Energy >= 100 {
+		if weaponType == "Self Heal" and NumLives < 3{
+			NumLives += 1
+			Energy -= 100
+		}
+	}
 }
 
 if damaged = true {
@@ -262,6 +272,11 @@ if weaponType == "Thorn Wall"{
 	instance_create_layer(x, y, "Instances", Player_Spell_Thorns_OBJ_2)
 }
 
+if weaponType == "Self Heal"{
+	instance_create_layer(x, y, "Instances", Player_Spell_Heal_OBJ)
+	instance_create_layer(x, y, "Instances", Player_Spell_Heal_OBJ_2)
+}
+
 if SwordActive == true {
 	SwordEnergyTimer -= 1
 }
@@ -270,18 +285,7 @@ if SwordEnergyTimer <= 0 {
 	Energy -= 1
 	SwordEnergyTimer = 75
 }
-if weaponType == "Hail Storm"{
-	MoveSpeed = 2.5
-}
-if weaponType == "Sand Blast"{
-	MoveSpeed = 2
-}
-if weaponType == "Lightning Bolt"{
-	MoveSpeed = 1.5
-}
-if weaponType == "Absorb"{
-	MoveSpeed = 2.5
-}
+
 
 if place_meeting(x, y, Enemy_OBJ) == true or place_meeting(x, y, Enemy_Bullet_OBJ) or place_meeting(x, y, Enemy_OBJ_2) == true or place_meeting(x, y, Enemy_OBJ_3) or place_meeting(x, y, Enemy_Shotgun_Bullet_OBJ) {
 	if NumLives <= 0 {
