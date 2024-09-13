@@ -38,6 +38,10 @@ if  keyboard_check(ord("8")) {
 	weaponType = "Self Heal"
 }
 
+if  keyboard_check(ord("9")) {
+	weaponType = "Blinding Light"
+}
+
 if  keyboard_check(ord("P")) {
 	room_goto(Main_Menu)
 }
