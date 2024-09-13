@@ -42,9 +42,6 @@ if  keyboard_check(ord("9")) {
 	weaponType = "Blinding Light"
 }
 
-if  keyboard_check(ord("P")) {
-	room_goto(Main_Menu)
-}
 
 if  mouse_check_button_pressed(mb_right) {
 	weaponType = "Absorb"

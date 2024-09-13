@@ -47,6 +47,7 @@
     {"id":{"name":"Enemy_OBJ_3","path":"objects/Enemy_OBJ_3/Enemy_OBJ_3.yy",},},
     {"id":{"name":"Enemy_OBJ","path":"objects/Enemy_OBJ/Enemy_OBJ.yy",},},
     {"id":{"name":"Enemy_Shotgun_Bullet_OBJ","path":"objects/Enemy_Shotgun_Bullet_OBJ/Enemy_Shotgun_Bullet_OBJ.yy",},},
+    {"id":{"name":"GAME_OBJECT","path":"objects/GAME_OBJECT/GAME_OBJECT.yy",},},
     {"id":{"name":"HealthText","path":"objects/HealthText/HealthText.yy",},},
     {"id":{"name":"Heart_OBJ","path":"objects/Heart_OBJ/Heart_OBJ.yy",},},
     {"id":{"name":"HeartIcon_OBJ","path":"objects/HeartIcon_OBJ/HeartIcon_OBJ.yy",},},

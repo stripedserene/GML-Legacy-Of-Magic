@@ -29,6 +29,7 @@
     {"name":"Enemy_OBJ_3","order":37,"path":"objects/Enemy_OBJ_3/Enemy_OBJ_3.yy",},
     {"name":"Enemy_OBJ","order":3,"path":"objects/Enemy_OBJ/Enemy_OBJ.yy",},
     {"name":"Enemy_Shotgun_Bullet_OBJ","order":38,"path":"objects/Enemy_Shotgun_Bullet_OBJ/Enemy_Shotgun_Bullet_OBJ.yy",},
+    {"name":"GAME_OBJECT","order":50,"path":"objects/GAME_OBJECT/GAME_OBJECT.yy",},
     {"name":"HealthText","order":17,"path":"objects/HealthText/HealthText.yy",},
     {"name":"Heart_OBJ","order":16,"path":"objects/Heart_OBJ/Heart_OBJ.yy",},
     {"name":"HeartIcon_OBJ","order":26,"path":"objects/HeartIcon_OBJ/HeartIcon_OBJ.yy",},
