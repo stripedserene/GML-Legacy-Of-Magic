@@ -1,7 +1,5 @@
 randomize()
 
-RoomGen()
-
 Xspeed = 0
 Yspeed = 0
 MoveSpeed = 2
