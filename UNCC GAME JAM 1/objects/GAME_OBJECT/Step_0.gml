@@ -4,6 +4,14 @@ if keyboard_check_pressed(ord("P")) {
 	paused = !paused
 }
 
+if keyboard_check_pressed(ord("M")) {
+	Save()
+}
+if keyboard_check_pressed(ord("N")) {
+	Load()
+}
+
+
 if paused == true {
 	instance_deactivate_all(true)
 	draw_set_alpha(0.5);
@@ -18,3 +26,4 @@ if paused == false {
 	surface_free(paused_surf)
 	paused_surf = -1
 }
+
