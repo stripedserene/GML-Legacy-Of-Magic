@@ -34,6 +34,7 @@
   },
   "name":"UNCC GAME JAM 1",
   "resources":[
+    {"id":{"name":"Absorb_Shop_OBJ","path":"objects/Absorb_Shop_OBJ/Absorb_Shop_OBJ.yy",},},
     {"id":{"name":"Back_Button_OBJ","path":"objects/Back_Button_OBJ/Back_Button_OBJ.yy",},},
     {"id":{"name":"Back_Shop_Button_OBJ","path":"objects/Back_Shop_Button_OBJ/Back_Shop_Button_OBJ.yy",},},
     {"id":{"name":"Blinding_Light_Shop_OBJ","path":"objects/Blinding_Light_Shop_OBJ/Blinding_Light_Shop_OBJ.yy",},},

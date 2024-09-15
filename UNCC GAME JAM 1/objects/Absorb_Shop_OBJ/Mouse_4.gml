@@ -2,13 +2,13 @@
 // You can write your code in this editor
 event_inherited();
 
-if CurrencyCounter_OBJ.MagicArmorUnlocked == false {
-	Buy_Button_OBJ.WeaponSelected = "Magic Armor"
-	Buy_Button_OBJ.Button_text = "Buy Magic Armor"
+if CurrencyCounter_OBJ.ThornWallUnlocked = false {
+	Buy_Button_OBJ.WeaponSelected = "Absorb"
+	Buy_Button_OBJ.Button_text = "Buy Absorb"
 }
 
 else {
-	Buy_Button_OBJ.WeaponSelected = "Magic Armor"
+	Buy_Button_OBJ.WeaponSelected = "Absorb"
 	Buy_Button_OBJ.Button_text = "ALREADY OWNED"
 }
 
