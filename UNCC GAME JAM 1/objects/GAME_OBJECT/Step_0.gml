@@ -12,7 +12,10 @@ if paused == true {
     draw_set_alpha(1);
     draw_set_halign(fa_center);
     draw_text_transformed_colour(room_width / 2, room_height / 2, "PAUSED", 2, 2, 0, c_aqua, c_aqua, c_aqua, c_aqua, 1);
-    draw_set_halign(fa_left);
+	draw_set_halign(fa_left);
+	if keyboard_check_pressed(ord("M")) {
+		room_goto(Main_Menu)
+	}
 }
 if paused == false {
 	instance_activate_all()

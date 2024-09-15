@@ -21,6 +21,7 @@ else
     draw_set_alpha(1);
     draw_set_halign(fa_center);
     draw_text_transformed_colour(room_width / 2, room_height / 2 - 130, "PAUSED", 2, 2, 0, c_aqua, c_aqua, c_aqua, c_aqua, 1);
-    draw_set_halign(fa_left);
+    draw_text_transformed_colour(room_width / 2, 100 , "Press M to return to menu", 1, 1, 0, c_red, c_red, c_red, c_red, 1);
+	draw_set_halign(fa_left);
     }
 }
