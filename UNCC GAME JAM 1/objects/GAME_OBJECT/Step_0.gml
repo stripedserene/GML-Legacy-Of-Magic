@@ -4,13 +4,6 @@ if keyboard_check_pressed(ord("P")) {
 	paused = !paused
 }
 
-if keyboard_check_pressed(ord("M")) {
-	Save()
-}
-if keyboard_check_pressed(ord("N")) {
-	Load()
-}
-
 
 if paused == true {
 	instance_deactivate_all(true)
@@ -27,3 +20,9 @@ if paused == false {
 	paused_surf = -1
 }
 
+if autosavetimer <= 0 {
+	Save()
+	autosavetimer = 300
+}
+
+autosavetimer -= 1
