@@ -63,7 +63,7 @@ y += Yspeed;
 BulletSpawnTimer -= 1
 
 if BulletSpawnTimer <= 0 {
-	BulletType = irandom_range(1, 3)
+	BulletType = irandom_range(1, 4)
 	if BulletType == 1 {
 		instance_create_layer(random_range(100, 300), random_range(100, 200), "Instances", Bullet_Pickup_OBJ)
 	}
@@ -72,6 +72,9 @@ if BulletSpawnTimer <= 0 {
 	}
 	if BulletType == 3 {
 		instance_create_layer(random_range(100, 300), random_range(100, 200), "Instances", Bullet_Pickup_Sniper_OBJ)
+	}
+	if BulletType == 4 {
+		instance_create_layer(random_range(100, 300), random_range(100, 200), "Instances", Coin_OBJ)
 	}
 	if OldBulletSpawnTimer > 150 {
 		BulletSpawnTimer = OldBulletSpawnTimer - (OldBulletSpawnTimer / 5)

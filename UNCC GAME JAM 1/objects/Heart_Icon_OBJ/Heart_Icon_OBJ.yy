@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"HeartIcon_OBJ",
+  "%Name":"Heart_Icon_OBJ",
   "eventList":[],
   "managed":true,
-  "name":"HeartIcon_OBJ",
+  "name":"Heart_Icon_OBJ",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
