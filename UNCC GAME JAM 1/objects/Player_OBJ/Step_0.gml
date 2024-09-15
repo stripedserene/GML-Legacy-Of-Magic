@@ -6,44 +6,44 @@ Down_key = keyboard_check(ord("S"));
 Xspeed = (Right_key - Left_key) * MoveSpeed;
 Yspeed = (Down_key - Up_key) * MoveSpeed;
 
-if  keyboard_check(ord("1")) {
+if  keyboard_check(ord("1")) and CurrencyCounter_OBJ.HailStormUnlocked{
 	weaponType = "Hail Storm"
 }
 
-if  keyboard_check(ord("2")) {
+if  keyboard_check(ord("2")) and CurrencyCounter_OBJ.SandBlastUnlocked {
 	weaponType = "Sand Blast"
 }
 
-if  keyboard_check(ord("3")) {
+if  keyboard_check(ord("3")) and CurrencyCounter_OBJ.MagicSwordUnlocked{
 	weaponType = "Magic Sword"
 }
 
-if  keyboard_check(ord("4")) {
+if  keyboard_check(ord("4")) and CurrencyCounter_OBJ.LightningBoltUnlocked{
 	weaponType = "Lightning Bolt"
 }
 
-if  keyboard_check(ord("5")) {
+if  keyboard_check(ord("5")) and CurrencyCounter_OBJ.TeleportUnlocked{
 	weaponType = "Teleportation"
 }
 
-if  keyboard_check(ord("6")) {
+if  keyboard_check(ord("6")) and CurrencyCounter_OBJ.MagicArmorUnlocked{
 	weaponType = "Magic Armor"
 }
 
-if  keyboard_check(ord("7")) {
+if  keyboard_check(ord("7")) and CurrencyCounter_OBJ.ThornWallUnlocked{
 	weaponType = "Thorn Wall"
 }
 
-if  keyboard_check(ord("8")) {
+if  keyboard_check(ord("8")) and CurrencyCounter_OBJ.SelfHealUnlocked{
 	weaponType = "Self Heal"
 }
 
-if  keyboard_check(ord("9")) {
+if  keyboard_check(ord("9")) and CurrencyCounter_OBJ.BlindingLightUnlocked {
 	weaponType = "Blinding Light"
 }
 
 
-if  mouse_check_button_pressed(mb_right) {
+if  mouse_check_button_pressed(mb_right) and CurrencyCounter_OBJ.AbsorbUnlocked{
 	weaponType = "Absorb"
 }
 

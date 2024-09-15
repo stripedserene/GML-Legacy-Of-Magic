@@ -19,17 +19,3 @@ if paused == false {
 	surface_free(paused_surf)
 	paused_surf = -1
 }
-
-if autosavetimer <= 0 and instance_exists(Player_OBJ){
-	Save()
-	autosavetimer = 300
-}
-
-autosavetimer -= 1
-
-//if keyboard_check_pressed(ord("N")) {
-//	Load()
-//}
-//if keyboard_check_pressed(ord("M")) {
-//	Save()
-//}
