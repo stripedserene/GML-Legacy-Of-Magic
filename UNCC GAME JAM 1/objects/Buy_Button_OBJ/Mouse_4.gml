@@ -101,3 +101,14 @@ if WeaponSelected == "Absorb" and CurrencyCounter_OBJ.AbsorbUnlocked == false {
 		Button_text = "YOU BROKE AS FUCK LOL"
 	}
 }
+if WeaponSelected == "Fireball" and CurrencyCounter_OBJ.FireballUnlocked == false {
+	if CurrencyCounter_OBJ.NumCoins >= 17 {
+		CurrencyCounter_OBJ.FireballUnlocked = true 
+		CurrencyCounter_OBJ.NumCoins -= 17
+		Button_text = "ALREADY OWNED"
+		SaveCurrency()
+	}
+	else {
+		Button_text = "YOU BROKE AS FUCK LOL"
+	}
+}

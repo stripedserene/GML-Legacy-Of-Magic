@@ -41,7 +41,16 @@ if place_meeting(x, y, Bullet_Sniper_OBJ) or place_meeting(x, y, Player_Weapon_S
 		}
 		instance_destroy()
 	}
-	
+
+if place_meeting(x, y, Explosion_OBJ){
+	Inst = instance_place(x, y, Explosion_OBJ)
+	if Inst.image_alpha = 1 {
+		if instance_exists(Player_OBJ){
+			Player_OBJ.EnemyKilled += 1;
+		}
+		instance_destroy()
+	}
+}
 
 x += Xspeed 
 y += Yspeed 

@@ -30,6 +30,9 @@ if Buy_Button_OBJ.WeaponSelected == "Blinding Light" {
 if Buy_Button_OBJ.WeaponSelected == "Absorb" {
 	draw_text(x, y, "Absorb enemy projectiles to\ngain energy\n\ncosts 6 coins")
 }
+if Buy_Button_OBJ.WeaponSelected == "Fireball" {
+	draw_text(x, y, "Shoots a fireball that\nexplodes and deals a lot of\ndamage to enemies in an\narea of effect\n\ncosts 7 energy to use\ncosts 17 coins")
+}
 
 draw_set_halign(fa_left)
 draw_set_valign(fa_top)

@@ -42,6 +42,9 @@ if  keyboard_check(ord("9")) and CurrencyCounter_OBJ.BlindingLightUnlocked {
 	weaponType = "Blinding Light"
 }
 
+if  keyboard_check(ord("0")) and CurrencyCounter_OBJ.FireballUnlocked{
+	weaponType = "Fireball"
+}
 
 if  mouse_check_button_pressed(mb_right) and CurrencyCounter_OBJ.AbsorbUnlocked{
 	weaponType = "Absorb"
@@ -216,6 +219,12 @@ if mouse_check_button_pressed(mb_left){
 			Energy -= 100
 		}
 	}
+	if Energy >= 7 {
+		if weaponType == "Fireball" {
+			instance_create_layer(x, y, layer, Fireball_OBJ)
+			Energy -= 7
+		}
+	}
 }
 
 if damaged = true {
@@ -286,6 +295,11 @@ if weaponType == "Thorn Wall"{
 if weaponType == "Self Heal"{
 	instance_create_layer(x, y, "Instances", Player_Spell_Heal_OBJ)
 	instance_create_layer(x, y, "Instances", Player_Spell_Heal_OBJ_2)
+}
+
+if weaponType == "Fireball"{
+	instance_create_layer(x, y, "Instances", Player_Spell_Fireball_OBJ)
+	instance_create_layer(x, y, "Instances", Player_Spell_Fireball_OBJ_2)
 }
 
 if SwordActive == true {
