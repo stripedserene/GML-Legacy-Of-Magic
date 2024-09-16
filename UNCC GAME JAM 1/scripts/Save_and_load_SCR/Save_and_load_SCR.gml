@@ -13,6 +13,8 @@ function SaveCurrency(){
 		SelfHealUnlocked: CurrencyCounter_OBJ.SelfHealUnlocked,
 		BlindingLightUnlocked: CurrencyCounter_OBJ.BlindingLightUnlocked,
 		FireballUnlocked: CurrencyCounter_OBJ.FireballUnlocked,
+		PlayerHP: CurrencyCounter_OBJ.PlayerHP,
+		PlayerEnergy: CurrencyCounter_OBJ.PlayerEnergy,
 	}
 	
 	var _string = json_stringify(_struct)
@@ -39,6 +41,8 @@ function LoadCurrency(){
 			CurrencyCounter_OBJ.SelfHealUnlocked = _struct.SelfHealUnlocked
 			CurrencyCounter_OBJ.BlindingLightUnlocked = _struct.BlindingLightUnlocked
 			CurrencyCounter_OBJ.FireballUnlocked = _struct.FireballUnlocked
+			CurrencyCounter_OBJ.PlayerHP = _struct.PlayerHP
+			CurrencyCounter_OBJ.PlayerEnergy = _struct.PlayerEnergy
 		}
 	}
 }

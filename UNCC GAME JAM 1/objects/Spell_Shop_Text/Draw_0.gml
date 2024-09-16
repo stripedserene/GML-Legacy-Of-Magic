@@ -34,5 +34,13 @@ if Buy_Button_OBJ.WeaponSelected == "Fireball" {
 	draw_text(x, y, "Shoots a fireball that\nexplodes and deals a lot of\ndamage to enemies in an\narea of effect\n\ncosts 7 energy to use\ncosts 17 coins")
 }
 
+if Buy_Button_OBJ.WeaponSelected == "Heart" {
+	draw_text(x, y, "Buy an extra heart\n\ncosts 10 coins")
+}
+
+if Buy_Button_OBJ.WeaponSelected == "Energy" {
+	draw_text(x, y, "Buy 50 extra energy\n\ncosts 10 coins")
+}
+
 draw_set_halign(fa_left)
 draw_set_valign(fa_top)

@@ -112,3 +112,25 @@ if WeaponSelected == "Fireball" and CurrencyCounter_OBJ.FireballUnlocked == fals
 		Button_text = "YOU BROKE AS FUCK LOL"
 	}
 }
+
+if WeaponSelected == "Heart" {
+	if CurrencyCounter_OBJ.NumCoins >= 10 {
+		CurrencyCounter_OBJ.PlayerHP += 1
+		CurrencyCounter_OBJ.NumCoins -= 10
+		SaveCurrency()
+	}
+	else {
+		Button_text = "YOU BROKE AS FUCK LOL"
+	}
+}
+
+if WeaponSelected == "Energy" {
+	if CurrencyCounter_OBJ.NumCoins >= 10 {
+		CurrencyCounter_OBJ.PlayerEnergy += 50
+		CurrencyCounter_OBJ.NumCoins -= 10
+		SaveCurrency()
+	}
+	else {
+		Button_text = "YOU BROKE AS FUCK LOL"
+	}
+}

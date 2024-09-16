@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"Next_Button_OBJ",
+  "%Name":"Energy_Shop_OBJ",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Next_Button_OBJ",
+  "name":"Energy_Shop_OBJ",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Parent_Button_OBJ","path":"objects/Parent_Button_OBJ/Parent_Button_OBJ.yy",},"propertyId":{"name":"Button_text","path":"objects/Parent_Button_OBJ/Parent_Button_OBJ.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"NEXT",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Parent_Button_OBJ","path":"objects/Parent_Button_OBJ/Parent_Button_OBJ.yy",},"propertyId":{"name":"Button_text","path":"objects/Parent_Button_OBJ/Parent_Button_OBJ.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"",},
   ],
   "parent":{
     "name":"Objects",
@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Button_SPR",
-    "path":"sprites/Button_SPR/Button_SPR.yy",
+    "name":"Bullet_Pickup_Sniper_SPR",
+    "path":"sprites/Bullet_Pickup_Sniper_SPR/Bullet_Pickup_Sniper_SPR.yy",
   },
   "spriteMaskId":null,
   "visible":true,
