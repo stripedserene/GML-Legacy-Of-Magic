@@ -1,7 +1,13 @@
 
 if instance_exists(Player_OBJ) == true {
-	direction = point_direction(x, y, Player_OBJ.x, Player_OBJ.y);
+	if Player_OBJ.invisible == false {
+		direction = point_direction(x, y, Player_OBJ.x, Player_OBJ.y);
+	}
+	if Player_OBJ.invisible == true {
+		direction = point_direction(x, y, Player_OBJ.lastx + random_range(-40, 40), Player_OBJ.lasty + random_range(-40, 40));
+	}
 }
+
 else {
 	speed = 0
 }

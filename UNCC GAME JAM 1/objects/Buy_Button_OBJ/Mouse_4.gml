@@ -134,3 +134,15 @@ if WeaponSelected == "Energy" {
 		Button_text = "YOU BROKE AS FUCK LOL"
 	}
 }
+
+if WeaponSelected == "Invisibility" and CurrencyCounter_OBJ.InvisibilityUnlocked == false {
+	if CurrencyCounter_OBJ.NumCoins >= 20 {
+		CurrencyCounter_OBJ.InvisibilityUnlocked = true 
+		CurrencyCounter_OBJ.NumCoins -= 20
+		Button_text = "ALREADY OWNED"
+		SaveCurrency()
+	}
+	else {
+		Button_text = "YOU BROKE AS FUCK LOL"
+	}
+}

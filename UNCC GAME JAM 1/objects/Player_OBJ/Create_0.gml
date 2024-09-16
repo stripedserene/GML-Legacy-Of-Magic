@@ -7,6 +7,9 @@ MoveSpeed = 2
 player_x = x
 player_y = y
 
+lastx = x
+lasty = y
+
 EnemyKilled = 0
 
 Energy = 100
@@ -19,6 +22,9 @@ SwordEnergyTimer = 75
 MagicArmorTimer = 500
 MagicArmorInvulnerability = false
 MagicArmorInvulnerabilityTime = 60
+
+invisible = false 
+invisibilityTimer = 400
 
 NumLives = 3
 

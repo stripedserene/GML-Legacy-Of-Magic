@@ -46,6 +46,10 @@ if  keyboard_check(ord("0")) and CurrencyCounter_OBJ.FireballUnlocked{
 	weaponType = "Fireball"
 }
 
+if  keyboard_check(ord("E")) and CurrencyCounter_OBJ.InvisibilityUnlocked{
+	weaponType = "Invisibility"
+}
+
 if  mouse_check_button_pressed(mb_right) and CurrencyCounter_OBJ.AbsorbUnlocked{
 	weaponType = "Absorb"
 }
@@ -225,6 +229,21 @@ if mouse_check_button_pressed(mb_left){
 			Energy -= 7
 		}
 	}
+	if Energy >= 8 {
+		if weaponType == "Invisibility" {
+			if invisible == false {
+				invisible = true
+				lastx = x
+				lasty = y
+				image_alpha = 0.3
+				invisibilityTimer = 400
+			}
+			if invisible == true {
+				invisibilityTimer = 400
+			}
+			Energy -= 8
+		}
+	}
 }
 
 if damaged = true {
@@ -244,6 +263,17 @@ if MagicArmorActive == true {
 		MagicArmorActive = false
 	}
 }
+
+if invisible == true {
+	invisibilityTimer -= 1
+}
+
+if invisibilityTimer <= 0 {
+	image_alpha = 1
+	invisible = false 
+	invisibilityTimer = 400
+}
+
 if MagicArmorTimer <= 0 {
 	MagicArmorActive = false
 	MagicArmorTimer = 500
@@ -307,6 +337,11 @@ if weaponType == "Blinding Light"{
 	instance_create_layer(x, y, "Instances", Player_Spell_Blinding_Light_OBJ_2)
 }
 
+if weaponType == "Invisibility"{
+	instance_create_layer(x, y, "Instances", Player_Spell_Invisibility_OBJ)
+	instance_create_layer(x, y, "Instances", Player_Spell_Invisibility_OBJ_2)
+}
+
 if SwordActive == true {
 	SwordEnergyTimer -= 1
 }
@@ -318,20 +353,22 @@ if SwordEnergyTimer <= 0 {
 
 
 if place_meeting(x, y, Enemy_OBJ) == true or place_meeting(x, y, Enemy_Bullet_OBJ) or place_meeting(x, y, Enemy_OBJ_2) == true or place_meeting(x, y, Enemy_OBJ_3) or place_meeting(x, y, Enemy_Shotgun_Bullet_OBJ) {
-	if NumLives <= 0 {
-		instance_create_layer(x, y, "DEATHTEXT", DeathText)
-		instance_destroy()
-	}
-	else if invulnerability == false and MagicArmorActive == false{
-		invulnerabilityTime = 50
-		damaged = true
-		invulnerability = true
-		NumLives -= 1
-	}
-	if MagicArmorActive == true and MagicArmorInvulnerability == false{
-		Energy -= 4
-		MagicArmorInvulnerability = true
-		MagicArmorInvulnerabilityTime = 60
+	if invisible == false {
+		if NumLives <= 0 {
+			instance_create_layer(x, y, "DEATHTEXT", DeathText)
+			instance_destroy()
+		}
+		else if invulnerability == false and MagicArmorActive == false{
+			invulnerabilityTime = 50
+			damaged = true
+			invulnerability = true
+			NumLives -= 1
+		}
+		if MagicArmorActive == true and MagicArmorInvulnerability == false{
+			Energy -= 4
+			MagicArmorInvulnerability = true
+			MagicArmorInvulnerabilityTime = 60
+		}
 	}
 }
 

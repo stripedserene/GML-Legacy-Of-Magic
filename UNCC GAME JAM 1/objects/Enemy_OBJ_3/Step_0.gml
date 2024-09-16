@@ -1,6 +1,11 @@
 
 if instance_exists(Player_OBJ) == true {
-	direction = point_direction(x, y, Player_OBJ.x, Player_OBJ.y);
+	if Player_OBJ.invisible == false {
+		direction = point_direction(x, y, Player_OBJ.x, Player_OBJ.y);
+	}
+	if Player_OBJ.invisible == true {
+		direction = point_direction(x, y, Player_OBJ.lastx + random_range(-40, 40), Player_OBJ.lasty + random_range(-40, 40));
+	}
 }
 else {
 	speed = 0
@@ -54,13 +59,15 @@ if place_meeting(x, y, Explosion_OBJ){
 
 
 if ShotTimer <= 0 {
-	instance_create_layer(x, y, "Instances", Enemy_Shotgun_Bullet_OBJ)
-	instance_create_layer(x, y, "Instances", Enemy_Shotgun_Bullet_OBJ)
-	instance_create_layer(x, y, "Instances", Enemy_Shotgun_Bullet_OBJ)
-	instance_create_layer(x, y, "Instances", Enemy_Shotgun_Bullet_OBJ)
-	instance_create_layer(x, y, "Instances", Enemy_Shotgun_Bullet_OBJ)
-	instance_create_layer(x, y, "Instances", Enemy_Shotgun_Bullet_OBJ)
-	instance_create_layer(x, y, "Instances", Enemy_Shotgun_Bullet_OBJ)
+	if instance_exists(Player_OBJ) and Player_OBJ.invisible == false {
+		instance_create_layer(x, y, "Instances", Enemy_Shotgun_Bullet_OBJ)
+		instance_create_layer(x, y, "Instances", Enemy_Shotgun_Bullet_OBJ)
+		instance_create_layer(x, y, "Instances", Enemy_Shotgun_Bullet_OBJ)
+		instance_create_layer(x, y, "Instances", Enemy_Shotgun_Bullet_OBJ)
+		instance_create_layer(x, y, "Instances", Enemy_Shotgun_Bullet_OBJ)
+		instance_create_layer(x, y, "Instances", Enemy_Shotgun_Bullet_OBJ)
+		instance_create_layer(x, y, "Instances", Enemy_Shotgun_Bullet_OBJ)
+	}
 	ShotTimer = 150
 }
 

@@ -27,7 +27,7 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"NumCoins","filters":[],"listItems":[],"multiselect":false,"name":"NumCoins","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"10","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"NumCoins","filters":[],"listItems":[],"multiselect":false,"name":"NumCoins","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"10000","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"HailStormUnlocked","filters":[],"listItems":[
         "\"Hail Storm\"",
         "\"Sand Blast\"",
@@ -44,6 +44,7 @@
     {"$GMObjectProperty":"v1","%Name":"FireballUnlocked","filters":[],"listItems":[],"multiselect":false,"name":"FireballUnlocked","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
     {"$GMObjectProperty":"v1","%Name":"PlayerHP","filters":[],"listItems":[],"multiselect":false,"name":"PlayerHP","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"3","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"PlayerEnergy","filters":[],"listItems":[],"multiselect":false,"name":"PlayerEnergy","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"100","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"InvisibilityUnlocked","filters":[],"listItems":[],"multiselect":false,"name":"InvisibilityUnlocked","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

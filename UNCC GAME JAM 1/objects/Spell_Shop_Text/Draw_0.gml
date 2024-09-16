@@ -42,5 +42,9 @@ if Buy_Button_OBJ.WeaponSelected == "Energy" {
 	draw_text(x, y, "Buy 50 extra energy\n\ncosts 10 coins")
 }
 
+if Buy_Button_OBJ.WeaponSelected == "Invisibility" {
+	draw_text(x, y, "Temporarily turn invisible\nto enemies\n\ncosts 8 energy to use\ncosts 20 coins")
+}
+
 draw_set_halign(fa_left)
 draw_set_valign(fa_top)
