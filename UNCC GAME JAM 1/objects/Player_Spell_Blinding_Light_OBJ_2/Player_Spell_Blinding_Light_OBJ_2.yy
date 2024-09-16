@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"Player_Spell_Blinding_Light_OBJ",
+  "%Name":"Player_Spell_Blinding_Light_OBJ_2",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Player_Spell_Blinding_Light_OBJ",
+  "name":"Player_Spell_Blinding_Light_OBJ_2",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Player_Spell_Blinding_Light_SPR",
-    "path":"sprites/Player_Spell_Blinding_Light_SPR/Player_Spell_Blinding_Light_SPR.yy",
+    "name":"Player_Spell_Blinding_Light_SPR_2",
+    "path":"sprites/Player_Spell_Blinding_Light_SPR_2/Player_Spell_Blinding_Light_SPR_2.yy",
   },
   "spriteMaskId":null,
   "visible":true,

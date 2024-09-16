@@ -302,6 +302,11 @@ if weaponType == "Fireball"{
 	instance_create_layer(x, y, "Instances", Player_Spell_Fireball_OBJ_2)
 }
 
+if weaponType == "Blinding Light"{
+	instance_create_layer(x, y, "Instances", Player_Spell_Blinding_Light_OBJ)
+	instance_create_layer(x, y, "Instances", Player_Spell_Blinding_Light_OBJ_2)
+}
+
 if SwordActive == true {
 	SwordEnergyTimer -= 1
 }
