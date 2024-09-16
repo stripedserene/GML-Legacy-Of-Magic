@@ -16,6 +16,7 @@ function SaveCurrency(){
 		PlayerHP: CurrencyCounter_OBJ.PlayerHP,
 		PlayerEnergy: CurrencyCounter_OBJ.PlayerEnergy,
 		InvisibilityUnlocked: CurrencyCounter_OBJ.InvisibilityUnlocked,
+		AbsorbUnlocked: CurrencyCounter_OBJ.AbsorbUnlocked
 	}
 	
 	var _string = json_stringify(_struct)
@@ -45,6 +46,7 @@ function LoadCurrency(){
 			CurrencyCounter_OBJ.PlayerHP = _struct.PlayerHP
 			CurrencyCounter_OBJ.PlayerEnergy = _struct.PlayerEnergy
 			CurrencyCounter_OBJ.InvisibilityUnlocked = _struct.InvisibilityUnlocked
+			CurrencyCounter_OBJ.AbsorbUnlocked = _struct.AbsorbUnlocked
 		}
 	}
 }
