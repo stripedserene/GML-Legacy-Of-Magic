@@ -10,7 +10,7 @@ if Buy_Button_OBJ.WeaponSelected == "Lightning Bolt" {
 	draw_text(x, y, "Shoots a fast moving\nbolt of lightning that\ndoes high damage and\npierces enemies and walls\n\ncosts 3 energy to use\ncosts 5 coins")
 }
 if Buy_Button_OBJ.WeaponSelected == "Magic Sword" {
-	draw_text(x, y, "A magic sword that deals\nhigh damage to enemies\nyou hit with it\nbut drains you energy as you\nhold it\ncosts 5 coins")
+	draw_text(x, y, "A magic sword that deals\nhigh damage to enemies\nyou hit with it\nbut drains you energy as you\nhold it\n\ncosts 5 coins")
 }
 if Buy_Button_OBJ.WeaponSelected == "Teleportation" {
 	draw_text(x, y, "Instantly teleport to\nwherever you are aiming\nyour mouse\n\ncosts 7 energy to use\ncosts 10 coins")
