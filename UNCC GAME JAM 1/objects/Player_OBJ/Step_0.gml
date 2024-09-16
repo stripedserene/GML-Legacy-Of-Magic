@@ -214,7 +214,7 @@ if mouse_check_button_pressed(mb_left){
 		}
 	}
 	if Energy >= 100 {
-		if weaponType == "Self Heal" and NumLives < 3{
+		if weaponType == "Self Heal" and NumLives < CurrencyCounter_OBJ.PlayerHP{
 			NumLives += 1
 			Energy -= 100
 		}
