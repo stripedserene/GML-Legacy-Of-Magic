@@ -16,6 +16,8 @@
     {"name":"inst_54D09B83","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_73B40882","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_23EAA83F","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_5515E9F","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_40FC0132","path":"rooms/Room1/Room1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -33,6 +35,8 @@
         {"$GMRInstance":"v1","%Name":"inst_77E0C969","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_77E0C969","objectId":{"name":"HealthText","path":"objects/HealthText/HealthText.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":129.0,"y":218.0,},
         {"$GMRInstance":"v1","%Name":"inst_4B019B6A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4B019B6A","objectId":{"name":"Heart_Icon_OBJ","path":"objects/Heart_Icon_OBJ/Heart_Icon_OBJ.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":365.0,"y":10.0,},
         {"$GMRInstance":"v1","%Name":"inst_62FEAB73","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_62FEAB73","objectId":{"name":"WeaponSelectText","path":"objects/WeaponSelectText/WeaponSelectText.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":164.0,"y":248.0,},
+        {"$GMRInstance":"v1","%Name":"inst_5515E9F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5515E9F","objectId":{"name":"Coin_Icon_OBJ","path":"objects/Coin_Icon_OBJ/Coin_Icon_OBJ.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.5,"scaleY":1.5,"x":298.0,"y":6.0,},
+        {"$GMRInstance":"v1","%Name":"inst_40FC0132","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_40FC0132","objectId":{"name":"Coin_Text_2","path":"objects/Coin_Text_2/Coin_Text_2.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":346.0,"y":156.0,},
       ],"layers":[],"name":"TEXT_DISPLAY_LAYER","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],

@@ -7,8 +7,8 @@ numShots = 0
 
 speed = 1.3
 
-BurstTimer = 50
-ShotTimer = 25
+BurstTimer = 10
+ShotTimer = 23
 
 if place_meeting(x, y, Wall_OBJ) {
 	Player_OBJ.EnemySpawnTimer = 1

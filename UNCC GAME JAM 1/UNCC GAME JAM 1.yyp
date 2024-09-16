@@ -48,6 +48,7 @@
     {"id":{"name":"Buy_Button_OBJ","path":"objects/Buy_Button_OBJ/Buy_Button_OBJ.yy",},},
     {"id":{"name":"Coin_Icon_OBJ","path":"objects/Coin_Icon_OBJ/Coin_Icon_OBJ.yy",},},
     {"id":{"name":"Coin_OBJ","path":"objects/Coin_OBJ/Coin_OBJ.yy",},},
+    {"id":{"name":"Coin_Text_2","path":"objects/Coin_Text_2/Coin_Text_2.yy",},},
     {"id":{"name":"Coin_Text","path":"objects/Coin_Text/Coin_Text.yy",},},
     {"id":{"name":"CurrencyCounter_OBJ","path":"objects/CurrencyCounter_OBJ/CurrencyCounter_OBJ.yy",},},
     {"id":{"name":"DeathText","path":"objects/DeathText/DeathText.yy",},},

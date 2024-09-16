@@ -30,6 +30,7 @@
     {"name":"Buy_Button_OBJ","order":57,"path":"objects/Buy_Button_OBJ/Buy_Button_OBJ.yy",},
     {"name":"Coin_Icon_OBJ","order":54,"path":"objects/Coin_Icon_OBJ/Coin_Icon_OBJ.yy",},
     {"name":"Coin_OBJ","order":52,"path":"objects/Coin_OBJ/Coin_OBJ.yy",},
+    {"name":"Coin_Text_2","order":71,"path":"objects/Coin_Text_2/Coin_Text_2.yy",},
     {"name":"Coin_Text","order":55,"path":"objects/Coin_Text/Coin_Text.yy",},
     {"name":"CurrencyCounter_OBJ","order":53,"path":"objects/CurrencyCounter_OBJ/CurrencyCounter_OBJ.yy",},
     {"name":"DeathText","order":7,"path":"objects/DeathText/DeathText.yy",},
