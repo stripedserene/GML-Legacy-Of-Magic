@@ -22,3 +22,9 @@ if paused == false {
 	surface_free(paused_surf)
 	paused_surf = -1
 }
+
+if instance_exists(Player_OBJ) == false {
+	if keyboard_check_pressed(ord("M")) {
+		room_goto(Main_Menu)
+	}
+}
