@@ -6,57 +6,57 @@ Down_key = keyboard_check(ord("S"));
 Xspeed = (Right_key - Left_key) * MoveSpeed;
 Yspeed = (Down_key - Up_key) * MoveSpeed;
 
-if  keyboard_check(ord("1")) and CurrencyCounter_OBJ.HailStormUnlocked{
+if  keyboard_check(ord(CurrencyCounter_OBJ.HailStormBind)) and CurrencyCounter_OBJ.HailStormUnlocked{
 	weaponType = "Hail Storm"
 	lastSpell = "Hail Storm"
 }
 
-if  keyboard_check(ord("2")) and CurrencyCounter_OBJ.SandBlastUnlocked {
+if  keyboard_check(ord(CurrencyCounter_OBJ.SandBlastBind)) and CurrencyCounter_OBJ.SandBlastUnlocked {
 	weaponType = "Sand Blast"
 	lastSpell = "Sand Blast"
 }
 
-if  keyboard_check(ord("3")) and CurrencyCounter_OBJ.MagicSwordUnlocked{
+if  keyboard_check(ord(CurrencyCounter_OBJ.MagicSwordBind)) and CurrencyCounter_OBJ.MagicSwordUnlocked{
 	weaponType = "Magic Sword"
 	lastSpell = "Magic Sword"
 }
 
-if  keyboard_check(ord("4")) and CurrencyCounter_OBJ.LightningBoltUnlocked{
+if  keyboard_check(ord(CurrencyCounter_OBJ.LightningBoltBind)) and CurrencyCounter_OBJ.LightningBoltUnlocked{
 	weaponType = "Lightning Bolt"
 	lastSpell = "Lightning Bolt"
 }
 
-if  keyboard_check(ord("5")) and CurrencyCounter_OBJ.TeleportUnlocked{
+if  keyboard_check(ord(CurrencyCounter_OBJ.TeleportBind)) and CurrencyCounter_OBJ.TeleportUnlocked{
 	weaponType = "Teleportation"
 	lastSpell = "Teleportation"
 }
 
-if  keyboard_check(ord("6")) and CurrencyCounter_OBJ.MagicArmorUnlocked{
+if  keyboard_check(ord(CurrencyCounter_OBJ.MagicArmorBind)) and CurrencyCounter_OBJ.MagicArmorUnlocked{
 	weaponType = "Magic Armor"
 	lastSpell = "Magic Armor"
 }
 
-if  keyboard_check(ord("7")) and CurrencyCounter_OBJ.ThornWallUnlocked{
+if  keyboard_check(ord(CurrencyCounter_OBJ.ThornWallBind)) and CurrencyCounter_OBJ.ThornWallUnlocked{
 	weaponType = "Thorn Wall"
 	lastSpell = "Thorn Wall"
 }
 
-if  keyboard_check(ord("8")) and CurrencyCounter_OBJ.SelfHealUnlocked{
+if  keyboard_check(ord(CurrencyCounter_OBJ.SelfHealBind)) and CurrencyCounter_OBJ.SelfHealUnlocked{
 	weaponType = "Self Heal"
 	lastSpell = "Self Heal"
 }
 
-if  keyboard_check(ord("9")) and CurrencyCounter_OBJ.BlindingLightUnlocked {
+if  keyboard_check(ord(CurrencyCounter_OBJ.BlindingLightBind)) and CurrencyCounter_OBJ.BlindingLightUnlocked {
 	weaponType = "Blinding Light"
 	lastSpell = "Blinding Light"
 }
 
-if  keyboard_check(ord("0")) and CurrencyCounter_OBJ.FireballUnlocked{
+if  keyboard_check(ord(CurrencyCounter_OBJ.FireballBind)) and CurrencyCounter_OBJ.FireballUnlocked{
 	weaponType = "Fireball"
 	lastSpell = "Fireball"
 }
 
-if  keyboard_check(ord("E")) and CurrencyCounter_OBJ.InvisibilityUnlocked{
+if  keyboard_check(ord(CurrencyCounter_OBJ.InvisibilityBind)) and CurrencyCounter_OBJ.InvisibilityUnlocked{
 	weaponType = "Invisibility"
 	lastSpell = "Invisibility"
 }

@@ -16,7 +16,18 @@ function SaveCurrency(){
 		PlayerHP: CurrencyCounter_OBJ.PlayerHP,
 		PlayerEnergy: CurrencyCounter_OBJ.PlayerEnergy,
 		InvisibilityUnlocked: CurrencyCounter_OBJ.InvisibilityUnlocked,
-		AbsorbUnlocked: CurrencyCounter_OBJ.AbsorbUnlocked
+		AbsorbUnlocked: CurrencyCounter_OBJ.AbsorbUnlocked,
+		HailStormBind: CurrencyCounter_OBJ.HailStormBind,
+		SandBlastBind: CurrencyCounter_OBJ.SandBlastBind,
+		MagicSwordBind: CurrencyCounter_OBJ.MagicSwordBind,
+		LightningBoltBind: CurrencyCounter_OBJ.LightningBoltBind,
+		TeleportBind: CurrencyCounter_OBJ.TeleportBind, 
+		MagicArmorBind: CurrencyCounter_OBJ.MagicArmorBind,
+		ThornWallBind: CurrencyCounter_OBJ.ThornWallBind,
+		SelfHealBind: CurrencyCounter_OBJ.SelfHealBind,
+		BlindingLightBind: CurrencyCounter_OBJ.BlindingLightBind,
+		FireballBind: CurrencyCounter_OBJ.FireballBind,
+		InvisibilityBind: CurrencyCounter_OBJ.InvisibilityBind
 	}
 	
 	var _string = json_stringify(_struct)
@@ -47,6 +58,17 @@ function LoadCurrency(){
 			CurrencyCounter_OBJ.PlayerEnergy = _struct.PlayerEnergy
 			CurrencyCounter_OBJ.InvisibilityUnlocked = _struct.InvisibilityUnlocked
 			CurrencyCounter_OBJ.AbsorbUnlocked = _struct.AbsorbUnlocked
+			CurrencyCounter_OBJ.HailStormBind = _struct.HailStormBind
+			CurrencyCounter_OBJ.SandBlastBind = _struct.SandBlastBind
+			CurrencyCounter_OBJ.MagicSwordBind = _struct.MagicSwordBind
+			CurrencyCounter_OBJ.LightningBoltBind = _struct.LightningBoltBind
+			CurrencyCounter_OBJ.TeleportBind = _struct.TeleportBind
+			CurrencyCounter_OBJ.MagicArmorBind = _struct.MagicArmorBind
+			CurrencyCounter_OBJ.ThornWallBind = _struct.ThornWallBind
+			CurrencyCounter_OBJ.SelfHealBind = _struct.SelfHealBind
+			CurrencyCounter_OBJ.BlindingLightBind = _struct.BlindingLightBind
+			CurrencyCounter_OBJ.FireballBind = _struct.FireballBind
+			CurrencyCounter_OBJ.InvisibilityBind = _struct.InvisibilityBind
 		}
 	}
 }
