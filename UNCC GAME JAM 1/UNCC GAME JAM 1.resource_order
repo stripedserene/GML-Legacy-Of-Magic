@@ -90,6 +90,7 @@
     {"name":"Player_Weapon_Sword_OBJ","order":32,"path":"objects/Player_Weapon_Sword_OBJ/Player_Weapon_Sword_OBJ.yy",},
     {"name":"Quit_Button_OBJ","order":43,"path":"objects/Quit_Button_OBJ/Quit_Button_OBJ.yy",},
     {"name":"Rebind_Button_OBJ","order":89,"path":"objects/Rebind_Button_OBJ/Rebind_Button_OBJ.yy",},
+    {"name":"Sand_Blast_Rebind_OBJ","order":91,"path":"objects/Sand_Blast_Rebind_OBJ/Sand_Blast_Rebind_OBJ.yy",},
     {"name":"Sand_Blast_Shop_OBJ","order":58,"path":"objects/Sand_Blast_Shop_OBJ/Sand_Blast_Shop_OBJ.yy",},
     {"name":"Scoreboard","order":5,"path":"objects/Scoreboard/Scoreboard.yy",},
     {"name":"Self_Heal_Shop_OBJ","order":66,"path":"objects/Self_Heal_Shop_OBJ/Self_Heal_Shop_OBJ.yy",},

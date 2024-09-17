@@ -3,4 +3,4 @@
 event_inherited();
 
 Rebind_Button_OBJ.WeaponSelected = "Hail Storm"
-Rebind_Button_OBJ.Button_text = CurrencyCounter_OBJ.HailStormBind
+Rebind_Button_OBJ.Button_text = "Rebind Hail Storm: " + CurrencyCounter_OBJ.HailStormBind

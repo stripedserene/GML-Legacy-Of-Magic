@@ -109,6 +109,7 @@
     {"id":{"name":"Player_Weapon_Sword_OBJ","path":"objects/Player_Weapon_Sword_OBJ/Player_Weapon_Sword_OBJ.yy",},},
     {"id":{"name":"Quit_Button_OBJ","path":"objects/Quit_Button_OBJ/Quit_Button_OBJ.yy",},},
     {"id":{"name":"Rebind_Button_OBJ","path":"objects/Rebind_Button_OBJ/Rebind_Button_OBJ.yy",},},
+    {"id":{"name":"Sand_Blast_Rebind_OBJ","path":"objects/Sand_Blast_Rebind_OBJ/Sand_Blast_Rebind_OBJ.yy",},},
     {"id":{"name":"Sand_Blast_Shop_OBJ","path":"objects/Sand_Blast_Shop_OBJ/Sand_Blast_Shop_OBJ.yy",},},
     {"id":{"name":"Scoreboard","path":"objects/Scoreboard/Scoreboard.yy",},},
     {"id":{"name":"Self_Heal_Shop_OBJ","path":"objects/Self_Heal_Shop_OBJ/Self_Heal_Shop_OBJ.yy",},},
