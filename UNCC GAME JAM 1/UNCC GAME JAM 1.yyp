@@ -74,6 +74,7 @@
     {"id":{"name":"Heart_OBJ","path":"objects/Heart_OBJ/Heart_OBJ.yy",},},
     {"id":{"name":"Heart_Shop_OBJ","path":"objects/Heart_Shop_OBJ/Heart_Shop_OBJ.yy",},},
     {"id":{"name":"Help_Button_OBJ","path":"objects/Help_Button_OBJ/Help_Button_OBJ.yy",},},
+    {"id":{"name":"Help_Text_Rebind","path":"objects/Help_Text_Rebind/Help_Text_Rebind.yy",},},
     {"id":{"name":"Help_Text","path":"objects/Help_Text/Help_Text.yy",},},
     {"id":{"name":"Invisibility_Rebind_OBJ","path":"objects/Invisibility_Rebind_OBJ/Invisibility_Rebind_OBJ.yy",},},
     {"id":{"name":"Invisibility_Shop_OBJ","path":"objects/Invisibility_Shop_OBJ/Invisibility_Shop_OBJ.yy",},},

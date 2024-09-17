@@ -56,6 +56,7 @@
     {"name":"Heart_OBJ","order":16,"path":"objects/Heart_OBJ/Heart_OBJ.yy",},
     {"name":"Heart_Shop_OBJ","order":83,"path":"objects/Heart_Shop_OBJ/Heart_Shop_OBJ.yy",},
     {"name":"Help_Button_OBJ","order":42,"path":"objects/Help_Button_OBJ/Help_Button_OBJ.yy",},
+    {"name":"Help_Text_Rebind","order":101,"path":"objects/Help_Text_Rebind/Help_Text_Rebind.yy",},
     {"name":"Help_Text","order":44,"path":"objects/Help_Text/Help_Text.yy",},
     {"name":"Invisibility_Rebind_OBJ","order":100,"path":"objects/Invisibility_Rebind_OBJ/Invisibility_Rebind_OBJ.yy",},
     {"name":"Invisibility_Shop_OBJ","order":87,"path":"objects/Invisibility_Shop_OBJ/Invisibility_Shop_OBJ.yy",},
