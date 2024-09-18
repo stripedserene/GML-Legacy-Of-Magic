@@ -179,12 +179,22 @@ if mouse_check_button_pressed(mb_left){
 	if Energy >= 1 {
 		if weaponType = "Hail Storm"{
 			instance_create_layer(x, y, layer, Bullet_OBJ);
+			if invisible == true {
+				invisible = false
+				invisibilityTimer = 400
+				image_alpha = 1
+			}
 			Energy -= 1
 		}
 	}
 	if Energy >= 3 {
 		if weaponType = "Lightning Bolt"{
 			instance_create_layer(x, y, layer, Bullet_Sniper_OBJ);
+			if invisible == true {
+				invisible = false
+				invisibilityTimer = 400
+				image_alpha = 1
+			}
 			Energy -= 5
 		}
 	}
@@ -200,6 +210,11 @@ if mouse_check_button_pressed(mb_left){
 			instance_create_layer(x, y, layer, Bullet_Shotgun_OBJ);
 			instance_create_layer(x, y, layer, Bullet_Shotgun_OBJ);
 			instance_create_layer(x, y, layer, Bullet_Shotgun_OBJ);
+			if invisible == true {
+				invisible = false
+				invisibilityTimer = 400
+				image_alpha = 1
+			}
 			Energy -= 3
 		}
 	}
@@ -213,6 +228,11 @@ if mouse_check_button_pressed(mb_left){
 	if Energy >= 15 {
 		if weaponType = "Magic Armor" and MagicArmorActive == false{
 			instance_create_layer(x, y, "Instances", Magic_Armor_OBJ)
+			if invisible == true {
+				invisible = false
+				invisibilityTimer = 400
+				image_alpha = 1
+			}
 			Energy -= 15
 			MagicArmorActive = true
 		}
@@ -230,6 +250,11 @@ if mouse_check_button_pressed(mb_left){
 			instance_create_layer(mouse_x + random_range(-30, 30), mouse_y + random_range(-30, 30), "Instances", Thorn_OBJ)
 			instance_create_layer(mouse_x + random_range(-30, 30), mouse_y + random_range(-30, 30), "Instances", Thorn_OBJ)
 			instance_create_layer(mouse_x + random_range(-30, 30), mouse_y + random_range(-30, 30), "Instances", Thorn_OBJ)
+			if invisible == true {
+				invisible = false
+				invisibilityTimer = 400
+				image_alpha = 1
+			}
 			Energy -= 20
 		}
 	}
@@ -242,6 +267,11 @@ if mouse_check_button_pressed(mb_left){
 	if Energy >= 7 {
 		if weaponType == "Fireball" {
 			instance_create_layer(x, y, layer, Fireball_OBJ)
+			if invisible == true {
+				invisible = false
+				invisibilityTimer = 400
+				image_alpha = 1
+			}
 			Energy -= 7
 		}
 	}
