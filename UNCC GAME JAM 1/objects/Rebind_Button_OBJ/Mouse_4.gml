@@ -79,3 +79,10 @@ if WeaponSelected == "Invisibility" {
 		SaveCurrency()
 	}
 }
+if WeaponSelected == "Pause" {
+	if keyboard_lastkey != vk_nokey{
+		CurrencyCounter_OBJ.PauseBind = string_upper(keyboard_lastchar)
+		Button_text = "Rebind Pause Key: " + CurrencyCounter_OBJ.PauseBind
+		SaveCurrency()
+	}
+}

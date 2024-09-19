@@ -1,12 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
-if keyboard_check_pressed(ord("P")) {
+if keyboard_check_pressed(ord(CurrencyCounter_OBJ.PauseBind)) {
 	paused = !paused
 }
 
 
 if paused == true {
-	instance_deactivate_all(true)
+	instance_deactivate_layer("Instances")
+	instance_deactivate_layer("DEATHTEXT")
+	instance_deactivate_layer("TEXT_DISPLAY_LAYER")
 	draw_set_alpha(0.5);
     draw_rectangle_colour(0, 0, room_width, room_height, c_black, c_black, c_black, c_black, false);
     draw_set_alpha(1);

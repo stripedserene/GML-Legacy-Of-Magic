@@ -6,7 +6,9 @@ if !surface_exists(paused_surf)
     {
     if paused_surf == -1
         {
-        instance_deactivate_all(true);
+        instance_deactivate_layer("Instances");
+		instance_deactivate_layer("DEATHTEXT");
+		instance_deactivate_layer("TEXT_DISPLAY_LAYER")
         }
     paused_surf = surface_create(room_width, room_height);
     surface_set_target(paused_surf);

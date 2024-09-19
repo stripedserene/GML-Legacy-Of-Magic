@@ -56,6 +56,7 @@
     {"$GMObjectProperty":"v1","%Name":"FireballBind","filters":[],"listItems":[],"multiselect":false,"name":"FireballBind","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":2,},
     {"$GMObjectProperty":"v1","%Name":"InvisibilityBind","filters":[],"listItems":[],"multiselect":false,"name":"InvisibilityBind","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"E","varType":2,},
     {"$GMObjectProperty":"v1","%Name":"SelfHealBind","filters":[],"listItems":[],"multiselect":false,"name":"SelfHealBind","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"8","varType":2,},
+    {"$GMObjectProperty":"v1","%Name":"PauseBind","filters":[],"listItems":[],"multiselect":false,"name":"PauseBind","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"P","varType":2,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

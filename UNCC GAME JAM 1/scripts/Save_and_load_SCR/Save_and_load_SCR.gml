@@ -27,7 +27,8 @@ function SaveCurrency(){
 		SelfHealBind: CurrencyCounter_OBJ.SelfHealBind,
 		BlindingLightBind: CurrencyCounter_OBJ.BlindingLightBind,
 		FireballBind: CurrencyCounter_OBJ.FireballBind,
-		InvisibilityBind: CurrencyCounter_OBJ.InvisibilityBind
+		InvisibilityBind: CurrencyCounter_OBJ.InvisibilityBind,
+		PauseBind: CurrencyCounter_OBJ.PauseBind
 	}
 	
 	var _string = json_stringify(_struct)
@@ -69,6 +70,7 @@ function LoadCurrency(){
 			CurrencyCounter_OBJ.BlindingLightBind = _struct.BlindingLightBind
 			CurrencyCounter_OBJ.FireballBind = _struct.FireballBind
 			CurrencyCounter_OBJ.InvisibilityBind = _struct.InvisibilityBind
+			CurrencyCounter_OBJ.PauseBind = _struct.PauseBind
 		}
 	}
 }
