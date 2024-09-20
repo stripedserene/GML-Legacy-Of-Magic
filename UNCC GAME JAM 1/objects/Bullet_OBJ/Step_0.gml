@@ -14,11 +14,12 @@ if instance_exists(Player_OBJ){
 		{
 		instance_destroy()
 		}
-	if place_meeting(x, y, Enemy_OBJ) or place_meeting(x, y, Enemy_OBJ_2) or place_meeting(x, y, Enemy_OBJ_3) == true
+	if place_meeting(x, y, Enemy_OBJ) or place_meeting(x, y, Enemy_OBJ_2) or place_meeting(x, y, Enemy_OBJ_3) or place_meeting(x, y, BOSS_OBJ)== true
 		{
 		EnemyInst1 = instance_place(x, y, Enemy_OBJ)
 		EnemyInst2 = instance_place(x, y, Enemy_OBJ_2)
 		EnemyInst3 = instance_place(x, y, Enemy_OBJ_3)
+		BOSSInst = instance_place(x, y, BOSS_OBJ)
 		if EnemyInst1 != noone {
 			EnemyInst1.speed = EnemyInst1.speed/5
 		}

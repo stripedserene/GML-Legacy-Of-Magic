@@ -1,6 +1,4 @@
 
-
-
 if instance_exists(Player_OBJ) == true {
 	if Player_OBJ.invisible == false {
 		direction = point_direction(x, y, Player_OBJ.x, Player_OBJ.y);
@@ -40,7 +38,7 @@ if place_meeting(x, y + Yspeed, Wall_OBJ) == true
 	Yspeed = 0
 	}
 
-if place_meeting(x, y, Bullet_OBJ) or place_meeting(x, y, Bullet_Shotgun_OBJ) or place_meeting(x, y, Thorn_OBJ) == true
+if place_meeting(x, y, Bullet_OBJ) or place_meeting(x, y, Bullet_Shotgun_OBJ) == true
 	{
 		obj_HP -= 1
 		if (obj_HP = 0){
@@ -52,21 +50,15 @@ if place_meeting(x, y, Bullet_OBJ) or place_meeting(x, y, Bullet_Shotgun_OBJ) or
 		
 	}
 	
-if place_meeting(x, y, Bullet_Sniper_OBJ) or place_meeting(x, y, Player_Weapon_Sword_OBJ) or place_meeting(x, y, Player_Weapon_Sword_OBJ_2) == true
+if place_meeting(x, y, Bullet_Sniper_OBJ) == true
 	{
-	if instance_exists(Player_OBJ){
-		Player_OBJ.EnemyKilled += 1
-	}
-	instance_destroy()
+	obj_HP -= 3
 	}
 
 if place_meeting(x, y, Explosion_OBJ){
 	Inst = instance_place(x, y, Explosion_OBJ)
 	if Inst.image_alpha = 1 {
-		if instance_exists(Player_OBJ){
-			Player_OBJ.EnemyKilled += 1;
-		}
-		instance_destroy()
+		obj_HP -= 2
 	}
 }
 
@@ -77,7 +69,7 @@ if BurstTimer <= 0 and obj_stuned == false {
 	BurstActive = true
 }
 
-if BurstActive = true and obj_stuned == false{
+if BurstActive = true {
 	ShotTimer -= 1
 	if ShotTimer <= 0 {
 		if instance_exists(Player_OBJ) and Player_OBJ.invisible == false {

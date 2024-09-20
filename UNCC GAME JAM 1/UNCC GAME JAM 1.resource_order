@@ -21,6 +21,7 @@
     {"name":"Back_Shop_Button_OBJ","order":68,"path":"objects/Back_Shop_Button_OBJ/Back_Shop_Button_OBJ.yy",},
     {"name":"Blinding_Light_Rebind_OBJ","order":98,"path":"objects/Blinding_Light_Rebind_OBJ/Blinding_Light_Rebind_OBJ.yy",},
     {"name":"Blinding_Light_Shop_OBJ","order":69,"path":"objects/Blinding_Light_Shop_OBJ/Blinding_Light_Shop_OBJ.yy",},
+    {"name":"BOSS_OBJ","order":107,"path":"objects/BOSS_OBJ/BOSS_OBJ.yy",},
     {"name":"Bullet_OBJ","order":2,"path":"objects/Bullet_OBJ/Bullet_OBJ.yy",},
     {"name":"Bullet_Pickup_OBJ","order":4,"path":"objects/Bullet_Pickup_OBJ/Bullet_Pickup_OBJ.yy",},
     {"name":"Bullet_Pickup_Shotgun_OBJ","order":20,"path":"objects/Bullet_Pickup_Shotgun_OBJ/Bullet_Pickup_Shotgun_OBJ.yy",},

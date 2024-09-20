@@ -39,6 +39,7 @@
     {"id":{"name":"Back_Shop_Button_OBJ","path":"objects/Back_Shop_Button_OBJ/Back_Shop_Button_OBJ.yy",},},
     {"id":{"name":"Blinding_Light_Rebind_OBJ","path":"objects/Blinding_Light_Rebind_OBJ/Blinding_Light_Rebind_OBJ.yy",},},
     {"id":{"name":"Blinding_Light_Shop_OBJ","path":"objects/Blinding_Light_Shop_OBJ/Blinding_Light_Shop_OBJ.yy",},},
+    {"id":{"name":"BOSS_OBJ","path":"objects/BOSS_OBJ/BOSS_OBJ.yy",},},
     {"id":{"name":"Bullet_OBJ","path":"objects/Bullet_OBJ/Bullet_OBJ.yy",},},
     {"id":{"name":"Bullet_Pickup_OBJ","path":"objects/Bullet_Pickup_OBJ/Bullet_Pickup_OBJ.yy",},},
     {"id":{"name":"Bullet_Pickup_Shotgun_OBJ","path":"objects/Bullet_Pickup_Shotgun_OBJ/Bullet_Pickup_Shotgun_OBJ.yy",},},
