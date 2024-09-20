@@ -7,7 +7,7 @@ numShots = 0
 
 speed = 1.3
 
-BurstTimer = 10
+BurstTimer = 100
 ShotTimer = 23
 
 if place_meeting(x, y, Wall_OBJ) {

@@ -5,7 +5,7 @@ obj_HP = 3
 
 speed = 1
 
-ShotTimer = 10
+ShotTimer = 120
 
 if place_meeting(x, y, Wall_OBJ) {
 	Player_OBJ.EnemySpawnTimer = 1
