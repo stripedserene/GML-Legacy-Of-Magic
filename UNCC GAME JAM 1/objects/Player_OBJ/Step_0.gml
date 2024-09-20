@@ -322,7 +322,7 @@ if mouse_check_button_pressed(mb_left){
 				Enemy_OBJ.obj_stuned =  true
 			}
 			if instance_exists(Enemy_OBJ_2){
-				Enemy_OBJ_3.obj_stuned = true
+				Enemy_OBJ_2.obj_stuned = true
 			}
 			if instance_exists(Enemy_OBJ_3){
 				Enemy_OBJ_3.obj_stuned = true

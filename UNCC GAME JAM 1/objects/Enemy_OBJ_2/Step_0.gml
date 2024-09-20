@@ -75,7 +75,7 @@ if place_meeting(x, y, Explosion_OBJ){
 
 BurstTimer -= 1
 
-if BurstTimer <= 0 and obj_stuned == false{
+if BurstTimer <= 0 and obj_stuned == false {
 	BurstActive = true
 }
 
