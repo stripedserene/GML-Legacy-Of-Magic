@@ -116,6 +116,18 @@ if HeartSpawnTimer <= 0 {
 	OldHeartSpawnTimer = HeartSpawnTimer
 }
 
+WaveSpawnTimer -= 1 
+
+if WaveSpawnTimer <= 0 {
+	EnemySpawnTimer = 0 
+	WaveSpawnNumber -= 1
+}
+if WaveSpawnNumber <= 0 {
+	WaveSpawnNumber = oldWaveSpawnNumber
+	oldWaveSpawnNumber += 1
+	WaveSpawnTimer = 1000
+}
+
 EnemySpawnTimer -= 1 
 
 EnemySpawnSide = irandom_range(1, 3)
