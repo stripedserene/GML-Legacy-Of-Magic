@@ -9,7 +9,7 @@ player_y = y
 
 lastx = x
 lasty = y
-lastSpell = "Hail Storm"
+lastSpell = ""
 
 EnemyKilled = 0
 
@@ -64,7 +64,7 @@ OldEnemySpawnTimer = 200
 
 // weaponType = "Sniper"
 //weaponType = "Shotgun"
-weaponType = "Hail Storm"
+weaponType = ""
 
 if weaponType == "Sand Blast"{
 	instance_create_layer(x, y, "Instances", Player_Weapon_Shotgun_OBJ)
