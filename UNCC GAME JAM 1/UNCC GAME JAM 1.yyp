@@ -148,6 +148,7 @@
     {"id":{"name":"Ice_effect","path":"scripts/Ice_effect/Ice_effect.yy",},},
     {"id":{"name":"Pause_SCR","path":"scripts/Pause_SCR/Pause_SCR.yy",},},
     {"id":{"name":"Save_and_load_SCR","path":"scripts/Save_and_load_SCR/Save_and_load_SCR.yy",},},
+    {"id":{"name":"Boss_SPR","path":"sprites/Boss_SPR/Boss_SPR.yy",},},
     {"id":{"name":"Bullet_Pickup_Shotgun_SPR","path":"sprites/Bullet_Pickup_Shotgun_SPR/Bullet_Pickup_Shotgun_SPR.yy",},},
     {"id":{"name":"Bullet_Pickup_Sniper_SPR","path":"sprites/Bullet_Pickup_Sniper_SPR/Bullet_Pickup_Sniper_SPR.yy",},},
     {"id":{"name":"Bullet_Pickup_SPR","path":"sprites/Bullet_Pickup_SPR/Bullet_Pickup_SPR.yy",},},
