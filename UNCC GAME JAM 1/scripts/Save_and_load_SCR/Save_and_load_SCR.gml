@@ -33,7 +33,8 @@ function SaveCurrency(){
 		SandBlastCooldown: CurrencyCounter_OBJ.SandBlastCooldown,
 		FireballCooldown: CurrencyCounter_OBJ.FireballCooldown,
 		InvisibilityCooldown: CurrencyCounter_OBJ.InvisibilityCooldown,
-		MagicArmorCooldown: CurrencyCounter_OBJ.MagicArmorCooldown
+		MagicArmorCooldown: CurrencyCounter_OBJ.MagicArmorCooldown,
+		HailStormCooldown: CurrencyCounter_OBJ.HailStormCooldown
 	}
 	
 	var _string = json_stringify(_struct)
@@ -81,6 +82,7 @@ function LoadCurrency(){
 			CurrencyCounter_OBJ.MagicArmorCooldown = _struct.MagicArmorCooldown
 			CurrencyCounter_OBJ.SandBlastCooldown = _struct.SandBlastCooldown
 			CurrencyCounter_OBJ.InvisibilityCooldown = _struct.InvisibilityCooldown
+			CurrencyCounter_OBJ.HailStormCooldown = _struct.HailStormCooldown
 		}
 	}
 }

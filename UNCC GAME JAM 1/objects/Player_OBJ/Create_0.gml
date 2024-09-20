@@ -35,6 +35,7 @@ MagicArmorCooldownTimer = CurrencyCounter_OBJ.MagicArmorCooldown
 InvisibilityCooldownTimer = CurrencyCounter_OBJ.InvisibilityCooldown
 FireballCooldownTimer = CurrencyCounter_OBJ.FireballCooldown
 LightningBoltCooldownTimer = CurrencyCounter_OBJ.LightningBoltCooldown
+HailStormCooldownTimer = CurrencyCounter_OBJ.HailStormCooldown
 NumLives = CurrencyCounter_OBJ.PlayerHP
 Energy = CurrencyCounter_OBJ.PlayerEnergy
 
@@ -43,6 +44,7 @@ MagicArmorCooldownActive = false
 InvisibilityCooldownActive = false
 FireballCooldownActive = false
 LightningBoltCooldownActive = false 
+HailStormCooldownActive = false
 
 
 instance_create_layer(random_range(0, 400), random_range(0, 300), "Instances", Bullet_Pickup_OBJ)
