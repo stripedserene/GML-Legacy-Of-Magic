@@ -1,5 +1,6 @@
 
 
+
 if instance_exists(Player_OBJ) == true {
 	if Player_OBJ.invisible == false {
 		direction = point_direction(x, y, Player_OBJ.x, Player_OBJ.y);
@@ -11,6 +12,19 @@ if instance_exists(Player_OBJ) == true {
 else {
 	speed = 0
 }
+
+if (obj_stuned) {
+	stunDuration = 10
+	while (stunDuration !=0){
+		speed = 0
+		stunDuration--;
+	}	
+		
+	if (stunDuration == 0){
+	 obj_stuned = false
+	}
+
+} 
 
 Xspeed = lengthdir_x(speed, direction)
 Yspeed = lengthdir_y(speed, direction)
@@ -61,7 +75,7 @@ if place_meeting(x, y, Explosion_OBJ){
 
 BurstTimer -= 1
 
-if BurstTimer <= 0 {
+if BurstTimer <= 0 and obj_stuned == false{
 	BurstActive = true
 }
 

@@ -315,6 +315,21 @@ if mouse_check_button_pressed(mb_left){
 			Energy -= 8
 		}
 	}
+	
+	if Energy >= 4{
+		if weaponType == "Blinding Light" {
+			if instance_exists(Enemy_OBJ){
+				Enemy_OBJ.obj_stuned =  true
+			}
+			if instance_exists(Enemy_OBJ_2){
+				Enemy_OBJ_3.obj_stuned = true
+			}
+			if instance_exists(Enemy_OBJ_3){
+				Enemy_OBJ_3.obj_stuned = true
+			}
+		}
+	
+	}
 }
 
 if damaged = true {

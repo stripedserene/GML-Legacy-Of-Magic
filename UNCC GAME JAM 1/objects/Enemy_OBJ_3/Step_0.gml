@@ -1,4 +1,5 @@
 
+
 if instance_exists(Player_OBJ) == true {
 	if Player_OBJ.invisible == false {
 		direction = point_direction(x, y, Player_OBJ.x, Player_OBJ.y);
@@ -10,6 +11,19 @@ if instance_exists(Player_OBJ) == true {
 else {
 	speed = 0
 }
+
+if (obj_stuned) {
+	stunDuration = 10
+	while (stunDuration !=0){
+		speed = 0
+		stunDuration--;
+	}	
+		
+	if (stunDuration == 0){
+	 obj_stuned = false
+	}
+
+} 
 
 Xspeed = lengthdir_x(speed, direction)
 Yspeed = lengthdir_y(speed, direction)
@@ -58,7 +72,7 @@ if place_meeting(x, y, Explosion_OBJ){
 }
 
 
-if ShotTimer <= 0 {
+if ShotTimer <= 0 and obj_stuned == false {
 	if instance_exists(Player_OBJ) and Player_OBJ.invisible == false {
 		instance_create_layer(x, y, "Instances", Enemy_Shotgun_Bullet_OBJ)
 		instance_create_layer(x, y, "Instances", Enemy_Shotgun_Bullet_OBJ)
