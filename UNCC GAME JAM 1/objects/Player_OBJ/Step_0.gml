@@ -461,6 +461,10 @@ if weaponType == "Invisibility"{
 	instance_create_layer(x, y, "Instances", Player_Spell_Invisibility_OBJ)
 	instance_create_layer(x, y, "Instances", Player_Spell_Invisibility_OBJ_2)
 }
+if weaponType == ""{
+	instance_create_layer(x, y, "Instances", Player_Arms_OBJ)
+	instance_create_layer(x, y, "Instances", Player_Arms_OBJ_2)
+}
 
 if SwordActive == true {
 	SwordEnergyTimer -= 1
