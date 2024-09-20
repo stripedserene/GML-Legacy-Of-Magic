@@ -127,6 +127,7 @@
     {"name":"Ice_effect","order":2,"path":"scripts/Ice_effect/Ice_effect.yy",},
     {"name":"Pause_SCR","order":3,"path":"scripts/Pause_SCR/Pause_SCR.yy",},
     {"name":"Save_and_load_SCR","order":4,"path":"scripts/Save_and_load_SCR/Save_and_load_SCR.yy",},
+    {"name":"Boss_SPR","order":59,"path":"sprites/Boss_SPR/Boss_SPR.yy",},
     {"name":"Bullet_Pickup_Shotgun_SPR","order":21,"path":"sprites/Bullet_Pickup_Shotgun_SPR/Bullet_Pickup_Shotgun_SPR.yy",},
     {"name":"Bullet_Pickup_Sniper_SPR","order":22,"path":"sprites/Bullet_Pickup_Sniper_SPR/Bullet_Pickup_Sniper_SPR.yy",},
     {"name":"Bullet_Pickup_SPR","order":5,"path":"sprites/Bullet_Pickup_SPR/Bullet_Pickup_SPR.yy",},
