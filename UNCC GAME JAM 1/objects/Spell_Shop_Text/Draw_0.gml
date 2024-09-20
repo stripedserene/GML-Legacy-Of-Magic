@@ -25,7 +25,7 @@ if Buy_Button_OBJ.WeaponSelected == "Self Heal" {
 	draw_text(x, y, "Uses energy to heal 1 heart\n\ncosts 100 energy to use\ncosts 15 coins")
 }
 if Buy_Button_OBJ.WeaponSelected == "Blinding Light" {
-	draw_text(x, y, "INDEV\n\ncosts X energy to use\ncosts 3 coins")
+	draw_text(x, y, "Flash your enemies with a \nbright and blinding light\nthat stops them from\nmoving and shooting\n\ncosts 4 energy to use\ncosts 3 coins")
 }
 if Buy_Button_OBJ.WeaponSelected == "Absorb" {
 	draw_text(x, y, "Absorb enemy projectiles to\ngain energy\n\nhold right click to use\ncosts 6 coins")

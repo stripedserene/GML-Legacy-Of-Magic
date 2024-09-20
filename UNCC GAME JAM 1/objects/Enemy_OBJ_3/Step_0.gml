@@ -12,18 +12,15 @@ else {
 	speed = 0
 }
 
-if (obj_stuned) {
-	stunDuration = 10
-	while (stunDuration !=0){
-		speed = 0
-		stunDuration--;
-	}	
-		
-	if (stunDuration == 0){
-	 obj_stuned = false
-	}
-
-} 
+if obj_stuned {
+	stunDuration -= 1
+	speed = 0
+}
+if stunDuration <= 0 {
+	obj_stuned = false 
+	stunDuration = 300
+	speed = 1
+}
 
 Xspeed = lengthdir_x(speed, direction)
 Yspeed = lengthdir_y(speed, direction)
