@@ -182,23 +182,26 @@ if mouse_check_button_pressed(mb_left){
 			if invisible == true {
 				invisible = false
 				invisibilityTimer = 400
+				InvisibilityCooldownActive = true
 				image_alpha = 1
 			}
 			Energy -= 1
 		}
 	}
-	if Energy >= 3 {
+	if Energy >= 3 and LightningBoltCooldownActive == false{
 		if weaponType = "Lightning Bolt"{
 			instance_create_layer(x, y, layer, Bullet_Sniper_OBJ);
 			if invisible == true {
 				invisible = false
 				invisibilityTimer = 400
+				InvisibilityCooldownActive = true
 				image_alpha = 1
 			}
+			LightningBoltCooldownActive = true
 			Energy -= 5
 		}
 	}
-	if Energy >= 5 {
+	if Energy >= 5 and SandBlastCooldownActive == false {
 		if weaponType = "Sand Blast"{
 			instance_create_layer(x, y, layer, Bullet_Shotgun_OBJ);
 			instance_create_layer(x, y, layer, Bullet_Shotgun_OBJ);
@@ -213,8 +216,10 @@ if mouse_check_button_pressed(mb_left){
 			if invisible == true {
 				invisible = false
 				invisibilityTimer = 400
+				InvisibilityCooldownActive = true
 				image_alpha = 1
 			}
+			SandBlastCooldownActive = true
 			Energy -= 3
 		}
 	}
@@ -225,12 +230,13 @@ if mouse_check_button_pressed(mb_left){
 			Energy -= 7
 		}
 	}
-	if Energy >= 15 {
+	if Energy >= 15 and MagicArmorCooldownActive == false{
 		if weaponType = "Magic Armor" and MagicArmorActive == false{
 			instance_create_layer(x, y, "Instances", Magic_Armor_OBJ)
 			if invisible == true {
 				invisible = false
 				invisibilityTimer = 400
+				InvisibilityCooldownActive = true
 				image_alpha = 1
 			}
 			Energy -= 15
@@ -253,6 +259,7 @@ if mouse_check_button_pressed(mb_left){
 			if invisible == true {
 				invisible = false
 				invisibilityTimer = 400
+				InvisibilityCooldownActive = true
 				image_alpha = 1
 			}
 			Energy -= 20
@@ -264,18 +271,20 @@ if mouse_check_button_pressed(mb_left){
 			Energy -= 100
 		}
 	}
-	if Energy >= 7 {
+	if Energy >= 7 and FireballCooldownActive == false {
 		if weaponType == "Fireball" {
 			instance_create_layer(x, y, layer, Fireball_OBJ)
 			if invisible == true {
 				invisible = false
 				invisibilityTimer = 400
+				InvisibilityCooldownActive = true
 				image_alpha = 1
 			}
+			FireballCooldownActive = true
 			Energy -= 7
 		}
 	}
-	if Energy >= 8 {
+	if Energy >= 8 and InvisibilityCooldownActive == false and invisible == false {
 		if weaponType == "Invisibility" {
 			if invisible == false {
 				invisible = true
@@ -303,6 +312,45 @@ if damaged = true {
 	}
 }
 
+if FireballCooldownActive == true {
+	FireballCooldownTimer -= 1
+}
+if FireballCooldownTimer <= 0 {
+	FireballCooldownActive = false 
+	FireballCooldownTimer = CurrencyCounter_OBJ.FireballCooldown
+}
+
+if InvisibilityCooldownActive == true {
+	InvisibilityCooldownTimer -= 1
+}
+if InvisibilityCooldownTimer <= 0 {
+	InvisibilityCooldownActive = false 
+	InvisibilityCooldownTimer = CurrencyCounter_OBJ.InvisibilityCooldown
+}
+
+if LightningBoltCooldownActive == true {
+	LightningBoltCooldownTimer -= 1
+}
+if LightningBoltCooldownTimer <= 0 {
+	LightningBoltCooldownActive = false
+	LightningBoltCooldownTimer = CurrencyCounter_OBJ.LightningBoltCooldown
+}
+
+if MagicArmorCooldownActive == true {
+	MagicArmorCooldownTimer -= 1
+}
+if MagicArmorCooldownTimer <= 0 {
+	MagicArmorCooldownActive = false 
+	MagicArmorCooldownTimer = CurrencyCounter_OBJ.MagicArmorCooldown
+}
+if SandBlastCooldownActive == true {
+	SandBlastCooldownTimer -= 1
+}
+if SandBlastCooldownTimer <= 0 {
+	SandBlastCooldownActive = false 
+	SandBlastCooldownTimer = CurrencyCounter_OBJ.SandBlastCooldown
+}
+
 if MagicArmorActive == true {
 	MagicArmorTimer -= 1
 	if Energy <= 0 {
@@ -318,11 +366,13 @@ if invisibilityTimer <= 0 {
 	image_alpha = 1
 	invisible = false 
 	invisibilityTimer = 400
+	InvisibilityCooldownActive = true
 }
 
 if MagicArmorTimer <= 0 {
 	MagicArmorActive = false
 	MagicArmorTimer = 500
+	MagicArmorCooldownActive = true
 }
 
 if weaponType == "Sand Blast"{

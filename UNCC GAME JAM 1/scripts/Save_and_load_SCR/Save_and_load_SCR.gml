@@ -28,7 +28,12 @@ function SaveCurrency(){
 		BlindingLightBind: CurrencyCounter_OBJ.BlindingLightBind,
 		FireballBind: CurrencyCounter_OBJ.FireballBind,
 		InvisibilityBind: CurrencyCounter_OBJ.InvisibilityBind,
-		PauseBind: CurrencyCounter_OBJ.PauseBind
+		PauseBind: CurrencyCounter_OBJ.PauseBind,
+		LightningBoltCooldown: CurrencyCounter_OBJ.LightningBoltCooldown,
+		SandBlastCooldown: CurrencyCounter_OBJ.SandBlastCooldown,
+		FireballCooldown: CurrencyCounter_OBJ.FireballCooldown,
+		InvisibilityCooldown: CurrencyCounter_OBJ.InvisibilityCooldown,
+		MagicArmorCooldown: CurrencyCounter_OBJ.MagicArmorCooldown
 	}
 	
 	var _string = json_stringify(_struct)
@@ -71,6 +76,11 @@ function LoadCurrency(){
 			CurrencyCounter_OBJ.FireballBind = _struct.FireballBind
 			CurrencyCounter_OBJ.InvisibilityBind = _struct.InvisibilityBind
 			CurrencyCounter_OBJ.PauseBind = _struct.PauseBind
+			CurrencyCounter_OBJ.FireballCooldown = _struct.FireballCooldown
+			CurrencyCounter_OBJ.LightningBoltCooldown = _struct.LightningBoltCooldown
+			CurrencyCounter_OBJ.MagicArmorCooldown = _struct.MagicArmorCooldown
+			CurrencyCounter_OBJ.SandBlastCooldown = _struct.SandBlastCooldown
+			CurrencyCounter_OBJ.InvisibilityCooldown = _struct.InvisibilityCooldown
 		}
 	}
 }

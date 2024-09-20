@@ -13,12 +13,10 @@ lastSpell = "Hail Storm"
 
 EnemyKilled = 0
 
-Energy = 100
 MagicArmorActive = false 
 SwordActive = false 
 
 SwordEnergyTimer = 75
-
 
 MagicArmorTimer = 500
 MagicArmorInvulnerability = false
@@ -27,11 +25,25 @@ MagicArmorInvulnerabilityTime = 60
 invisible = false 
 invisibilityTimer = 400
 
-NumLives = 3
-
 invulnerability = false
 invulnerabilityTime = 50
 damaged = false
+
+instance_create_layer(x, y, "Instances", CurrencyCounter_OBJ)
+SandBlastCooldownTimer = CurrencyCounter_OBJ.SandBlastCooldown
+MagicArmorCooldownTimer = CurrencyCounter_OBJ.MagicArmorCooldown
+InvisibilityCooldownTimer = CurrencyCounter_OBJ.InvisibilityCooldown
+FireballCooldownTimer = CurrencyCounter_OBJ.FireballCooldown
+LightningBoltCooldownTimer = CurrencyCounter_OBJ.LightningBoltCooldown
+NumLives = CurrencyCounter_OBJ.PlayerHP
+Energy = CurrencyCounter_OBJ.PlayerEnergy
+
+SandBlastCooldownActive = false
+MagicArmorCooldownActive = false
+InvisibilityCooldownActive = false
+FireballCooldownActive = false
+LightningBoltCooldownActive = false 
+
 
 instance_create_layer(random_range(0, 400), random_range(0, 300), "Instances", Bullet_Pickup_OBJ)
 
@@ -61,7 +73,3 @@ if weaponType == "Lightning Bolt"{
 	instance_create_layer(x, y, "Instances", Player_Weapon_Sniper_OBJ)
 	instance_create_layer(x, y, "Instances", Player_Weapon_Sniper_OBJ_2)
 }
-
-
-
-
