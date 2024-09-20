@@ -8,7 +8,7 @@ obj_stuned = false
 
 speed = 1.3
 
-BurstTimer = 100
+BurstTimer = 10
 ShotTimer = 23
 
 if place_meeting(x, y, Wall_OBJ) {

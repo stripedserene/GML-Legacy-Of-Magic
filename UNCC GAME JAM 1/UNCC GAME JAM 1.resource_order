@@ -60,7 +60,6 @@
     {"name":"Help_Text","order":44,"path":"objects/Help_Text/Help_Text.yy",},
     {"name":"Invisibility_Rebind_OBJ","order":100,"path":"objects/Invisibility_Rebind_OBJ/Invisibility_Rebind_OBJ.yy",},
     {"name":"Invisibility_Shop_OBJ","order":87,"path":"objects/Invisibility_Shop_OBJ/Invisibility_Shop_OBJ.yy",},
-    {"name":"light_Orb_Obj","order":49,"path":"objects/light_Orb_Obj/light_Orb_Obj.yy",},
     {"name":"Lightning_Bolt_Rebind_OBJ","order":93,"path":"objects/Lightning_Bolt_Rebind_OBJ/Lightning_Bolt_Rebind_OBJ.yy",},
     {"name":"Lightning_Bolt_Shop_OBJ","order":61,"path":"objects/Lightning_Bolt_Shop_OBJ/Lightning_Bolt_Shop_OBJ.yy",},
     {"name":"Magic_Armor_OBJ","order":47,"path":"objects/Magic_Armor_OBJ/Magic_Armor_OBJ.yy",},
