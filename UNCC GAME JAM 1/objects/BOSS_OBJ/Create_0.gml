@@ -4,7 +4,7 @@ image_yscale = 1.7
 
 Xspeed = 0
 Yspeed = 0
-obj_HP = 3
+obj_HP = 100
 BurstActive = false 
 numShots = 0
 
