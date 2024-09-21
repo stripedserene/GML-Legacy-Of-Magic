@@ -174,6 +174,8 @@
     {"name":"Player_Spell_Lightning_Bolt_SPR_ALT","order":70,"path":"sprites/Player_Spell_Lightning_Bolt_SPR_ALT/Player_Spell_Lightning_Bolt_SPR_ALT.yy",},
     {"name":"Player_Spell_Lightning_Bolt_SPR","order":40,"path":"sprites/Player_Spell_Lightning_Bolt_SPR/Player_Spell_Lightning_Bolt_SPR.yy",},
     {"name":"Player_Spell_Magic_Armor_SPR_2","order":26,"path":"sprites/Player_Spell_Magic_Armor_SPR_2/Player_Spell_Magic_Armor_SPR_2.yy",},
+    {"name":"Player_Spell_Magic_Armor_SPR_ALT_2","order":75,"path":"sprites/Player_Spell_Magic_Armor_SPR_ALT_2/Player_Spell_Magic_Armor_SPR_ALT_2.yy",},
+    {"name":"Player_Spell_Magic_Armor_SPR_ALT","order":74,"path":"sprites/Player_Spell_Magic_Armor_SPR_ALT/Player_Spell_Magic_Armor_SPR_ALT.yy",},
     {"name":"Player_Spell_Magic_Armor_SPR","order":27,"path":"sprites/Player_Spell_Magic_Armor_SPR/Player_Spell_Magic_Armor_SPR.yy",},
     {"name":"Player_Spell_Sand_Blast_SPR_2","order":39,"path":"sprites/Player_Spell_Sand_Blast_SPR_2/Player_Spell_Sand_Blast_SPR_2.yy",},
     {"name":"Player_Spell_Sand_Blast_SPR_ALT_2","order":67,"path":"sprites/Player_Spell_Sand_Blast_SPR_ALT_2/Player_Spell_Sand_Blast_SPR_ALT_2.yy",},
