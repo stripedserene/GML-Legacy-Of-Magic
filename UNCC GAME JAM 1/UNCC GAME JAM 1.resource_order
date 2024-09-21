@@ -172,6 +172,8 @@
     {"name":"Player_Spell_Magic_Armor_SPR_2","order":26,"path":"sprites/Player_Spell_Magic_Armor_SPR_2/Player_Spell_Magic_Armor_SPR_2.yy",},
     {"name":"Player_Spell_Magic_Armor_SPR","order":27,"path":"sprites/Player_Spell_Magic_Armor_SPR/Player_Spell_Magic_Armor_SPR.yy",},
     {"name":"Player_Spell_Sand_Blast_SPR_2","order":39,"path":"sprites/Player_Spell_Sand_Blast_SPR_2/Player_Spell_Sand_Blast_SPR_2.yy",},
+    {"name":"Player_Spell_Sand_Blast_SPR_ALT_2","order":67,"path":"sprites/Player_Spell_Sand_Blast_SPR_ALT_2/Player_Spell_Sand_Blast_SPR_ALT_2.yy",},
+    {"name":"Player_Spell_Sand_Blast_SPR_ALT","order":66,"path":"sprites/Player_Spell_Sand_Blast_SPR_ALT/Player_Spell_Sand_Blast_SPR_ALT.yy",},
     {"name":"Player_Spell_Sand_Blast_SPR","order":38,"path":"sprites/Player_Spell_Sand_Blast_SPR/Player_Spell_Sand_Blast_SPR.yy",},
     {"name":"Player_Spell_Teleport_SPR_2","order":29,"path":"sprites/Player_Spell_Teleport_SPR_2/Player_Spell_Teleport_SPR_2.yy",},
     {"name":"Player_Spell_Teleport_SPR","order":28,"path":"sprites/Player_Spell_Teleport_SPR/Player_Spell_Teleport_SPR.yy",},
