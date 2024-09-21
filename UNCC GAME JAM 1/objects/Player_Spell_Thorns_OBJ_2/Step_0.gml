@@ -14,7 +14,7 @@ if instance_exists(Player_OBJ){
 		image_angle = direction + 180
 	}
 	else {
-		image_angle = 0
+		image_angle = 150
 	}
 }
 else {

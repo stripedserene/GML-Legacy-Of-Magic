@@ -8,6 +8,8 @@ if Lifespan <= 0 {
 }
 
 if place_meeting(x, y, Wall_OBJ) {
-	Player_OBJ.EnemySpawnTimer = 1
+	if instance_exists(Player_OBJ) {
+		Player_OBJ.EnemySpawnTimer = 1
+	}
 	instance_destroy()
 }
