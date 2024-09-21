@@ -6,6 +6,15 @@ Down_key = keyboard_check(ord("S"));
 Xspeed = (Right_key - Left_key) * MoveSpeed;
 Yspeed = (Down_key - Up_key) * MoveSpeed;
 
+if mouse_x > x {
+	image_xscale = -0.06
+	image_yscale = 0.06
+}
+else {
+	image_xscale = 0.06
+	image_yscale = 0.06
+}
+
 if  keyboard_check(ord(CurrencyCounter_OBJ.HailStormBind)) and CurrencyCounter_OBJ.HailStormUnlocked{
 	weaponType = "Hail Storm"
 	lastSpell = "Hail Storm"

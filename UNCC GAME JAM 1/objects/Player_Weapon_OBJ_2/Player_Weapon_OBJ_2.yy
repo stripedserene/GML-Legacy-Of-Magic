@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Player_Spell_Hail_Storm_SPR_2",
-    "path":"sprites/Player_Spell_Hail_Storm_SPR_2/Player_Spell_Hail_Storm_SPR_2.yy",
+    "name":"Player_Spell_Hail_Storm_SPR_ALT_2",
+    "path":"sprites/Player_Spell_Hail_Storm_SPR_ALT_2/Player_Spell_Hail_Storm_SPR_ALT_2.yy",
   },
   "spriteMaskId":null,
   "visible":true,
