@@ -522,6 +522,16 @@ if place_meeting(x, y, Enemy_OBJ) == true or place_meeting(x, y, Enemy_Bullet_OB
 			MagicArmorInvulnerabilityTime = 60
 		}
 	}
+	if invisible = true {
+		invulnerabilityTime = 50
+		damaged = true
+		invulnerability = true
+		NumLives -= 1
+		image_alpha = 1
+		invisible = false 
+		invisibilityTimer = 400
+		InvisibilityCooldownActive = true
+	}
 }
 
 if MagicArmorInvulnerabilityTime <= 0 {
