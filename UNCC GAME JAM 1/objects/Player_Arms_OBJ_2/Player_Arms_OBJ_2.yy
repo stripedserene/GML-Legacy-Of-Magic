@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Player_Arms_SPR_2",
-    "path":"sprites/Player_Arms_SPR_2/Player_Arms_SPR_2.yy",
+    "name":"Player_Arms_SPR_ALT_2",
+    "path":"sprites/Player_Arms_SPR_ALT_2/Player_Arms_SPR_ALT_2.yy",
   },
   "spriteMaskId":null,
   "visible":true,
