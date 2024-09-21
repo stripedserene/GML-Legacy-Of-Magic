@@ -29,6 +29,9 @@ if instance_exists(Player_OBJ){
 		if EnemyInst3 != noone {
 			EnemyInst3.speed = EnemyInst3.speed/5
 		}
+		if BOSSInst != noone {
+			BOSSInst.speed = 0.6
+		}
 		lifespan = 1
 		}
 }
