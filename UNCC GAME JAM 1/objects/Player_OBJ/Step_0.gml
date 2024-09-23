@@ -106,7 +106,16 @@ if BulletSpawnTimer <= 0 {
 		instance_create_layer(random_range(100, 300), random_range(100, 200), "Instances", Bullet_Pickup_Sniper_OBJ)
 	}
 	if BulletType == 4 {
-		instance_create_layer(random_range(100, 300), random_range(100, 200), "Instances", Coin_OBJ)
+		CoinType = irandom_range(1,3)
+		if CoinType == 1 {
+			instance_create_layer(random_range(100, 300), random_range(100, 200), "Instances", Coin_OBJ)
+		}
+		if CoinType == 2 {
+			instance_create_layer(random_range(100, 300), random_range(100, 200), "Instances", Coin_OBJ_2)
+		}
+		if CoinType == 3 {
+			instance_create_layer(random_range(100, 300), random_range(100, 200), "Instances", Coin_OBJ_3)
+		}
 	}
 	if OldBulletSpawnTimer > 150 {
 		BulletSpawnTimer = OldBulletSpawnTimer - (OldBulletSpawnTimer / 5)
