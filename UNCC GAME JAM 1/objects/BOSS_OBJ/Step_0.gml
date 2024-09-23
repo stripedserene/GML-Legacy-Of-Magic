@@ -18,7 +18,7 @@ if obj_stuned {
 }
 if stunDuration <= 0 {
 	obj_stuned = false
-	stunDuration = 300
+	stunDuration = 150
 	speed = 1.3
 }
 
@@ -28,7 +28,7 @@ Yspeed = lengthdir_y(speed, direction)
 if place_meeting(x + Xspeed, y, Wall_OBJ) == true
 	{
 	wallInst = instance_place(x + Xspeed, y, Wall_OBJ)
-	wallInst.wallHealth -= 0.25
+	wallInst.wallHealth -= 0.75
 	Xspeed = 0
 	}
 if place_meeting(x, y + Yspeed, Wall_OBJ) == true
@@ -82,10 +82,36 @@ if speed < 1.3{
 	speed += 0.05
 }
 
-BurstTimer -= 1
+AttackTimer -= 1
 
-if BurstTimer <= 0 and obj_stuned == false {
-	BurstActive = true
+if AttackTimer <= 0 and obj_stuned == false and instance_exists(Player_OBJ){
+	AttackType = irandom_range(1, 3)
+	if AttackType == 1 {
+		BurstActive = true
+	}
+	if AttackType == 2 {
+		if instance_exists(Player_OBJ) and Player_OBJ.invisible == false {
+			instance_create_layer(x, y, "Instances", Enemy_Shotgun_Bullet_OBJ)
+			instance_create_layer(x, y, "Instances", Enemy_Shotgun_Bullet_OBJ)
+			instance_create_layer(x, y, "Instances", Enemy_Shotgun_Bullet_OBJ)
+			instance_create_layer(x, y, "Instances", Enemy_Shotgun_Bullet_OBJ)
+			instance_create_layer(x, y, "Instances", Enemy_Shotgun_Bullet_OBJ)
+			instance_create_layer(x, y, "Instances", Enemy_Shotgun_Bullet_OBJ)
+			instance_create_layer(x, y, "Instances", Enemy_Shotgun_Bullet_OBJ)
+			instance_create_layer(x, y, "Instances", Enemy_Shotgun_Bullet_OBJ)
+			instance_create_layer(x, y, "Instances", Enemy_Shotgun_Bullet_OBJ)
+			instance_create_layer(x, y, "Instances", Enemy_Shotgun_Bullet_OBJ)
+		}
+		AttackTimer = 120
+	}
+	if AttackType == 3 {
+		instance_create_layer(Player_OBJ.x + random_range(-30, 30), Player_OBJ.y + random_range(-30, 30), "Instances", Enemy_Thorn_Warning_OBJ)
+		instance_create_layer(Player_OBJ.x + random_range(-30, 30), Player_OBJ.y + random_range(-30, 30), "Instances", Enemy_Thorn_Warning_OBJ)
+		instance_create_layer(Player_OBJ.x + random_range(-30, 30), Player_OBJ.y + random_range(-30, 30), "Instances", Enemy_Thorn_Warning_OBJ)
+		instance_create_layer(Player_OBJ.x + random_range(-30, 30), Player_OBJ.y + random_range(-30, 30), "Instances", Enemy_Thorn_Warning_OBJ)
+		instance_create_layer(Player_OBJ.x + random_range(-30, 30), Player_OBJ.y + random_range(-30, 30), "Instances", Enemy_Thorn_Warning_OBJ)
+		AttackTimer = 120
+	}
 }
 
 if BurstActive = true {
@@ -94,14 +120,14 @@ if BurstActive = true {
 		if instance_exists(Player_OBJ) and Player_OBJ.invisible == false {
 			instance_create_layer(x, y, "Instances", Enemy_Bullet_OBJ)
 		}
-		ShotTimer = 25
+		ShotTimer = 20
 		numShots += 1
 	}
 }
 
-if numShots >= 3 {
+if numShots >= 10 {
 	BurstActive = false 
-	BurstTimer = 120
+	AttackTimer = 120
 	numShots = 0
 }
 
