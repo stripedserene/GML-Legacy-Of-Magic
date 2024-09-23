@@ -3,6 +3,7 @@
   "%Name":"Teleport_Shop_OBJ",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"Teleport_Shop_OBJ",
@@ -35,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Player_Spell_Teleport_SPR",
-    "path":"sprites/Player_Spell_Teleport_SPR/Player_Spell_Teleport_SPR.yy",
+    "name":"Spell_Teleport_SPR",
+    "path":"sprites/Spell_Teleport_SPR/Spell_Teleport_SPR.yy",
   },
   "spriteMaskId":null,
   "visible":true,
