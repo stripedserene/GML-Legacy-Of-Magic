@@ -13,6 +13,12 @@ if place_meeting(x, y, Explosion_OBJ) {
 		wallHealth -= 10
 	}
 }
+if place_meeting(x, y, Enemy_Explosion_OBJ) {
+	var inst_fire = instance_place(x, y, Enemy_Explosion_OBJ)
+	if inst_fire.image_alpha == 1{
+		wallHealth -= 10
+	}
+}
 
 if place_meeting(x, y, Bullet_Sniper_OBJ) {
 	bulletInst = instance_place(x, y, Bullet_Sniper_OBJ)
