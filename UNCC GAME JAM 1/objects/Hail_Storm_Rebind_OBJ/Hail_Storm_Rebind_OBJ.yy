@@ -3,6 +3,7 @@
   "%Name":"Hail_Storm_Rebind_OBJ",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"Hail_Storm_Rebind_OBJ",
@@ -35,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Player_Spell_Hail_Storm_SPR",
-    "path":"sprites/Player_Spell_Hail_Storm_SPR/Player_Spell_Hail_Storm_SPR.yy",
+    "name":"Spell_Hail_Storm_SPR",
+    "path":"sprites/Spell_Hail_Storm_SPR/Spell_Hail_Storm_SPR.yy",
   },
   "spriteMaskId":null,
   "visible":true,
