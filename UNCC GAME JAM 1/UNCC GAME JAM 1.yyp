@@ -57,6 +57,8 @@
     {"id":{"name":"CurrencyCounter_OBJ","path":"objects/CurrencyCounter_OBJ/CurrencyCounter_OBJ.yy",},},
     {"id":{"name":"DeathText","path":"objects/DeathText/DeathText.yy",},},
     {"id":{"name":"Enemy_Bullet_OBJ","path":"objects/Enemy_Bullet_OBJ/Enemy_Bullet_OBJ.yy",},},
+    {"id":{"name":"Enemy_Explosion_OBJ","path":"objects/Enemy_Explosion_OBJ/Enemy_Explosion_OBJ.yy",},},
+    {"id":{"name":"Enemy_Fireball_OBJ","path":"objects/Enemy_Fireball_OBJ/Enemy_Fireball_OBJ.yy",},},
     {"id":{"name":"Enemy_OBJ_2","path":"objects/Enemy_OBJ_2/Enemy_OBJ_2.yy",},},
     {"id":{"name":"Enemy_OBJ_3","path":"objects/Enemy_OBJ_3/Enemy_OBJ_3.yy",},},
     {"id":{"name":"Enemy_OBJ","path":"objects/Enemy_OBJ/Enemy_OBJ.yy",},},

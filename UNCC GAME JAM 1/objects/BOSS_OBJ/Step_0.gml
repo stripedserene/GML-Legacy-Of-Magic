@@ -85,7 +85,7 @@ if speed < 1.3{
 AttackTimer -= 1
 
 if AttackTimer <= 0 and obj_stuned == false and instance_exists(Player_OBJ){
-	AttackType = irandom_range(1, 3)
+	AttackType = irandom_range(1, 4)
 	if AttackType == 1 {
 		BurstActive = true
 	}
@@ -104,12 +104,16 @@ if AttackTimer <= 0 and obj_stuned == false and instance_exists(Player_OBJ){
 		}
 		AttackTimer = 120
 	}
-	if AttackType == 3 {
+	if AttackType == 3 and Player_OBJ.invisible == false {
 		instance_create_layer(Player_OBJ.x + random_range(-30, 30), Player_OBJ.y + random_range(-30, 30), "Instances", Enemy_Thorn_Warning_OBJ)
 		instance_create_layer(Player_OBJ.x + random_range(-30, 30), Player_OBJ.y + random_range(-30, 30), "Instances", Enemy_Thorn_Warning_OBJ)
 		instance_create_layer(Player_OBJ.x + random_range(-30, 30), Player_OBJ.y + random_range(-30, 30), "Instances", Enemy_Thorn_Warning_OBJ)
 		instance_create_layer(Player_OBJ.x + random_range(-30, 30), Player_OBJ.y + random_range(-30, 30), "Instances", Enemy_Thorn_Warning_OBJ)
 		instance_create_layer(Player_OBJ.x + random_range(-30, 30), Player_OBJ.y + random_range(-30, 30), "Instances", Enemy_Thorn_Warning_OBJ)
+		AttackTimer = 120
+	}
+	if AttackType == 4 and Player_OBJ.invisible == false {
+		instance_create_layer(x, y, "Instances", Enemy_Fireball_OBJ)
 		AttackTimer = 120
 	}
 }

@@ -534,6 +534,18 @@ if place_meeting(x, y, Enemy_OBJ) == true or place_meeting(x, y, Enemy_Bullet_OB
 		InvisibilityCooldownActive = true
 	}
 }
+if place_meeting(x, y, Enemy_Explosion_OBJ) and invulnerability == false and MagicArmorActive == false {
+	Inst = instance_place(x, y, Enemy_Explosion_OBJ)
+	if Inst.image_alpha = 1 {
+		if instance_exists(Player_OBJ){
+			invulnerabilityTime = 50
+			damaged = true
+			invulnerability = true
+			NumLives -= 1
+		}
+	}
+}
+
 
 if MagicArmorInvulnerabilityTime <= 0 {
 	MagicArmorInvulnerability = false 

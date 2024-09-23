@@ -39,6 +39,8 @@
     {"name":"CurrencyCounter_OBJ","order":53,"path":"objects/CurrencyCounter_OBJ/CurrencyCounter_OBJ.yy",},
     {"name":"DeathText","order":7,"path":"objects/DeathText/DeathText.yy",},
     {"name":"Enemy_Bullet_OBJ","order":9,"path":"objects/Enemy_Bullet_OBJ/Enemy_Bullet_OBJ.yy",},
+    {"name":"Enemy_Explosion_OBJ","order":112,"path":"objects/Enemy_Explosion_OBJ/Enemy_Explosion_OBJ.yy",},
+    {"name":"Enemy_Fireball_OBJ","order":111,"path":"objects/Enemy_Fireball_OBJ/Enemy_Fireball_OBJ.yy",},
     {"name":"Enemy_OBJ_2","order":8,"path":"objects/Enemy_OBJ_2/Enemy_OBJ_2.yy",},
     {"name":"Enemy_OBJ_3","order":37,"path":"objects/Enemy_OBJ_3/Enemy_OBJ_3.yy",},
     {"name":"Enemy_OBJ","order":3,"path":"objects/Enemy_OBJ/Enemy_OBJ.yy",},
