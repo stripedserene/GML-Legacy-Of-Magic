@@ -4,6 +4,7 @@
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"Magic_Sword_Rebind_OBJ",
@@ -36,8 +37,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Player_Weapon_Sword_SPR",
-    "path":"sprites/Player_Weapon_Sword_SPR/Player_Weapon_Sword_SPR.yy",
+    "name":"Player_Weapon_Sword_SPR_ALT_2",
+    "path":"sprites/Player_Weapon_Sword_SPR_ALT_2/Player_Weapon_Sword_SPR_ALT_2.yy",
   },
   "spriteMaskId":null,
   "visible":true,

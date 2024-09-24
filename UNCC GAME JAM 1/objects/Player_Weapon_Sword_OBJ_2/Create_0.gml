@@ -1,4 +1,7 @@
 if instance_exists(Player_OBJ){
+	image_xscale = 0.06
+	image_yscale = 0.06
+	
 	direction = point_direction(x, y, mouse_x, mouse_y)
 	x = Player_OBJ.x - 2
 	y = Player_OBJ.y - 3

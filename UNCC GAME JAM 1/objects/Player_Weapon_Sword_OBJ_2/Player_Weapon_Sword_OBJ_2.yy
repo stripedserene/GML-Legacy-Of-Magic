@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Player_Weapon_Sword_SPR_2",
-    "path":"sprites/Player_Weapon_Sword_SPR_2/Player_Weapon_Sword_SPR_2.yy",
+    "name":"Player_Weapon_Sword_SPR_ALT_1",
+    "path":"sprites/Player_Weapon_Sword_SPR_ALT_1/Player_Weapon_Sword_SPR_ALT_1.yy",
   },
   "spriteMaskId":null,
   "visible":true,
