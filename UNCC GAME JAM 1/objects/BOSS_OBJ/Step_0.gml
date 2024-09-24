@@ -40,32 +40,38 @@ if place_meeting(x, y + Yspeed, Wall_OBJ) == true
 
 if place_meeting(x, y, Bullet_OBJ) or place_meeting(x, y, Bullet_Shotgun_OBJ) == true
 	{
-		obj_HP -= 1
-		if (obj_HP <= 0){
-		    if instance_exists(Player_OBJ){
-			    Player_OBJ.EnemyKilled += 1
+		if MagicArmorActive == false {
+			obj_HP -= 1
+			if (obj_HP <= 0){
+			    if instance_exists(Player_OBJ){
+				    Player_OBJ.EnemyKilled += 1
+				}
+				instance_destroy()
 			}
-			instance_destroy()
 		}
-		
 	}
 	
 if place_meeting(x, y, Thorn_OBJ) {
-	obj_HP -= 3
-	if (obj_HP <= 0){
-		if instance_exists(Player_OBJ){
-			Player_OBJ.EnemyKilled += 1
+	if MagicArmorActive == false {
+		obj_HP -= 3
+		if (obj_HP <= 0){
+			if instance_exists(Player_OBJ){
+				Player_OBJ.EnemyKilled += 1
+			}
+			instance_destroy()
 		}
-		instance_destroy()
 	}
 }
 	
 if place_meeting(x, y, Bullet_Sniper_OBJ) == true
 	{
-	obj_HP -= 3
+		if MagicArmorActive == false {
+			obj_HP -= 3
+		}
+		
 	}
 
-if place_meeting(x, y, Explosion_OBJ){
+if place_meeting(x, y, Explosion_OBJ) and MagicArmorActive == false{
 	Inst = instance_place(x, y, Explosion_OBJ)
 	if Inst.image_alpha = 1 {
 		obj_HP -= 1.5
@@ -135,7 +141,20 @@ if numShots >= 10 {
 	numShots = 0
 }
 
+if obj_HP <= 250 and MagicArmorActivated = false {
+	instance_create_layer(x, y, "Instances", Enemy_Magic_Armor_OBJ)
+	MagicArmorActive = true
+	instance_create_layer(random_range(50, 350), random_range(50, 250), "Instances", Magic_Armor_Target_OBJ)
+	instance_create_layer(random_range(50, 350), random_range(50, 250), "Instances", Magic_Armor_Target_OBJ)
+	instance_create_layer(random_range(50, 350), random_range(50, 250), "Instances", Magic_Armor_Target_OBJ)
+	MagicArmorActivated = true
+}
 
+if MagicArmorActive == true {
+	if instance_exists(Magic_Armor_Target_OBJ) == false {
+		MagicArmorActive = false 
+	}
+}
 
 x += Xspeed 
 y += Yspeed 

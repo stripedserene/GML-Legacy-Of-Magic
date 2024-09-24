@@ -14,7 +14,7 @@ if instance_exists(Player_OBJ){
 		{
 		instance_destroy()
 		}
-	if place_meeting(x, y, Enemy_OBJ) or place_meeting(x, y, Enemy_OBJ_2) or place_meeting(x, y, Enemy_OBJ_3) or place_meeting(x, y, BOSS_OBJ)== true
+	if place_meeting(x, y, Enemy_OBJ) or place_meeting(x, y, Enemy_OBJ_2) or place_meeting(x, y, Enemy_OBJ_3) or place_meeting(x, y, BOSS_OBJ) == true
 		{
 		EnemyInst1 = instance_place(x, y, Enemy_OBJ)
 		EnemyInst2 = instance_place(x, y, Enemy_OBJ_2)
@@ -34,4 +34,7 @@ if instance_exists(Player_OBJ){
 		}
 		lifespan = 1
 		}
+}
+if place_meeting(x, y, Magic_Armor_Target_OBJ) {
+	lifespan = 1
 }

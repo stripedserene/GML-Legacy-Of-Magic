@@ -10,7 +10,7 @@ if lifespan <= 0
 	}
 
 if instance_exists(Player_OBJ){
-	if place_meeting(x, y, Wall_OBJ) == true
+	if place_meeting(x, y, Wall_OBJ) or place_meeting(x, y, Magic_Armor_Target_OBJ)== true
 		{
 		lifespan = 0
 		}

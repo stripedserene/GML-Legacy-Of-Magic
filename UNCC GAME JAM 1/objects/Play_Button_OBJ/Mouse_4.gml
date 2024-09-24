@@ -3,4 +3,4 @@
 event_inherited();
 
 SaveCurrency()
-room_goto(Room1)
+room_goto(Boss_Room)
