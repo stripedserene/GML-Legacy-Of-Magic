@@ -44,6 +44,32 @@ function SaveCurrency(){
 	file_text_close(_file)
 }
 
+function SaveHealth() {
+	var _struct = {
+		Health: Player_OBJ.NumLives,
+		Energy: Player_OBJ.Energy
+	}
+	
+	var _string = json_stringify(_struct)
+	
+	var _file = file_text_open_write("saveHealthEnergy.txt")
+	file_text_write_string(_file, _string)
+	file_text_close(_file)
+}
+
+function LoadHealth(){
+	if file_exists("saveHealthEnergy.txt") {
+		var _file = file_text_open_read("saveHealthEnergy.txt")
+		var _json = file_text_read_string(_file)
+		var _struct = json_parse(_json)
+		if instance_exists(Player_OBJ) {
+			Player_OBJ.NumLives = _struct.Health
+			Player_OBJ.Energy = _struct.Energy
+		}
+		file_delete("saveHealthEnergy.txt")
+	}
+}
+
 function LoadCurrency(){
 	if file_exists("saveCurrency.txt") {
 		var _file = file_text_open_read("saveCurrency.txt")
