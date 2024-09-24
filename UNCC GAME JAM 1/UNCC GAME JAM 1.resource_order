@@ -20,6 +20,7 @@
     {"name":"Advance_OBJ_2","order":116,"path":"objects/Advance_OBJ_2/Advance_OBJ_2.yy",},
     {"name":"Advance_OBJ_3","order":117,"path":"objects/Advance_OBJ_3/Advance_OBJ_3.yy",},
     {"name":"Advance_OBJ","order":115,"path":"objects/Advance_OBJ/Advance_OBJ.yy",},
+    {"name":"Advance_Text","order":118,"path":"objects/Advance_Text/Advance_Text.yy",},
     {"name":"Back_Button_OBJ","order":59,"path":"objects/Back_Button_OBJ/Back_Button_OBJ.yy",},
     {"name":"Back_Shop_Button_OBJ","order":68,"path":"objects/Back_Shop_Button_OBJ/Back_Shop_Button_OBJ.yy",},
     {"name":"Blinding_Light_Rebind_OBJ","order":98,"path":"objects/Blinding_Light_Rebind_OBJ/Blinding_Light_Rebind_OBJ.yy",},
