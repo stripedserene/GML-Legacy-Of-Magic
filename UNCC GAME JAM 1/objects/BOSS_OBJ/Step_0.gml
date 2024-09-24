@@ -147,6 +147,8 @@ if obj_HP <= 250 and MagicArmorActivated = false {
 	instance_create_layer(random_range(50, 350), random_range(50, 250), "Instances", Magic_Armor_Target_OBJ)
 	instance_create_layer(random_range(50, 350), random_range(50, 250), "Instances", Magic_Armor_Target_OBJ)
 	instance_create_layer(random_range(50, 350), random_range(50, 250), "Instances", Magic_Armor_Target_OBJ)
+	instance_create_layer(random_range(50, 350), random_range(50, 250), "Instances", Magic_Armor_Target_OBJ)
+	instance_create_layer(random_range(50, 350), random_range(50, 250), "Instances", Magic_Armor_Target_OBJ)
 	MagicArmorActivated = true
 }
 
