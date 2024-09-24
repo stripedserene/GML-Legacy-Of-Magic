@@ -1,4 +1,4 @@
-draw_text_transformed(10, 10, "For countless generations your family has \npracticed and perfected the art of magic,\nbut now people with guns and stuff want to\nkill you and take that magic for\nthemselves, you must kill them first and\nprotect your family's ", 1, 1, 0)
+draw_text_transformed(10, 10, "For countless generations your family has \npracticed and perfected the art of magic,\nbut now people with knives and guns want\nto kill you and take that magic for\nthemselves, you must kill them first and\nprotect your family's ", 1, 1, 0)
 draw_text_transformed_color(210, 111, "LEGACY", 1.5, 1.5, 0, c_red, c_red, c_red, c_red, 1)
 draw_set_halign(fa_center)
 draw_set_valign(fa_middle)
