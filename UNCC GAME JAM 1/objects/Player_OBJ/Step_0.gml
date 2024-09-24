@@ -91,8 +91,9 @@ if place_meeting(x, y + Yspeed, Wall_OBJ) == true
 x += Xspeed;
 y += Yspeed;
 
-
-BulletSpawnTimer -= 1
+if SpawnWave == true {
+	BulletSpawnTimer -= 1
+}
 
 if BulletSpawnTimer <= 0 {
 	BulletType = irandom_range(1, 4)
@@ -126,7 +127,9 @@ if BulletSpawnTimer <= 0 {
 	}
 }
 
-HeartSpawnTimer -= 1
+if SpawnWave == true {
+	HeartSpawnTimer -= 1
+}
 
 if HeartSpawnTimer <= 0 {
 	instance_create_layer(random_range(100, 300), random_range(100, 200), "Instances", Heart_OBJ)
@@ -134,7 +137,9 @@ if HeartSpawnTimer <= 0 {
 	OldHeartSpawnTimer = HeartSpawnTimer
 }
 
-WaveSpawnTimer -= 1 
+if SpawnWave == true {
+	WaveSpawnTimer -= 1 
+}
 
 if WaveSpawnTimer <= 0 {
 	EnemySpawnTimer = 0 
@@ -146,7 +151,9 @@ if WaveSpawnNumber <= 0 {
 	WaveSpawnTimer = 1000
 }
 
-EnemySpawnTimer -= 1 
+if SpawnEnemies == true {
+	EnemySpawnTimer -= 1 
+}
 
 EnemySpawnSide = irandom_range(1, 4)
 EnemySpawnType = irandom_range(1, 100)
@@ -572,6 +579,33 @@ if Energy < 0 {
 if NumLives <= 0 {
 	instance_create_layer(x, y, "DEATHTEXT", DeathText)
 	instance_destroy()
+}
+
+if room == Room1 and EnemyKilled >= 50 and SpawnEnemies == true{
+	SpawnWave = false
+	SpawnEnemies = false
+	CurrencyCounter_OBJ.NumCoins += 10
+	SaveCurrency()
+	instance_create_layer(random_range(100, 300), random_range(100, 200), "Instances", Advance_OBJ)
+}
+if room == Room2 and EnemyKilled >= 100 and SpawnEnemies == true{
+	SpawnWave = false
+	SpawnEnemies = false
+	CurrencyCounter_OBJ.NumCoins += 15
+	SaveCurrency()
+	instance_create_layer(random_range(100, 300), random_range(100, 200), "Instances", Advance_OBJ_2)
+}
+if room == Room3 and EnemyKilled >= 100 and SpawnEnemies == true{
+	SpawnWave = false
+	SpawnEnemies = false
+	CurrencyCounter_OBJ.NumCoins += 20
+	SaveCurrency()
+	instance_create_layer(random_range(100, 300), random_range(100, 200), "Instances", Advance_OBJ_3)
+}
+
+if instance_exists(BOSS_OBJ) {
+	SpawnEnemies = false
+	SpawnWave = true
 }
 
 x = clamp(x,0, room_width);

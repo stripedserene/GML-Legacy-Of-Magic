@@ -55,12 +55,15 @@ OldBulletSpawnTimer = 300
 HeartSpawnTimer = 2000
 OldHeartSpawnTimer = 2000
 
-WaveSpawnTimer = 10001000
+SpawnEnemies = true
+SpawnWave = true
+
+WaveSpawnTimer = 1000
 WaveSpawnNumber = 2
 oldWaveSpawnNumber = 2
 
 // EnemySpawnTimer = 200
-EnemySpawnTimer = 200200200
+EnemySpawnTimer = 200
 OldEnemySpawnTimer = 200
 
 weaponType = ""
