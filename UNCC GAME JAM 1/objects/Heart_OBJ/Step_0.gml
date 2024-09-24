@@ -4,7 +4,6 @@ if place_meeting(x, y, Player_OBJ) {
 		instance_destroy()
 	}
 	else {
-		Player_OBJ.EnemyKilled += 10
 		instance_destroy()
 	}
 }

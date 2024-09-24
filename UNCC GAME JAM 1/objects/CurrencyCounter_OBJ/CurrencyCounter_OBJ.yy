@@ -27,7 +27,7 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"NumCoins","filters":[],"listItems":[],"multiselect":false,"name":"NumCoins","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"100000","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"NumCoins","filters":[],"listItems":[],"multiselect":false,"name":"NumCoins","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"10","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"HailStormUnlocked","filters":[],"listItems":[
         "\"Hail Storm\"",
         "\"Sand Blast\"",
@@ -52,10 +52,10 @@
     {"$GMObjectProperty":"v1","%Name":"TeleportBind","filters":[],"listItems":[],"multiselect":false,"name":"TeleportBind","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"4","varType":2,},
     {"$GMObjectProperty":"v1","%Name":"MagicArmorBind","filters":[],"listItems":[],"multiselect":false,"name":"MagicArmorBind","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"5","varType":2,},
     {"$GMObjectProperty":"v1","%Name":"ThornWallBind","filters":[],"listItems":[],"multiselect":false,"name":"ThornWallBind","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"6","varType":2,},
-    {"$GMObjectProperty":"v1","%Name":"BlindingLightBind","filters":[],"listItems":[],"multiselect":false,"name":"BlindingLightBind","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"7","varType":2,},
-    {"$GMObjectProperty":"v1","%Name":"FireballBind","filters":[],"listItems":[],"multiselect":false,"name":"FireballBind","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"8","varType":2,},
+    {"$GMObjectProperty":"v1","%Name":"BlindingLightBind","filters":[],"listItems":[],"multiselect":false,"name":"BlindingLightBind","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"8","varType":2,},
+    {"$GMObjectProperty":"v1","%Name":"FireballBind","filters":[],"listItems":[],"multiselect":false,"name":"FireballBind","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"9","varType":2,},
     {"$GMObjectProperty":"v1","%Name":"InvisibilityBind","filters":[],"listItems":[],"multiselect":false,"name":"InvisibilityBind","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":2,},
-    {"$GMObjectProperty":"v1","%Name":"SelfHealBind","filters":[],"listItems":[],"multiselect":false,"name":"SelfHealBind","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"9","varType":2,},
+    {"$GMObjectProperty":"v1","%Name":"SelfHealBind","filters":[],"listItems":[],"multiselect":false,"name":"SelfHealBind","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"7","varType":2,},
     {"$GMObjectProperty":"v1","%Name":"PauseBind","filters":[],"listItems":[],"multiselect":false,"name":"PauseBind","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"P","varType":2,},
     {"$GMObjectProperty":"v1","%Name":"LightningBoltCooldown","filters":[],"listItems":[],"multiselect":false,"name":"LightningBoltCooldown","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"75","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"SandBlastCooldown","filters":[],"listItems":[],"multiselect":false,"name":"SandBlastCooldown","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"50","varType":0,},
