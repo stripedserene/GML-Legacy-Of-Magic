@@ -8,7 +8,7 @@ stunDuration = 300
 
 speed = 1
 
-ShotTimer = 120
+ShotTimer = 25
 
 if place_meeting(x, y, Wall_OBJ) {
 	Player_OBJ.EnemySpawnTimer = 1

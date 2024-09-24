@@ -10,7 +10,7 @@ if Buy_Button_OBJ.WeaponSelected == "Lightning Bolt" {
 	draw_text(x, y, "Shoots a fast moving\nbolt of lightning that\ndoes high damage and\npierces enemies and walls\n\ncosts 3 energy to use\ncosts 5 coins")
 }
 if Buy_Button_OBJ.WeaponSelected == "Magic Sword" {
-	draw_text(x, y, "A magic sword that deals\nhigh damage to enemies\nyou hit with it\nbut drains you energy as you\nhold it\n\ncosts 5 coins")
+	draw_text(x, y, "A magic sword that is\nable to instantly kill most\nenemies by just touching\nthem with it but drains\nyour energy as you hold it\n\ncosts 5 coins")
 }
 if Buy_Button_OBJ.WeaponSelected == "Teleportation" {
 	draw_text(x, y, "Instantly teleport to\nwherever you are aiming\nyour mouse\n\ncosts 7 energy to use\ncosts 10 coins")
@@ -32,6 +32,9 @@ if Buy_Button_OBJ.WeaponSelected == "Absorb" {
 }
 if Buy_Button_OBJ.WeaponSelected == "Fireball" {
 	draw_text(x, y, "Shoots a fireball that\nexplodes and deals a lot of\ndamage to enemies in an\narea of effect\n\ncosts 7 energy to use\ncosts 17 coins")
+}
+if Buy_Button_OBJ.WeaponSelected == "Hail Storm" {
+	draw_text(x, y, "A fast firing spell that\nshoots balls of ice that\ndeal low damage but slow\ndown enemies that it hits\n\ncosts 1 energy per shot")
 }
 
 if Buy_Button_OBJ.WeaponSelected == "Heart" {
