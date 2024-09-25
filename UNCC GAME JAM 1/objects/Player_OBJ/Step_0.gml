@@ -91,7 +91,7 @@ if place_meeting(x, y + Yspeed, Wall_OBJ) == true
 x += Xspeed;
 y += Yspeed;
 
-if SpawnWave == true {
+if RoomDone == false {
 	BulletSpawnTimer -= 1
 }
 
@@ -127,7 +127,7 @@ if BulletSpawnTimer <= 0 {
 	}
 }
 
-if SpawnWave == true {
+if RoomDone == false {
 	HeartSpawnTimer -= 1
 }
 
