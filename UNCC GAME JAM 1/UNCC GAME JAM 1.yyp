@@ -149,6 +149,7 @@
     {"id":{"name":"TitleText","path":"objects/TitleText/TitleText.yy",},},
     {"id":{"name":"Upgrade_Button_OBJ","path":"objects/Upgrade_Button_OBJ/Upgrade_Button_OBJ.yy",},},
     {"id":{"name":"Wall_OBJ","path":"objects/Wall_OBJ/Wall_OBJ.yy",},},
+    {"id":{"name":"Warning_BOSS_OBJ","path":"objects/Warning_BOSS_OBJ/Warning_BOSS_OBJ.yy",},},
     {"id":{"name":"Warning_OBJ_2","path":"objects/Warning_OBJ_2/Warning_OBJ_2.yy",},},
     {"id":{"name":"Warning_OBJ_3","path":"objects/Warning_OBJ_3/Warning_OBJ_3.yy",},},
     {"id":{"name":"Warning_OBJ","path":"objects/Warning_OBJ/Warning_OBJ.yy",},},

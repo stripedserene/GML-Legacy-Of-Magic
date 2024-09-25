@@ -130,6 +130,7 @@
     {"name":"TitleText","order":119,"path":"objects/TitleText/TitleText.yy",},
     {"name":"Upgrade_Button_OBJ","order":79,"path":"objects/Upgrade_Button_OBJ/Upgrade_Button_OBJ.yy",},
     {"name":"Wall_OBJ","order":1,"path":"objects/Wall_OBJ/Wall_OBJ.yy",},
+    {"name":"Warning_BOSS_OBJ","order":123,"path":"objects/Warning_BOSS_OBJ/Warning_BOSS_OBJ.yy",},
     {"name":"Warning_OBJ_2","order":25,"path":"objects/Warning_OBJ_2/Warning_OBJ_2.yy",},
     {"name":"Warning_OBJ_3","order":39,"path":"objects/Warning_OBJ_3/Warning_OBJ_3.yy",},
     {"name":"Warning_OBJ","order":24,"path":"objects/Warning_OBJ/Warning_OBJ.yy",},

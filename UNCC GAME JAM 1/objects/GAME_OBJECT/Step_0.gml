@@ -30,3 +30,8 @@ if instance_exists(Player_OBJ) == false {
 		room_goto(Main_Menu)
 	}
 }
+
+if room == Boss_Room and BossSpawned == false{
+	instance_create_layer(random_range(50, 350), random_range(50, 250), "Instances", Warning_BOSS_OBJ)
+	BossSpawned = true
+}
