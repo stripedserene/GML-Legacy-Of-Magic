@@ -9,6 +9,7 @@ player_y = y
 
 lastx = x
 lasty = y
+
 lastSpell = ""
 
 EnemyKilled = 0

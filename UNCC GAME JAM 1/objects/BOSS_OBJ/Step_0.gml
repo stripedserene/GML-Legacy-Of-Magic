@@ -46,6 +46,7 @@ if place_meeting(x, y, Bullet_OBJ) or place_meeting(x, y, Bullet_Shotgun_OBJ) ==
 			    if instance_exists(Player_OBJ){
 				    Player_OBJ.EnemyKilled += 1
 				}
+				Player_OBJ.SpawnWave = false
 				instance_destroy()
 			}
 		}
@@ -58,6 +59,7 @@ if place_meeting(x, y, Thorn_OBJ) {
 			if instance_exists(Player_OBJ){
 				Player_OBJ.EnemyKilled += 1
 			}
+			Player_OBJ.SpawnWave = false
 			instance_destroy()
 		}
 	}
@@ -80,6 +82,7 @@ if place_meeting(x, y, Explosion_OBJ) and MagicArmorActive == false{
 		if instance_exists(Player_OBJ){
 			Player_OBJ.EnemyKilled += 1
 		}
+		Player_OBJ.SpawnWave = false
 		instance_destroy()
 	}
 }

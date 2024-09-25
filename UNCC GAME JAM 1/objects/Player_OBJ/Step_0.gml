@@ -581,20 +581,20 @@ if NumLives <= 0 {
 	instance_destroy()
 }
 
-if room == Room1 and EnemyKilled >= 5 {
+if room == Room1 and EnemyKilled >= 50 {
 	SpawnWave = false
 	SpawnEnemies = false
 }
-if room == Room2 and EnemyKilled >= 10 {
+if room == Room2 and EnemyKilled >= 100 {
 	SpawnWave = false
 	SpawnEnemies = false
 }
-if room == Room3 and EnemyKilled >= 20 {
+if room == Room3 and EnemyKilled >= 200 {
 	SpawnWave = false
 	SpawnEnemies = false
 }
 
-if room == Room1 and EnemyKilled >= 5 and RoomDone == false and instance_exists(Advance_OBJ) == false and instance_exists(Enemy_OBJ) == false and instance_exists(Enemy_OBJ_2) == false and instance_exists(Enemy_OBJ_3 ) == false and instance_exists(Warning_OBJ) == false and instance_exists(Warning_OBJ_2) == false and instance_exists(Warning_OBJ_3) == false and instance_exists(Warning_BOSS_OBJ) == false {
+if room == Room1 and EnemyKilled >= 50 and RoomDone == false and instance_exists(Advance_OBJ) == false and instance_exists(Enemy_OBJ) == false and instance_exists(Enemy_OBJ_2) == false and instance_exists(Enemy_OBJ_3 ) == false and instance_exists(Warning_OBJ) == false and instance_exists(Warning_OBJ_2) == false and instance_exists(Warning_OBJ_3) == false and instance_exists(Warning_BOSS_OBJ) == false {
 	SpawnWave = false
 	SpawnEnemies = false
 	CurrencyCounter_OBJ.NumCoins += 10
@@ -603,7 +603,7 @@ if room == Room1 and EnemyKilled >= 5 and RoomDone == false and instance_exists(
 	instance_create_layer(x, y, "DEATHTEXT", Advance_Text)
 	RoomDone = true
 }
-if room == Room2 and EnemyKilled >= 10 and RoomDone == false and instance_exists(Advance_OBJ_2) == false and instance_exists(Enemy_OBJ) == false and instance_exists(Enemy_OBJ_2) == false and instance_exists(Enemy_OBJ_3) == false and instance_exists(Warning_OBJ) == false and instance_exists(Warning_OBJ_2) == false and instance_exists(Warning_OBJ_3) == false and instance_exists(Warning_BOSS_OBJ) == false {
+if room == Room2 and EnemyKilled >= 100 and RoomDone == false and instance_exists(Advance_OBJ_2) == false and instance_exists(Enemy_OBJ) == false and instance_exists(Enemy_OBJ_2) == false and instance_exists(Enemy_OBJ_3) == false and instance_exists(Warning_OBJ) == false and instance_exists(Warning_OBJ_2) == false and instance_exists(Warning_OBJ_3) == false and instance_exists(Warning_BOSS_OBJ) == false {
 	SpawnWave = false
 	SpawnEnemies = false
 	CurrencyCounter_OBJ.NumCoins += 15
@@ -612,7 +612,7 @@ if room == Room2 and EnemyKilled >= 10 and RoomDone == false and instance_exists
 	instance_create_layer(x, y, "DEATHTEXT", Advance_Text)
 	RoomDone = true
 }
-if room == Room3 and EnemyKilled >= 20 and RoomDone == false and instance_exists(Advance_OBJ_3) == false and instance_exists(Enemy_OBJ) == false and instance_exists(Enemy_OBJ_2) == false and instance_exists(Enemy_OBJ_3) == false and instance_exists(Warning_OBJ) == false and instance_exists(Warning_OBJ_2) == false and instance_exists(Warning_OBJ_3) == false and instance_exists(Warning_BOSS_OBJ) == false {
+if room == Room3 and EnemyKilled >= 200 and RoomDone == false and instance_exists(Advance_OBJ_3) == false and instance_exists(Enemy_OBJ) == false and instance_exists(Enemy_OBJ_2) == false and instance_exists(Enemy_OBJ_3) == false and instance_exists(Warning_OBJ) == false and instance_exists(Warning_OBJ_2) == false and instance_exists(Warning_OBJ_3) == false and instance_exists(Warning_BOSS_OBJ) == false {
 	SpawnWave = false
 	SpawnEnemies = false
 	CurrencyCounter_OBJ.NumCoins += 20
@@ -622,7 +622,7 @@ if room == Room3 and EnemyKilled >= 20 and RoomDone == false and instance_exists
 	RoomDone = true
 }
 
-if instance_exists(BOSS_OBJ) {
+if instance_exists(BOSS_OBJ) or instance_exists(Warning_BOSS_OBJ){
 	SpawnEnemies = false
 	SpawnWave = true
 }
