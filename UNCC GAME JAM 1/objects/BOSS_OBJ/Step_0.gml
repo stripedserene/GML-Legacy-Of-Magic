@@ -47,6 +47,7 @@ if place_meeting(x, y, Bullet_OBJ) or place_meeting(x, y, Bullet_Shotgun_OBJ) ==
 				    Player_OBJ.EnemyKilled += 1
 				}
 				Player_OBJ.SpawnWave = false
+				instance_create_layer(x, y, "DEATHTEXT", Win_Text)
 				instance_destroy()
 			}
 		}
@@ -60,6 +61,7 @@ if place_meeting(x, y, Thorn_OBJ) {
 				Player_OBJ.EnemyKilled += 1
 			}
 			Player_OBJ.SpawnWave = false
+			instance_create_layer(x, y, "DEATHTEXT", Win_Text)
 			instance_destroy()
 		}
 	}
@@ -83,6 +85,7 @@ if place_meeting(x, y, Explosion_OBJ) and MagicArmorActive == false{
 			Player_OBJ.EnemyKilled += 1
 		}
 		Player_OBJ.SpawnWave = false
+		instance_create_layer(x, y, "DEATHTEXT", Win_Text)
 		instance_destroy()
 	}
 }

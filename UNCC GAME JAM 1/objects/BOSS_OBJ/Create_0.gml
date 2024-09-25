@@ -4,7 +4,7 @@ image_yscale = 1.7
 
 Xspeed = 0
 Yspeed = 0
-obj_HP = 500
+obj_HP = 5
 
 AttackTimer = 23
 
