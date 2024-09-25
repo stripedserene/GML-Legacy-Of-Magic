@@ -12,6 +12,7 @@ lasty = y
 lastSpell = ""
 
 EnemyKilled = 0
+RoomDone = false
 
 MagicArmorActive = false 
 SwordActive = false 

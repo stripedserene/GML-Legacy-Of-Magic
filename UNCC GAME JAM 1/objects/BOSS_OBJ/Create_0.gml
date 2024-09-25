@@ -23,8 +23,3 @@ speed = 1.3
 ShotTimer = 20
 
 instance_create_layer(25, 30, "TEXT_DISPLAY_LAYER", BOSS_Healthbar_OBJ)
-
-if place_meeting(x, y, Wall_OBJ) {
-	Player_OBJ.EnemySpawnTimer = 1
-	instance_destroy()
-}
