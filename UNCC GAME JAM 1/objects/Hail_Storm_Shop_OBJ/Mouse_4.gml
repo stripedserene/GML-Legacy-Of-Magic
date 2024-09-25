@@ -4,7 +4,7 @@ event_inherited();
 
 if CurrencyCounter_OBJ.MagicArmorUnlocked == false {
 	Buy_Button_OBJ.WeaponSelected = "Hail Storm"
-	Buy_Button_OBJ.Button_text = "Buy Hail Storm"
+	Buy_Button_OBJ.Button_text = "ALREADY OWNED"
 }
 
 else {
