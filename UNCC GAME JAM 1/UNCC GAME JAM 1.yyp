@@ -147,6 +147,7 @@
     {"id":{"name":"Thorn_OBJ","path":"objects/Thorn_OBJ/Thorn_OBJ.yy",},},
     {"id":{"name":"Thorn_Wall_Rebind_OBJ","path":"objects/Thorn_Wall_Rebind_OBJ/Thorn_Wall_Rebind_OBJ.yy",},},
     {"id":{"name":"Thorn_Wall_Shop_OBJ","path":"objects/Thorn_Wall_Shop_OBJ/Thorn_Wall_Shop_OBJ.yy",},},
+    {"id":{"name":"TitleText_2","path":"objects/TitleText_2/TitleText_2.yy",},},
     {"id":{"name":"TitleText","path":"objects/TitleText/TitleText.yy",},},
     {"id":{"name":"Upgrade_Button_OBJ","path":"objects/Upgrade_Button_OBJ/Upgrade_Button_OBJ.yy",},},
     {"id":{"name":"Wall_OBJ","path":"objects/Wall_OBJ/Wall_OBJ.yy",},},

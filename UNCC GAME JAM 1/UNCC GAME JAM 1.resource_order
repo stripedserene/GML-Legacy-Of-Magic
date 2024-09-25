@@ -128,6 +128,7 @@
     {"name":"Thorn_OBJ","order":34,"path":"objects/Thorn_OBJ/Thorn_OBJ.yy",},
     {"name":"Thorn_Wall_Rebind_OBJ","order":96,"path":"objects/Thorn_Wall_Rebind_OBJ/Thorn_Wall_Rebind_OBJ.yy",},
     {"name":"Thorn_Wall_Shop_OBJ","order":65,"path":"objects/Thorn_Wall_Shop_OBJ/Thorn_Wall_Shop_OBJ.yy",},
+    {"name":"TitleText_2","order":126,"path":"objects/TitleText_2/TitleText_2.yy",},
     {"name":"TitleText","order":119,"path":"objects/TitleText/TitleText.yy",},
     {"name":"Upgrade_Button_OBJ","order":79,"path":"objects/Upgrade_Button_OBJ/Upgrade_Button_OBJ.yy",},
     {"name":"Wall_OBJ","order":1,"path":"objects/Wall_OBJ/Wall_OBJ.yy",},

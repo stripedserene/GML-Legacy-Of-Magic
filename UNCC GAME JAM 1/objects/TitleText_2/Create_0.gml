@@ -1,3 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
-alphaval = 0
+alphaval = 1
+timer = 150
