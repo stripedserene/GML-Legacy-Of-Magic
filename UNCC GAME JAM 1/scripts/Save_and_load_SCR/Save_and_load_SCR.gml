@@ -67,6 +67,7 @@ function LoadHealth(){
 			Player_OBJ.Energy = _struct.Energy
 		}
 		file_delete("saveHealthEnergy.txt")
+		file_text_close(_file)
 	}
 }
 
@@ -110,5 +111,6 @@ function LoadCurrency(){
 			CurrencyCounter_OBJ.InvisibilityCooldown = _struct.InvisibilityCooldown
 			CurrencyCounter_OBJ.HailStormCooldown = _struct.HailStormCooldown
 		}
+		file_text_close(_file)
 	}
 }
