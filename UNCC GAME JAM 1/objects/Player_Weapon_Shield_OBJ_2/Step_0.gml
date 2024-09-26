@@ -13,9 +13,10 @@ if instance_exists(Player_OBJ){
 		instance_destroy()
 		image_angle = 0
 	}
+	if Player_OBJ.weaponType != "Absorb" {
+		instance_destroy()
+	}
 }
 else {
 	instance_destroy()
 }
-
-instance_destroy()

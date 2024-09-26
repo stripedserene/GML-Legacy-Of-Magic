@@ -39,5 +39,9 @@ if place_meeting(x, y, Enemy_Shotgun_Bullet_OBJ) {
 if wallHealth <= 0 {
 	instance_destroy()
 }
-
-image_alpha = (wallHealth + (0.3 * startingWallHealth)) / (startingWallHealth)
+if wallHealth + (0.3 * startingWallHealth) < startingWallHealth {
+	image_alpha = (wallHealth + (0.3 * startingWallHealth)) / (startingWallHealth)
+}
+else {
+	image_alpha = 1
+}

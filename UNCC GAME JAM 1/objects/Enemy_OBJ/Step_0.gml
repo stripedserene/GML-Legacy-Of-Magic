@@ -1,5 +1,7 @@
 
-
+if place_meeting(x, y, Flash_OBJ) {
+	obj_stuned = true
+}
 
 if instance_exists(Player_OBJ) == true {
 	if Player_OBJ.invisible == false {
