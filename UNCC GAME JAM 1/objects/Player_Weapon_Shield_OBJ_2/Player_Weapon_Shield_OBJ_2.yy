@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Player_Weapon_Shield_SPR",
-    "path":"sprites/Player_Weapon_Shield_SPR/Player_Weapon_Shield_SPR.yy",
+    "name":"Player_Weapon_Shield_SPR_ALT_2",
+    "path":"sprites/Player_Weapon_Shield_SPR_ALT_2/Player_Weapon_Shield_SPR_ALT_2.yy",
   },
   "spriteMaskId":null,
   "visible":true,
