@@ -17,6 +17,7 @@ RoomDone = false
 
 MagicArmorActive = false 
 SwordActive = false 
+AbsorbActive = false 
 
 SwordEnergyTimer = 75
 

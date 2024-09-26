@@ -1,6 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
 if instance_exists(Player_OBJ){
+	if Player_OBJ.invisible == true {
+		image_alpha = 0.3
+	}
+	else {
+		image_alpha = 1
+	}
 	image_xscale = 0.06
 	image_yscale = 0.06
 	
@@ -14,10 +20,15 @@ if instance_exists(Player_OBJ){
 	
 	if direction <= 90 or direction >= 270 {
 		image_angle = direction
+		if Player_OBJ.invisible == true {
+			image_alpha = 0.3
+		}
+		else {
+			image_alpha = 1
+		}
 	}
 	else {
-		instance_destroy()
-		image_angle = 0
+		image_alpha = 0
 	}
 }
 else {

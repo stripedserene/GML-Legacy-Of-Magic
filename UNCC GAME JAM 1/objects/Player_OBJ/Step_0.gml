@@ -457,9 +457,13 @@ if weaponType == "Lightning Bolt"{
 	instance_create_layer(x, y, "Instances", Player_Weapon_Sniper_OBJ)
 	instance_create_layer(x, y, "Instances", Player_Weapon_Sniper_OBJ_2)
 }
-if weaponType == "Absorb"{
+if weaponType == "Absorb" and AbsorbActive == false {
 	instance_create_layer(x, y, "Instances", Player_Weapon_Shield_OBJ)
 	instance_create_layer(x, y, "Instances", Player_Weapon_Shield_OBJ_2)
+	AbsorbActive = true
+}
+if weaponType != "Absorb" {
+	AbsorbActive = false 
 }
 
 if weaponType == "Magic Armor"{
@@ -473,13 +477,13 @@ if weaponType == "Teleportation"{
 }
 
 
-if weaponType == "Magic Sword"{
+if weaponType == "Magic Sword" and SwordActive == false {
 	instance_create_layer(x, y, "Instances", Player_Weapon_Sword_OBJ)
 	instance_create_layer(x, y, "Instances", Player_Weapon_Sword_OBJ_2)
 	SwordActive = true
 }
-else {
-	SwordActive = false 
+if weaponType != "Magic Sword" {
+	SwordActive = false
 }
 
 if weaponType == "Thorn Wall"{
