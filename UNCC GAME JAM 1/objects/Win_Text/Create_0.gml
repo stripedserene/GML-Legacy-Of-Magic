@@ -20,3 +20,6 @@ if instance_exists(Warning_OBJ_2) {
 if instance_exists(Warning_OBJ_3) {
 	instance_destroy(Warning_OBJ_3)
 }
+if instance_exists(Player_OBJ) {
+	Player_OBJ.RoomDone = true
+}
