@@ -3,6 +3,8 @@
 randomize()
 text = irandom_range(1, 12)
 oldText = text
+textdone = []
+
 textChange = false 
 textalpha = 1
 changeTextTimer = 250

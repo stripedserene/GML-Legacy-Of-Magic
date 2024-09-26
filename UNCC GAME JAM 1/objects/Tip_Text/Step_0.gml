@@ -8,10 +8,13 @@ if changeTextTimer <= 0 {
 
 if textalpha <= 0 {
 	text = irandom_range(1, 12)
-	while text == oldText {
+	while array_contains(textdone, text) {
 		text = irandom_range(1, 12)
 	}
-	oldText = text
+	array_push(textdone, text)
+	if array_length(textdone) >= 11 {
+		textdone = []
+	}
 	changeTextTimer = 250
 	textChange = true
 }
