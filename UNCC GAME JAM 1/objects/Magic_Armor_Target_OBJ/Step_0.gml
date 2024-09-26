@@ -40,6 +40,13 @@ if place_meeting(x, y, Bullet_Sniper_OBJ) == true
 	{
 		obj_HP -= 5
 	}
+if place_meeting(x, y, Player_Weapon_Sword_OBJ) or place_meeting(x, y, Player_Weapon_Sword_OBJ) == true
+	{
+		if instance_exists(Player_OBJ){
+			Player_OBJ.EnemyKilled += 1
+		}
+		instance_destroy()
+	}
 
 if obj_HP <= 0 {
 	instance_destroy()

@@ -63,6 +63,7 @@
     {"$GMObjectProperty":"v1","%Name":"MagicArmorCooldown","filters":[],"listItems":[],"multiselect":false,"name":"MagicArmorCooldown","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"200","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"InvisibilityCooldown","filters":[],"listItems":[],"multiselect":false,"name":"InvisibilityCooldown","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"200","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"HailStormCooldown","filters":[],"listItems":[],"multiselect":false,"name":"HailStormCooldown","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"7","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"BeatBoss","filters":[],"listItems":[],"multiselect":false,"name":"BeatBoss","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
