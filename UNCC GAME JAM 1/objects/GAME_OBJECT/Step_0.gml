@@ -4,7 +4,6 @@ if keyboard_check_pressed(ord(CurrencyCounter_OBJ.PauseBind)) {
 	paused = !paused
 }
 
-
 if paused == true {
 	instance_deactivate_layer("Instances")
 	instance_deactivate_layer("DEATHTEXT")
@@ -34,4 +33,9 @@ if instance_exists(Player_OBJ) == false {
 if room == Boss_Room and BossSpawned == false{
 	instance_create_layer(random_range(50, 350), random_range(50, 250), "Instances", Warning_BOSS_OBJ)
 	BossSpawned = true
+}
+
+if oneframe == false {
+	paused = false
+	oneframe = true
 }
