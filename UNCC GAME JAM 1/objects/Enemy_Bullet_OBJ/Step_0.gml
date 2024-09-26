@@ -8,8 +8,20 @@ if place_meeting(x, y, Wall_OBJ) or place_meeting(x, y, Thorn_OBJ) == true
 	}
 if place_meeting(x + lengthdir_x(speed, direction), y, Player_Weapon_Shield_OBJ) == true or place_meeting(x, y + lengthdir_y(speed, direction), Player_Weapon_Shield_OBJ_2) == true
 	{
-	Player_OBJ.Energy += 5
-	instance_destroy()
+	Inst = instance_place(x, y, Player_Weapon_Shield_OBJ)
+	Inst2 = instance_place(x, y, Player_Weapon_Shield_OBJ_2)
+	if Inst != noone{
+		if Inst.image_alpha != 0 {
+			Player_OBJ.Energy += 3
+			instance_destroy()
+		}
+	}
+	if Inst2 != noone{
+		if Inst2.image_alpha != 0 {
+			Player_OBJ.Energy += 3
+			instance_destroy()
+		}
+	}
 	}
 
 lifespan -= 1

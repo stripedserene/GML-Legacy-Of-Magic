@@ -1,10 +1,10 @@
 {
   "$GMSprite":"",
   "%Name":"Player_Weapon_Shield_SPR_ALT_2",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":482,
   "bbox_left":285,
-  "bbox_right":672,
+  "bbox_right":514,
   "bbox_top":9,
   "collisionKind":1,
   "collisionTolerance":0,
