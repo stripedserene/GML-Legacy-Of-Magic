@@ -12,7 +12,7 @@ if textalpha <= 0 {
 		text = irandom_range(1, 12)
 	}
 	array_push(textdone, text)
-	if array_length(textdone) >= 11 {
+	if array_length(textdone) >= 12 {
 		textdone = []
 	}
 	changeTextTimer = 250

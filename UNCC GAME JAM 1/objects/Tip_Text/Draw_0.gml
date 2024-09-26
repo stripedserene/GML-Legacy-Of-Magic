@@ -39,6 +39,9 @@ if text == 11{
 if text == 12{
 	draw_text_transformed_color(200, 280, "The teleport spell can help\nyou get coins", 0.65, 0.65, 0, c_white, c_white, c_white, c_white, textalpha)
 }
+if text == 13{
+	draw_text_transformed_color(200, 280, "You unlock 2 more gamemodes\nupon beating the game", 0.65, 0.65, 0, c_white, c_white, c_white, c_white, textalpha)
+}
 
 draw_set_halign(fa_left)
 draw_set_valign(fa_top)
