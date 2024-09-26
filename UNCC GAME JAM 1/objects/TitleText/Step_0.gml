@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if TitleText_2.alphaval <= 0 and goMainMenu == false {
+if TitleText_2.alphaval <= 0 and goMainMenu == false and alphaval < 1{
 	alphaval += 0.03
 }
 if keyboard_check_pressed(vk_space) {
