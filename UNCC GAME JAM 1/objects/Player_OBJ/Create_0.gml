@@ -1,4 +1,5 @@
 randomize()
+persistent = true
 
 Xspeed = 0
 Yspeed = 0
