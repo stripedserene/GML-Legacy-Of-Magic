@@ -1,5 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-if CurrencyCounter_OBJ.ThornWallUnlocked == false {
+if global.ThornWallUnlocked == false {
 	instance_destroy()
 }

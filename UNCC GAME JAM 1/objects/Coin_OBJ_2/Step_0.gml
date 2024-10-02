@@ -1,6 +1,5 @@
 if place_meeting(x, y, Player_OBJ) {
-	CurrencyCounter_OBJ.NumCoins += 2
-	SaveCurrency()
+	global.NumCoins += 2
 	instance_destroy()
 }
 

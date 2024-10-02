@@ -15,66 +15,66 @@ else {
 	image_yscale = 0.06
 }
 
-if  keyboard_check(ord(CurrencyCounter_OBJ.HailStormBind)) and CurrencyCounter_OBJ.HailStormUnlocked{
+if  keyboard_check(ord(global.HailStormBind)) and global.HailStormUnlocked{
 	weaponType = "Hail Storm"
 	lastSpell = "Hail Storm"
 }
 
-if  keyboard_check(ord(CurrencyCounter_OBJ.SandBlastBind)) and CurrencyCounter_OBJ.SandBlastUnlocked {
+if  keyboard_check(ord(global.SandBlastBind)) and global.SandBlastUnlocked {
 	weaponType = "Sand Blast"
 	lastSpell = "Sand Blast"
 }
 
-if  keyboard_check(ord(CurrencyCounter_OBJ.MagicSwordBind)) and CurrencyCounter_OBJ.MagicSwordUnlocked{
+if  keyboard_check(ord(global.MagicSwordBind)) and global.MagicSwordUnlocked{
 	weaponType = "Magic Sword"
 	lastSpell = "Magic Sword"
 }
 
-if  keyboard_check(ord(CurrencyCounter_OBJ.LightningBoltBind)) and CurrencyCounter_OBJ.LightningBoltUnlocked{
+if  keyboard_check(ord(global.LightningBoltBind)) and global.LightningBoltUnlocked{
 	weaponType = "Lightning Bolt"
 	lastSpell = "Lightning Bolt"
 }
 
-if  keyboard_check(ord(CurrencyCounter_OBJ.TeleportBind)) and CurrencyCounter_OBJ.TeleportUnlocked{
+if  keyboard_check(ord(global.TeleportBind)) and global.TeleportUnlocked{
 	weaponType = "Teleportation"
 	lastSpell = "Teleportation"
 }
 
-if  keyboard_check(ord(CurrencyCounter_OBJ.MagicArmorBind)) and CurrencyCounter_OBJ.MagicArmorUnlocked{
+if  keyboard_check(ord(global.MagicArmorBind)) and global.MagicArmorUnlocked{
 	weaponType = "Magic Armor"
 	lastSpell = "Magic Armor"
 }
 
-if  keyboard_check(ord(CurrencyCounter_OBJ.ThornWallBind)) and CurrencyCounter_OBJ.ThornWallUnlocked{
+if  keyboard_check(ord(global.ThornWallBind)) and global.ThornWallUnlocked{
 	weaponType = "Thorn Wall"
 	lastSpell = "Thorn Wall"
 }
 
-if  keyboard_check(ord(CurrencyCounter_OBJ.SelfHealBind)) and CurrencyCounter_OBJ.SelfHealUnlocked{
+if  keyboard_check(ord(global.SelfHealBind)) and global.SelfHealUnlocked{
 	weaponType = "Self Heal"
 	lastSpell = "Self Heal"
 }
 
-if  keyboard_check(ord(CurrencyCounter_OBJ.BlindingLightBind)) and CurrencyCounter_OBJ.BlindingLightUnlocked {
+if  keyboard_check(ord(global.BlindingLightBind)) and global.BlindingLightUnlocked {
 	weaponType = "Blinding Light"
 	lastSpell = "Blinding Light"
 }
 
-if  keyboard_check(ord(CurrencyCounter_OBJ.FireballBind)) and CurrencyCounter_OBJ.FireballUnlocked{
+if  keyboard_check(ord(global.FireballBind)) and global.FireballUnlocked{
 	weaponType = "Fireball"
 	lastSpell = "Fireball"
 }
 
-if  keyboard_check(ord(CurrencyCounter_OBJ.InvisibilityBind)) and CurrencyCounter_OBJ.InvisibilityUnlocked{
+if  keyboard_check(ord(global.InvisibilityBind)) and global.InvisibilityUnlocked{
 	weaponType = "Invisibility"
 	lastSpell = "Invisibility"
 }
 
-if  mouse_check_button_pressed(mb_right) and CurrencyCounter_OBJ.AbsorbUnlocked{
+if  mouse_check_button_pressed(mb_right) and global.AbsorbUnlocked{
 	weaponType = "Absorb"
 }
 
-if  mouse_check_button_released(mb_right) and CurrencyCounter_OBJ.AbsorbUnlocked{
+if  mouse_check_button_released(mb_right) and global.AbsorbUnlocked{
 	weaponType = lastSpell
 }
 
@@ -307,7 +307,7 @@ if mouse_check_button_pressed(mb_left){
 		}
 	}
 	if Energy >= 100 {
-		if weaponType == "Self Heal" and NumLives < CurrencyCounter_OBJ.PlayerHP{
+		if weaponType == "Self Heal" and NumLives < global.PlayerHP{
 			NumLives += 1
 			Energy -= 100
 		}
@@ -378,7 +378,7 @@ if HailStormCooldownActive == true {
 }
 if HailStormCooldownTimer <= 0 {
 	HailStormCooldownActive = false 
-	HailStormCooldownTimer = CurrencyCounter_OBJ.HailStormCooldown
+	HailStormCooldownTimer = global.HailStormCooldown
 }
 
 if FireballCooldownActive == true {
@@ -386,7 +386,7 @@ if FireballCooldownActive == true {
 }
 if FireballCooldownTimer <= 0 {
 	FireballCooldownActive = false 
-	FireballCooldownTimer = CurrencyCounter_OBJ.FireballCooldown
+	FireballCooldownTimer = global.FireballCooldown
 }
 
 if InvisibilityCooldownActive == true {
@@ -394,7 +394,7 @@ if InvisibilityCooldownActive == true {
 }
 if InvisibilityCooldownTimer <= 0 {
 	InvisibilityCooldownActive = false 
-	InvisibilityCooldownTimer = CurrencyCounter_OBJ.InvisibilityCooldown
+	InvisibilityCooldownTimer = global.InvisibilityCooldown
 }
 
 if LightningBoltCooldownActive == true {
@@ -402,7 +402,7 @@ if LightningBoltCooldownActive == true {
 }
 if LightningBoltCooldownTimer <= 0 {
 	LightningBoltCooldownActive = false
-	LightningBoltCooldownTimer = CurrencyCounter_OBJ.LightningBoltCooldown
+	LightningBoltCooldownTimer = global.LightningBoltCooldown
 }
 
 if MagicArmorCooldownActive == true {
@@ -410,14 +410,14 @@ if MagicArmorCooldownActive == true {
 }
 if MagicArmorCooldownTimer <= 0 {
 	MagicArmorCooldownActive = false 
-	MagicArmorCooldownTimer = CurrencyCounter_OBJ.MagicArmorCooldown
+	MagicArmorCooldownTimer = global.MagicArmorCooldown
 }
 if SandBlastCooldownActive == true {
 	SandBlastCooldownTimer -= 1
 }
 if SandBlastCooldownTimer <= 0 {
 	SandBlastCooldownActive = false 
-	SandBlastCooldownTimer = CurrencyCounter_OBJ.SandBlastCooldown
+	SandBlastCooldownTimer = global.SandBlastCooldown
 }
 
 if MagicArmorActive == true {
@@ -601,27 +601,21 @@ if room == Room3 and EnemyKilled >= 200 {
 if room == Room1 and EnemyKilled >= 50 and RoomDone == false and instance_exists(Advance_OBJ) == false and instance_exists(Enemy_OBJ) == false and instance_exists(Enemy_OBJ_2) == false and instance_exists(Enemy_OBJ_3 ) == false and instance_exists(Warning_OBJ) == false and instance_exists(Warning_OBJ_2) == false and instance_exists(Warning_OBJ_3) == false and instance_exists(Warning_BOSS_OBJ) == false {
 	SpawnWave = false
 	SpawnEnemies = false
-	CurrencyCounter_OBJ.NumCoins += 10
-	SaveCurrency()
-	SaveHealth()
+	global.NumCoins += 10
 	instance_create_layer(x, y, "DEATHTEXT", Advance_Text)
 	RoomDone = true
 }
 if room == Room2 and EnemyKilled >= 100 and RoomDone == false and instance_exists(Advance_OBJ_2) == false and instance_exists(Enemy_OBJ) == false and instance_exists(Enemy_OBJ_2) == false and instance_exists(Enemy_OBJ_3) == false and instance_exists(Warning_OBJ) == false and instance_exists(Warning_OBJ_2) == false and instance_exists(Warning_OBJ_3) == false and instance_exists(Warning_BOSS_OBJ) == false {
 	SpawnWave = false
 	SpawnEnemies = false
-	CurrencyCounter_OBJ.NumCoins += 15
-	SaveCurrency()
-	SaveHealth()
+	global.NumCoins += 15
 	instance_create_layer(x, y, "DEATHTEXT", Advance_Text)
 	RoomDone = true
 }
 if room == Room3 and EnemyKilled >= 200 and RoomDone == false and instance_exists(Advance_OBJ_3) == false and instance_exists(Enemy_OBJ) == false and instance_exists(Enemy_OBJ_2) == false and instance_exists(Enemy_OBJ_3) == false and instance_exists(Warning_OBJ) == false and instance_exists(Warning_OBJ_2) == false and instance_exists(Warning_OBJ_3) == false and instance_exists(Warning_BOSS_OBJ) == false {
 	SpawnWave = false
 	SpawnEnemies = false
-	CurrencyCounter_OBJ.NumCoins += 20
-	SaveCurrency()
-	SaveHealth()
+	global.NumCoins += 20
 	instance_create_layer(x, y, "DEATHTEXT", Advance_Text)
 	RoomDone = true
 }

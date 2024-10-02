@@ -2,7 +2,7 @@
 // You can write your code in this editor
 event_inherited();
 
-if CurrencyCounter_OBJ.LightningBoltUnlocked == false {
+if global.LightningBoltUnlocked == false {
 	Buy_Button_OBJ.WeaponSelected = "Lightning Bolt"
 	Buy_Button_OBJ.Button_text = "Buy Lightning Bolt"
 }

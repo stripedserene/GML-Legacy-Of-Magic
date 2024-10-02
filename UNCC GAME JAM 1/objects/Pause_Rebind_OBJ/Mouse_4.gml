@@ -3,4 +3,4 @@
 event_inherited();
 
 Rebind_Button_OBJ.WeaponSelected = "Pause"
-Rebind_Button_OBJ.Button_text = "Rebind Pause Key: " + CurrencyCounter_OBJ.PauseBind
+Rebind_Button_OBJ.Button_text = "Rebind Pause Key: " + global.PauseBind

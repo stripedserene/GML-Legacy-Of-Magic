@@ -14,7 +14,6 @@
     {"name":"inst_62FEAB73_1","path":"rooms/Room2/Room2.yy",},
     {"name":"inst_5515E9F_1","path":"rooms/Room2/Room2.yy",},
     {"name":"inst_40FC0132_1","path":"rooms/Room2/Room2.yy",},
-    {"name":"inst_19776CA2_1","path":"rooms/Room2/Room2.yy",},
     {"name":"inst_7F28CCF5_1","path":"rooms/Room2/Room2.yy",},
   ],
   "isDnd":false,
@@ -25,7 +24,6 @@
         {"$GMRInstance":"v1","%Name":"inst_14A06616_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_14A06616_1","objectId":{"name":"BulletCount","path":"objects/BulletCount/BulletCount.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":160.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"GAMELAYER","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v1","%Name":"inst_19776CA2_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_19776CA2_1","objectId":{"name":"CurrencyCounter_OBJ","path":"objects/CurrencyCounter_OBJ/CurrencyCounter_OBJ.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":256.0,"y":192.0,},
         {"$GMRInstance":"v1","%Name":"inst_7F28CCF5_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7F28CCF5_1","objectId":{"name":"GAME_OBJECT","path":"objects/GAME_OBJECT/GAME_OBJECT.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":224.0,},
       ],"layers":[],"name":"GAMELAYER","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"TEXT_DISPLAY_LAYER","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[

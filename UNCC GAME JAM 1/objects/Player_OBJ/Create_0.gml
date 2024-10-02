@@ -32,15 +32,14 @@ invulnerability = false
 invulnerabilityTime = 50
 damaged = false
 
-instance_create_layer(x, y, "Instances", CurrencyCounter_OBJ)
-SandBlastCooldownTimer = CurrencyCounter_OBJ.SandBlastCooldown
-MagicArmorCooldownTimer = CurrencyCounter_OBJ.MagicArmorCooldown
-InvisibilityCooldownTimer = CurrencyCounter_OBJ.InvisibilityCooldown
-FireballCooldownTimer = CurrencyCounter_OBJ.FireballCooldown
-LightningBoltCooldownTimer = CurrencyCounter_OBJ.LightningBoltCooldown
-HailStormCooldownTimer = CurrencyCounter_OBJ.HailStormCooldown
-NumLives = CurrencyCounter_OBJ.PlayerHP
-Energy = CurrencyCounter_OBJ.PlayerEnergy
+SandBlastCooldownTimer = global.SandBlastCooldown
+MagicArmorCooldownTimer = global.MagicArmorCooldown
+InvisibilityCooldownTimer = global.InvisibilityCooldown
+FireballCooldownTimer = global.FireballCooldown
+LightningBoltCooldownTimer = global.LightningBoltCooldown
+HailStormCooldownTimer = global.HailStormCooldown
+NumLives = global.PlayerHP
+Energy = global.PlayerEnergy
 
 SandBlastCooldownActive = false
 MagicArmorCooldownActive = false
@@ -84,5 +83,3 @@ if weaponType == "Lightning Bolt"{
 	instance_create_layer(x, y, "Instances", Player_Weapon_Sniper_OBJ)
 	instance_create_layer(x, y, "Instances", Player_Weapon_Sniper_OBJ_2)
 }
-
-LoadHealth()
