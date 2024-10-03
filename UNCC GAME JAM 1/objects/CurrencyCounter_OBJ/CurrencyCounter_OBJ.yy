@@ -27,7 +27,7 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"NumCoins","filters":[],"listItems":[],"multiselect":false,"name":"NumCoins","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1000","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"NumCoins","filters":[],"listItems":[],"multiselect":false,"name":"NumCoins","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"10","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"HailStormUnlocked","filters":[],"listItems":[
         "\"Hail Storm\"",
         "\"Sand Blast\"",
