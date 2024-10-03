@@ -160,6 +160,7 @@
     {"id":{"name":"Warning_OBJ","path":"objects/Warning_OBJ/Warning_OBJ.yy",},},
     {"id":{"name":"WeaponSelectText","path":"objects/WeaponSelectText/WeaponSelectText.yy",},},
     {"id":{"name":"Win_Text","path":"objects/Win_Text/Win_Text.yy",},},
+    {"id":{"name":"Boss_Room_2","path":"rooms/Boss_Room_2/Boss_Room_2.yy",},},
     {"id":{"name":"Boss_Room","path":"rooms/Boss_Room/Boss_Room.yy",},},
     {"id":{"name":"Controls_Room","path":"rooms/Controls_Room/Controls_Room.yy",},},
     {"id":{"name":"Endless_Room","path":"rooms/Endless_Room/Endless_Room.yy",},},
@@ -297,6 +298,7 @@
     {"roomId":{"name":"Room3","path":"rooms/Room3/Room3.yy",},},
     {"roomId":{"name":"Boss_Room","path":"rooms/Boss_Room/Boss_Room.yy",},},
     {"roomId":{"name":"Endless_Room","path":"rooms/Endless_Room/Endless_Room.yy",},},
+    {"roomId":{"name":"Boss_Room_2","path":"rooms/Boss_Room_2/Boss_Room_2.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

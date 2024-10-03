@@ -35,6 +35,11 @@ if room == Boss_Room and BossSpawned == false{
 	BossSpawned = true
 }
 
+if room == Boss_Room_2 and BossSpawned == false{
+	instance_create_layer(random_range(50, 350), random_range(50, 250), "Instances", Warning_BOSS_OBJ)
+	BossSpawned = true
+}
+
 if oneframe == false {
 	paused = false
 	oneframe = true
