@@ -3,4 +3,4 @@
 event_inherited();
 
 Rebind_Button_OBJ.WeaponSelected = "Thorn Wall"
-Rebind_Button_OBJ.Button_text = "Rebind Thorn Wall: " + CurrencyCounter_OBJ.ThornWallBind
+Rebind_Button_OBJ.Button_text = "Rebind Thorn Wall: " + global.ThornWallBind

@@ -3,4 +3,4 @@
 event_inherited();
 
 Rebind_Button_OBJ.WeaponSelected = "Magic Armor"
-Rebind_Button_OBJ.Button_text = "Rebind Magic Armor: " + CurrencyCounter_OBJ.MagicArmorBind
+Rebind_Button_OBJ.Button_text = "Rebind Magic Armor: " + global.MagicArmorBind

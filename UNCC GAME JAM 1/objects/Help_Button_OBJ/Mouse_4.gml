@@ -9,7 +9,6 @@ if instance_exists(Help_Text){
 	instance_activate_object(inst_7E9D4BD1)
 	instance_activate_object(inst_68161376)
 	instance_activate_object(inst_14B71C1D)
-	instance_activate_object(inst_163677F4)
 }
 
 else {
@@ -19,5 +18,4 @@ else {
 	instance_deactivate_object(inst_7E9D4BD1)
 	instance_deactivate_object(inst_68161376)
 	instance_deactivate_object(inst_14B71C1D)
-	instance_deactivate_object(inst_163677F4)
 }

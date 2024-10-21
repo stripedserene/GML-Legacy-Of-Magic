@@ -3,4 +3,4 @@
 event_inherited();
 
 Rebind_Button_OBJ.WeaponSelected = "Sand Blast"
-Rebind_Button_OBJ.Button_text = "Rebind Sand Blast: " + CurrencyCounter_OBJ.SandBlastBind
+Rebind_Button_OBJ.Button_text = "Rebind Sand Blast: " + global.SandBlastBind

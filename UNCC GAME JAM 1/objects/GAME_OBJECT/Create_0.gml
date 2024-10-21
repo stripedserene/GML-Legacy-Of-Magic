@@ -9,5 +9,3 @@ paused_surf = -1
 
 autosavetimer = 300
 BossSpawned = false
-
-LoadCurrency()

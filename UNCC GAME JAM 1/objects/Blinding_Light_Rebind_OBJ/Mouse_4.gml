@@ -3,4 +3,4 @@
 event_inherited();
 
 Rebind_Button_OBJ.WeaponSelected = "Blinding Light"
-Rebind_Button_OBJ.Button_text = "Rebind Blinding Light: " + CurrencyCounter_OBJ.BlindingLightBind
+Rebind_Button_OBJ.Button_text = "Rebind Blinding Light: " + global.BlindingLightBind

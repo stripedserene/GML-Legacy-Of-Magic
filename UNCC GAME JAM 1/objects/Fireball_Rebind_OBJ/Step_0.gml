@@ -1,5 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-if CurrencyCounter_OBJ.FireballUnlocked == false {
+if global.FireballUnlocked == false {
 	instance_destroy()
 }

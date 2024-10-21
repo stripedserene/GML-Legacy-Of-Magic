@@ -3,7 +3,7 @@
 lifespan -= 1
 
 if lifespan <= 0 {
-	if room == Boss_Room {
+	if room == Boss_Room or room == Boss_Room_2{
 		instance_create_layer(random_range(100, 300), random_range(100, 200), "Instances", Advance_OBJ_4)
 	}
 	instance_destroy()

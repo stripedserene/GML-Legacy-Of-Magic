@@ -3,4 +3,4 @@
 event_inherited();
 
 Rebind_Button_OBJ.WeaponSelected = "Teleportation"
-Rebind_Button_OBJ.Button_text = "Rebind Teleportation: " + CurrencyCounter_OBJ.TeleportBind
+Rebind_Button_OBJ.Button_text = "Rebind Teleportation: " + global.TeleportBind

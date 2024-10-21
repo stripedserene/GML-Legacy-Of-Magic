@@ -1,5 +1,5 @@
 if place_meeting(x, y, Player_OBJ) {
-	if Player_OBJ.NumLives < CurrencyCounter_OBJ.PlayerHP {
+	if Player_OBJ.NumLives < global.PlayerHP {
 		Player_OBJ.NumLives += 1
 		instance_destroy()
 	}
